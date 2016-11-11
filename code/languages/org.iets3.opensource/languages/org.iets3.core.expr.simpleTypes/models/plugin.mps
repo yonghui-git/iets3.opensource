@@ -17,6 +17,7 @@
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" />
     <import index="u78q" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.typesystem.inference(MPS.Core/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
@@ -56,6 +57,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -81,6 +86,9 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -866,11 +874,35 @@
     <node concept="qq9P1" id="uGVYUijb8S" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="5qo5:4rZeNQ6OYR8" resolve="StringLiteral" />
-      <node concept="3vetai" id="uGVYUijbbq" role="3vQZUl">
-        <node concept="2OqwBi" id="uGVYUijbe1" role="3vdyny">
-          <node concept="oxGPV" id="uGVYUijbbC" role="2Oq$k0" />
-          <node concept="3TrcHB" id="uGVYUijbk1" role="2OqNvi">
-            <ref role="3TsBF5" to="5qo5:4rZeNQ6OYRb" resolve="value" />
+      <node concept="3dA_Gj" id="TUBgQ0xCg$" role="3vQZUl">
+        <node concept="9aQIb" id="TUBgQ0xCgA" role="3vcmbn">
+          <node concept="3clFbS" id="TUBgQ0xCgC" role="9aQI4">
+            <node concept="3clFbJ" id="TUBgQ0xCjN" role="3cqZAp">
+              <node concept="2OqwBi" id="TUBgQ0xDgY" role="3clFbw">
+                <node concept="2OqwBi" id="TUBgQ0xCt$" role="2Oq$k0">
+                  <node concept="oxGPV" id="TUBgQ0xCjZ" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="TUBgQ0xCIX" role="2OqNvi">
+                    <ref role="3TsBF5" to="5qo5:4rZeNQ6OYRb" resolve="value" />
+                  </node>
+                </node>
+                <node concept="17RlXB" id="TUBgQ0xE6r" role="2OqNvi" />
+              </node>
+              <node concept="3clFbS" id="TUBgQ0xCjP" role="3clFbx">
+                <node concept="3cpWs6" id="TUBgQ0xEbR" role="3cqZAp">
+                  <node concept="Xl_RD" id="TUBgQ0xEbU" role="3cqZAk">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="TUBgQ0xEf8" role="3cqZAp">
+              <node concept="2OqwBi" id="TUBgQ0xNRF" role="3cqZAk">
+                <node concept="oxGPV" id="TUBgQ0xNKd" role="2Oq$k0" />
+                <node concept="3TrcHB" id="TUBgQ0xOq4" role="2OqNvi">
+                  <ref role="3TsBF5" to="5qo5:4rZeNQ6OYRb" resolve="value" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1579,13 +1611,33 @@
     <node concept="qq9P1" id="uGVYUikI8i" role="qq9xR">
       <property role="2TnfIJ" value="true" />
       <ref role="qq9wM" to="hm2y:4rZeNQ6MqjM" resolve="PlusExpression" />
-      <node concept="3vetai" id="uGVYUikJcJ" role="3vQZUl">
-        <node concept="3cpWs3" id="uGVYUikJw6" role="3vdyny">
-          <node concept="rqRoa" id="uGVYUikJw9" role="3uHU7w">
-            <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
-          </node>
-          <node concept="rqRoa" id="uGVYUikJse" role="3uHU7B">
-            <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+      <node concept="3dA_Gj" id="4H_8WGVnkqR" role="3vQZUl">
+        <node concept="9aQIb" id="4H_8WGVnkqT" role="3vcmbn">
+          <node concept="3clFbS" id="4H_8WGVnkqV" role="9aQI4">
+            <node concept="3clFbF" id="4H_8WGVnnok" role="3cqZAp">
+              <node concept="2OqwBi" id="4H_8WGVnnoh" role="3clFbG">
+                <node concept="10M0yZ" id="4H_8WGVnnoi" role="2Oq$k0">
+                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+                </node>
+                <node concept="liA8E" id="4H_8WGVnnoj" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                  <node concept="Xl_RD" id="4H_8WGVnoiX" role="37wK5m">
+                    <property role="Xl_RC" value="HERE" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="4H_8WGVnlx0" role="3cqZAp">
+              <node concept="3cpWs3" id="4H_8WGVnlx2" role="3cqZAk">
+                <node concept="rqRoa" id="4H_8WGVnlx3" role="3uHU7w">
+                  <ref role="rqRob" to="hm2y:4rZeNQ6MpKo" resolve="right" />
+                </node>
+                <node concept="rqRoa" id="4H_8WGVnlx4" role="3uHU7B">
+                  <ref role="rqRob" to="hm2y:4rZeNQ6MpKm" resolve="left" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -1707,15 +1759,6 @@
       </node>
     </node>
     <node concept="lHU7p" id="uGVYUikHMe" role="qq9xR" />
-    <node concept="qq9P1" id="uGVYUik42y" role="qq9xR">
-      <property role="2TnfIJ" value="true" />
-      <ref role="qq9wM" to="hm2y:4rZeNQ6OJ4v" resolve="ParensExpression" />
-      <node concept="3vetai" id="uGVYUik4ov" role="3vQZUl">
-        <node concept="rqRoa" id="uGVYUik4oJ" role="3vdyny">
-          <ref role="rqRob" to="hm2y:4rZeNQ6OJ5M" resolve="expr" />
-        </node>
-      </node>
-    </node>
     <node concept="lHU7p" id="uGVYUik4qz" role="qq9xR" />
     <node concept="lHU7p" id="2K1INuj_rcR" role="qq9xR" />
     <node concept="qq9P1" id="64rKhdUrLOG" role="qq9xR">
@@ -3012,6 +3055,48 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4XlPKep8_f1" role="3cqZAp">
+          <node concept="3cpWsn" id="4XlPKep8_f2" role="3cpWs9">
+            <property role="TrG5h" value="v2dec" />
+            <node concept="3uibUv" id="4XlPKep8_f3" role="1tU5fm">
+              <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+            </node>
+            <node concept="2ShNRf" id="4XlPKep8_f4" role="33vP2m">
+              <node concept="1pGfFk" id="4XlPKep8_f5" role="2ShVmc">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                <node concept="37vLTw" id="4XlPKep8_f6" role="37wK5m">
+                  <ref role="3cqZAo" node="3f3yNhCUrU_" resolve="v2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4XlPKep8_f7" role="3cqZAp">
+          <node concept="3clFbS" id="4XlPKep8_f8" role="3clFbx">
+            <node concept="3cpWs6" id="4XlPKep8_f9" role="3cqZAp">
+              <node concept="37vLTw" id="4XlPKep8_fR" role="3cqZAk">
+                <ref role="3cqZAo" node="2NHHcg2FYHt" resolve="POSINF" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4XlPKep8_fa" role="3clFbw">
+            <node concept="3cmrfG" id="4XlPKep8_fb" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="4XlPKep8_fc" role="3uHU7B">
+              <node concept="37vLTw" id="4XlPKep8_fd" role="2Oq$k0">
+                <ref role="3cqZAo" node="4XlPKep8_f2" resolve="v2dec" />
+              </node>
+              <node concept="liA8E" id="4XlPKep8_fe" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                <node concept="10M0yZ" id="4XlPKep8_ff" role="37wK5m">
+                  <ref role="3cqZAo" to="xlxw:~BigDecimal.ZERO" resolve="ZERO" />
+                  <ref role="1PxDUh" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="3f3yNhCUrTX" role="3cqZAp">
           <node concept="2OqwBi" id="3f3yNhCUrTY" role="3cqZAk">
             <node concept="2OqwBi" id="3f3yNhCUrTZ" role="2Oq$k0">
@@ -3025,13 +3110,8 @@
               </node>
               <node concept="liA8E" id="3f3yNhCUrU3" role="2OqNvi">
                 <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal):java.math.BigDecimal" resolve="divide" />
-                <node concept="2ShNRf" id="3f3yNhCUrU4" role="37wK5m">
-                  <node concept="1pGfFk" id="3f3yNhCUrU5" role="2ShVmc">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-                    <node concept="37vLTw" id="3f3yNhCUrU6" role="37wK5m">
-                      <ref role="3cqZAo" node="3f3yNhCUrU_" resolve="v2" />
-                    </node>
-                  </node>
+                <node concept="37vLTw" id="4XlPKep8_Ts" role="37wK5m">
+                  <ref role="3cqZAo" node="4XlPKep8_f2" resolve="v2dec" />
                 </node>
               </node>
             </node>
@@ -3129,6 +3209,48 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4XlPKep7dhO" role="3cqZAp">
+          <node concept="3cpWsn" id="4XlPKep7dhP" role="3cpWs9">
+            <property role="TrG5h" value="v2dec" />
+            <node concept="3uibUv" id="4XlPKep7dhM" role="1tU5fm">
+              <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+            </node>
+            <node concept="2ShNRf" id="4XlPKep7dhQ" role="33vP2m">
+              <node concept="1pGfFk" id="4XlPKep7dhR" role="2ShVmc">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
+                <node concept="37vLTw" id="4XlPKep7dhS" role="37wK5m">
+                  <ref role="3cqZAo" node="5cWGVRfVItK" resolve="v2" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4XlPKep7iyE" role="3cqZAp">
+          <node concept="3clFbS" id="4XlPKep7iyG" role="3clFbx">
+            <node concept="3cpWs6" id="4XlPKep7rqw" role="3cqZAp">
+              <node concept="37vLTw" id="4XlPKep7rRr" role="3cqZAk">
+                <ref role="3cqZAo" node="2NHHcg2FYHt" resolve="POSINF" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="4XlPKep8nrI" role="3clFbw">
+            <node concept="3cmrfG" id="4XlPKep8nJ$" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="2OqwBi" id="4XlPKep7j6C" role="3uHU7B">
+              <node concept="37vLTw" id="4XlPKep8ppH" role="2Oq$k0">
+                <ref role="3cqZAo" node="4XlPKep7dhP" resolve="v2dec" />
+              </node>
+              <node concept="liA8E" id="4XlPKep7jCH" role="2OqNvi">
+                <ref role="37wK5l" to="xlxw:~BigDecimal.compareTo(java.math.BigDecimal):int" resolve="compareTo" />
+                <node concept="10M0yZ" id="4XlPKep8ms4" role="37wK5m">
+                  <ref role="1PxDUh" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+                  <ref role="3cqZAo" to="xlxw:~BigDecimal.ZERO" resolve="ZERO" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="5cWGVRfVIty" role="3cqZAp">
           <node concept="2OqwBi" id="5cWGVRfVItz" role="3cqZAk">
             <node concept="2OqwBi" id="5cWGVRfVIt$" role="2Oq$k0">
@@ -3141,22 +3263,13 @@
                 </node>
               </node>
               <node concept="liA8E" id="5cWGVRfVItC" role="2OqNvi">
-                <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,java.math.MathContext):java.math.BigDecimal" resolve="divide" />
-                <node concept="2ShNRf" id="5cWGVRfVItD" role="37wK5m">
-                  <node concept="1pGfFk" id="5cWGVRfVItE" role="2ShVmc">
-                    <ref role="37wK5l" to="xlxw:~BigDecimal.&lt;init&gt;(java.lang.String)" resolve="BigDecimal" />
-                    <node concept="37vLTw" id="5cWGVRfVItF" role="37wK5m">
-                      <ref role="3cqZAo" node="5cWGVRfVItK" resolve="v2" />
-                    </node>
-                  </node>
+                <ref role="37wK5l" to="xlxw:~BigDecimal.divide(java.math.BigDecimal,java.math.RoundingMode):java.math.BigDecimal" resolve="divide" />
+                <node concept="37vLTw" id="4XlPKep7dhT" role="37wK5m">
+                  <ref role="3cqZAo" node="4XlPKep7dhP" resolve="v2dec" />
                 </node>
-                <node concept="2ShNRf" id="5cWGVRfVKQ8" role="37wK5m">
-                  <node concept="1pGfFk" id="5cWGVRfW0Pu" role="2ShVmc">
-                    <ref role="37wK5l" to="xlxw:~MathContext.&lt;init&gt;(int)" resolve="MathContext" />
-                    <node concept="37vLTw" id="5cWGVRfW1Jo" role="37wK5m">
-                      <ref role="3cqZAo" node="5cWGVRfVJWM" resolve="precision" />
-                    </node>
-                  </node>
+                <node concept="Rm8GO" id="4XlPKep6GdB" role="37wK5m">
+                  <ref role="Rm8GQ" to="xlxw:~RoundingMode.FLOOR" resolve="FLOOR" />
+                  <ref role="1Px2BO" to="xlxw:~RoundingMode" resolve="RoundingMode" />
                 </node>
               </node>
             </node>

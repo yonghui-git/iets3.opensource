@@ -2,24 +2,12 @@
 if (project.hasProperty('projectVersion')) {
     version project.projectVersion
 } else {
-    def gitBranchCmd
-    if (System.getProperty('os.name').toLowerCase().contains('windows')) {
-        gitBranchCmd = 'cmd /c git rev-parse --abbrev-ref HEAD'
-    } else {
-        gitBranchCmd = 'git rev-parse --abbrev-ref HEAD'
-    }
-    def gitBranch = gitBranchCmd.execute().in.text.trim().toString().replace("/","-")
-
-    if (gitBranch == null || gitBranch.empty) {
-        gitBranch = 'HEAD'
-    }
-
-    version "0.1-$gitBranch-SNAPSHOT"
+    version GitBasedVersioning.getVersion('0', '1')
 }
 
 // Dependency versions
 ext.mpsVersion = '3.4.1'
-ext.mbeddrVersion = '1.0-master-SNAPSHOT'
+ext.mbeddrVersion = '1.0.+'
 
 ext.releaseRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr'
 ext.snapshotRepository = 'https://projects.itemis.de/nexus/content/repositories/mbeddr_snapshots'
