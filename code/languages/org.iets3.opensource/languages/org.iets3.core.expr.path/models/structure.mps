@@ -71,10 +71,17 @@
     <node concept="PrWs8" id="4o9aP47qdjx" role="PzmwI">
       <ref role="PrY4T" node="4o9aP47qdic" resolve="IComparablePathPart" />
     </node>
+    <node concept="PrWs8" id="7SZA7UffDz0" role="PzmwI">
+      <ref role="PrY4T" node="7SZA7UffDxv" resolve="INoneTolerant" />
+    </node>
   </node>
   <node concept="PlHQZ" id="4o9aP47qdic">
     <property role="TrG5h" value="IComparablePathPart" />
     <property role="EcuMT" value="5046612484462007436" />
+  </node>
+  <node concept="PlHQZ" id="7SZA7UffDxv">
+    <property role="EcuMT" value="9097157441648236639" />
+    <property role="TrG5h" value="INoneTolerant" />
   </node>
 </model>
 
