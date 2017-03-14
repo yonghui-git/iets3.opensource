@@ -35,6 +35,30 @@
       <modulePath path="$PROJECT_DIR$/solutions/test.iets3.core.assessment/test.iets3.core.tracequery.msd" folder="trace" />
       <modulePath path="$PROJECT_DIR$/tests/test.in.expr.os/test.in.expr.os.msd" folder="expr" />
       <modulePath path="$PROJECT_DIR$/tests/test.ts.expr.os/test.ts.expr.os.msd" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.build.os/languages/iets3.build/org.iets3.opensource.build.jar!/META-INF/module.xml" folder="_build" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.comp.os/languages/iets3.comp.os/org.iets3.components.core.jar!/META-INF/module.xml" folder="comp" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.comp.os/languages/iets3.comp.os/org.iets3.components.plugin.jar!/META-INF/module.xml" folder="comp" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.comp.os/languages/iets3.comp.os/org.iets3.components.req.jar!/META-INF/module.xml" folder="comp" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.assessment/languages/iets3.assessment/org.iets3.core.assessment.jar!/META-INF/module.xml" folder="assessmt" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar!/META-INF/module.xml" folder="analysis" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.attributes.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.collections.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.plugin.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.repl.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.repl.plugin.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar!/META-INF/module.xml" folder="expr" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.plugin.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.users.jar!/META-INF/module.xml" folder="core" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.req.os/languages/iets3.req.os/org.iets3.glossary.jar!/META-INF/module.xml" folder="req" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.req.os/languages/iets3.req.os/org.iets3.req.core.jar!/META-INF/module.xml" folder="req" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.req.os/languages/iets3.req.os/org.iets3.req.plugin.jar!/META-INF/module.xml" folder="req" />
+      <modulePath path="$convecton.core.home$/artifacts/org.iets3.opensource/org.iets3.trace/languages/iets3.trace/org.iets3.core.trace.jar!/META-INF/module.xml" folder="trace" />
     </projectModules>
   </component>
 </project>

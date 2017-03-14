@@ -12,7 +12,6 @@
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="gdgh" ref="r:e4d9478b-ae0e-416e-be60-73d136571015(org.iets3.core.base.behavior)" />
     <import index="hnhi" ref="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)" />
-    <import index="hknx" ref="r:4df5de9d-c793-4b8c-9d89-32508bcd7b9c(org.iets3.analysis.solversupport.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -91,12 +90,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
-      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
-      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -125,13 +118,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
-        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
-      </concept>
-      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
-        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
-      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -139,17 +125,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -371,49 +349,6 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="iAIiaXpOOt" role="3cqZAp" />
-                <node concept="3SKdUt" id="iAIiaXpJgA" role="3cqZAp">
-                  <node concept="3SKdUq" id="iAIiaXpJgC" role="3SKWNk">
-                    <property role="3SKdUp" value="TODO: it would be nice if the debugger would be updated automatically" />
-                  </node>
-                </node>
-                <node concept="1X3_iC" id="iAIiaXpMTz" role="lGtFl">
-                  <property role="3V$3am" value="statement" />
-                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="3clFbJ" id="4b9bcl$alSQ" role="8Wnug">
-                    <node concept="3clFbS" id="4b9bcl$alSS" role="3clFbx">
-                      <node concept="3SKdUt" id="4b9bcl$atJd" role="3cqZAp">
-                        <node concept="3SKdUq" id="4b9bcl$atJf" role="3SKWNk">
-                          <property role="3SKdUp" value="the SolverDebugger is open on that node =&gt; update it using a Quickfix!" />
-                        </node>
-                      </node>
-                      <node concept="1X3_iC" id="iAIiaXpHOB" role="lGtFl">
-                        <property role="3V$3am" value="statement" />
-                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="2MkqsV" id="4b9bcl$umhd" role="8Wnug">
-                          <node concept="Xl_RD" id="4b9bcl$umjb" role="2MkJ7o">
-                            <property role="Xl_RC" value="Debugger needs to be updated" />
-                          </node>
-                          <node concept="1YBJjd" id="4b9bcl$uoHw" role="2OEOjV">
-                            <ref role="1YBMHb" node="4pkidg67LgL" resolve="is" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="4b9bcl$anJn" role="3clFbw">
-                      <node concept="2OqwBi" id="4b9bcl$amib" role="2Oq$k0">
-                        <node concept="1YBJjd" id="4b9bcl$am6c" role="2Oq$k0">
-                          <ref role="1YBMHb" node="4pkidg67LgL" resolve="is" />
-                        </node>
-                        <node concept="3CFZ6_" id="4b9bcl$an$e" role="2OqNvi">
-                          <node concept="3CFYIy" id="4b9bcl$an$f" role="3CFYIz">
-                            <ref role="3CFYIx" to="hknx:2VYQpiut0cQ" resolve="SolverDebugger" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3x8VRR" id="4b9bcl$aoOI" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="TDmWw" id="4b9bclzVJWO" role="TEbGg">
                 <node concept="3cpWsn" id="4b9bclzVJWQ" role="TDEfY">
