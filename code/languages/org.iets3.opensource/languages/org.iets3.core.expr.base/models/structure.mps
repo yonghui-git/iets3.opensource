@@ -3,10 +3,13 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
   </languages>
   <imports>
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" implicit="true" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
@@ -117,6 +120,9 @@
     <property role="3GE5qa" value="binary.p1000" />
     <property role="EcuMT" value="5115872837156578546" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKB" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MqlJ">
     <property role="TrG5h" value="MulExpression" />
@@ -124,6 +130,9 @@
     <property role="3GE5qa" value="binary.p1100" />
     <property role="EcuMT" value="5115872837156578671" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKH" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MGm_">
     <property role="3GE5qa" value="binary.p1000" />
@@ -131,6 +140,9 @@
     <property role="34LRSv" value="-" />
     <property role="EcuMT" value="5115872837156652453" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RK$" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MGoV">
     <property role="3GE5qa" value="binary.p1100" />
@@ -138,6 +150,9 @@
     <property role="34LRSv" value="/" />
     <property role="EcuMT" value="5115872837156652603" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYi" resolve="BinaryArithmeticExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKE" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MOYi">
     <property role="TrG5h" value="BinaryArithmeticExpression" />
@@ -161,6 +176,9 @@
     <property role="3GE5qa" value="binary.p0900" />
     <property role="EcuMT" value="5115872837156687764" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKr" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MP0h">
     <property role="TrG5h" value="GreaterEqualsExpression" />
@@ -168,6 +186,9 @@
     <property role="3GE5qa" value="binary.p0900" />
     <property role="EcuMT" value="5115872837156687889" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKo" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MP0i">
     <property role="3GE5qa" value="binary.p0900" />
@@ -175,6 +196,9 @@
     <property role="34LRSv" value="&lt;" />
     <property role="EcuMT" value="5115872837156687890" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKx" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MP0j">
     <property role="3GE5qa" value="binary.p0900" />
@@ -182,6 +206,9 @@
     <property role="34LRSv" value="&lt;=" />
     <property role="EcuMT" value="5115872837156687891" />
     <ref role="1TJDcQ" node="4rZeNQ6MOYj" resolve="BinaryComparisonExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKu" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MXJB">
     <property role="TrG5h" value="BinaryLogicalExpression" />
@@ -197,6 +224,9 @@
     <property role="3GE5qa" value="binary.p0600" />
     <property role="EcuMT" value="5115872837156723899" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKc" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6MXOT">
     <property role="TrG5h" value="LogicalAndExpression" />
@@ -204,6 +234,9 @@
     <property role="34LRSv" value="&amp;&amp;" />
     <property role="EcuMT" value="5115872837156724025" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKf" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6N6Qp">
     <property role="TrG5h" value="BinaryEqualityExpression" />
@@ -219,6 +252,9 @@
     <property role="3GE5qa" value="binary.p0800" />
     <property role="EcuMT" value="5115872837156761033" />
     <ref role="1TJDcQ" node="4rZeNQ6N6Qp" resolve="BinaryEqualityExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKi" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6N6Ra">
     <property role="3GE5qa" value="binary.p0800" />
@@ -226,6 +262,9 @@
     <property role="34LRSv" value="!=" />
     <property role="EcuMT" value="5115872837156761034" />
     <ref role="1TJDcQ" node="4rZeNQ6N6Qp" resolve="BinaryEqualityExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKl" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6NgXD">
     <property role="TrG5h" value="UnaryExpression" />
@@ -248,6 +287,9 @@
     <property role="34LRSv" value="!" />
     <property role="EcuMT" value="5115872837156802410" />
     <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RKK" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6NtQV">
     <property role="3GE5qa" value="unary.p2000" />
@@ -255,6 +297,9 @@
     <property role="34LRSv" value="-" />
     <property role="EcuMT" value="5115872837156855227" />
     <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
+    <node concept="PrWs8" id="4OgAv3N6Jio" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4rZeNQ6OJ4v">
     <property role="TrG5h" value="ParensExpression" />
@@ -268,6 +313,9 @@
       <property role="IQ2ns" value="5115872837157187954" />
       <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
+    <node concept="PrWs8" id="4OgAv3N4pT7" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1k3knzd4P65">
     <property role="3GE5qa" value="binary.p0500" />
@@ -275,6 +323,9 @@
     <property role="34LRSv" value="=&gt;" />
     <property role="EcuMT" value="1514143479005139333" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RK6" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7NJy08a3O99">
     <property role="TrG5h" value="DotExpression" />
@@ -451,6 +502,9 @@
       <property role="IQ2ns" value="2807135271607939857" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="6bG6MAFT807" role="PzmwI">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsF5w0">
     <property role="3GE5qa" value="option" />
@@ -475,6 +529,9 @@
     <property role="34LRSv" value="&lt;=&gt;" />
     <property role="EcuMT" value="8448265401162061756" />
     <ref role="1TJDcQ" node="4rZeNQ6MXJB" resolve="BinaryLogicalExpression" />
+    <node concept="PrWs8" id="4OgAv3N5RK9" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4OgAv3N4pT3" resolve="ICanBeMappedToSolver" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6XENO0rLj7">
     <property role="TrG5h" value="IIsSingleSymbol" />
@@ -501,20 +558,6 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="1919538606560895473" />
       <ref role="20lvS9" node="1Ez$z58DYVm" resolve="ErrorLiteral" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1Ez$z58JHsy">
-    <property role="3GE5qa" value="error" />
-    <property role="TrG5h" value="SuccessExpression" />
-    <property role="34LRSv" value="success" />
-    <property role="EcuMT" value="1919538606561482530" />
-    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
-    <node concept="1TJgyj" id="1Ez$z58JHsz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="1919538606561482531" />
-      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
   <node concept="1TIwiD" id="1Ez$z58L7Ek">
@@ -565,6 +608,9 @@
     <property role="3GE5qa" value="error.types" />
     <property role="TrG5h" value="IAttemptType" />
     <property role="EcuMT" value="1919538606562038159" />
+    <node concept="PrWs8" id="6bG6MAG4L_P" role="PrDN$">
+      <ref role="PrY4T" to="3673:6bG6MAFRAaG" resolve="IInterpreterWrapperType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5BNZGjBtUbJ">
     <property role="TrG5h" value="AttemptType" />
@@ -710,6 +756,9 @@
     <property role="EcuMT" value="3281846772293355652" />
     <property role="34LRSv" value="cast" />
     <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="4146AzEJCrT" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
     <node concept="1TJgyj" id="252QIDzztQk" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="expr" />
@@ -1001,6 +1050,12 @@
     <node concept="PrWs8" id="2PhSkOg8N6m" role="PzmwI">
       <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
     </node>
+    <node concept="PrWs8" id="21vB0Vz3zn7" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="PrWs8" id="3tDSm3sv$CV" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6UxFDrx4dpr">
     <property role="3GE5qa" value="alt" />
@@ -1026,6 +1081,9 @@
     </node>
     <node concept="PrWs8" id="53cOfDpiRRE" role="PzmwI">
       <ref role="PrY4T" node="53cOfDpcBb9" resolve="IValidOtherwiseContainer" />
+    </node>
+    <node concept="PrWs8" id="4e_7uAsc7Ur" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ye9uPrgbPQ">
@@ -1132,6 +1190,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
     </node>
+    <node concept="PrWs8" id="69JueU2EnvQ" role="PzmwI">
+      <ref role="PrY4T" node="69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
   </node>
   <node concept="PlHQZ" id="53cOfDpcBb9">
     <property role="EcuMT" value="5822258191940088521" />
@@ -1185,6 +1246,37 @@
     <property role="EcuMT" value="6527211908672525240" />
     <property role="3GE5qa" value="docs" />
     <property role="TrG5h" value="IDocumentableWordContainer" />
+  </node>
+  <node concept="PlHQZ" id="3oWFox95OXG">
+    <property role="EcuMT" value="3908189377504169836" />
+    <property role="TrG5h" value="IHasBaseType" />
+  </node>
+  <node concept="PlHQZ" id="5GL30CqMVEV">
+    <property role="TrG5h" value="ISSConstrainedValue" />
+    <property role="EcuMT" value="6571046568849029819" />
+    <property role="3GE5qa" value="contract" />
+  </node>
+  <node concept="PlHQZ" id="5GL30CqMVEW">
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSConstrainedValueRef" />
+    <property role="EcuMT" value="6571046568849029820" />
+  </node>
+  <node concept="PlHQZ" id="69JueU2zshL">
+    <property role="EcuMT" value="7093020903919699057" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSItValueRef" />
+  </node>
+  <node concept="PlHQZ" id="69JueU2Zy6_">
+    <property role="EcuMT" value="7093020903927062949" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="ISSDelegatingType" />
+  </node>
+  <node concept="PlHQZ" id="5WNmJ7DoRmx">
+    <property role="EcuMT" value="6859926652464625057" />
+    <property role="TrG5h" value="ICollectionType" />
+    <node concept="PrWs8" id="5WNmJ7DoRmC" role="PrDN$">
+      <ref role="PrY4T" node="3oWFox95OXG" resolve="IHasBaseType" />
+    </node>
   </node>
 </model>
 

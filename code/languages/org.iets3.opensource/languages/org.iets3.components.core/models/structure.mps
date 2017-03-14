@@ -9,6 +9,7 @@
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="138" ref="r:2c1007f3-e814-47ba-b729-c3ea0297f627(org.iets3.core.attributes.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -121,7 +122,7 @@
       <property role="20kJfa" value="icon" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="2065851220495953160" />
-      <ref role="20lvS9" to="vs0r:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
+      <ref role="20lvS9" to="68mc:5lKnBeAxLdJ" resolve="SolutionRelativeFilePicker" />
     </node>
     <node concept="1TJgyi" id="6LfBX8Yi4o4" role="1TKVEl">
       <property role="TrG5h" value="fragment" />
@@ -340,6 +341,9 @@
     <node concept="PrWs8" id="siw10FiR6l" role="PzmwI">
       <ref role="PrY4T" node="siw10FiR6c" resolve="ISubstructureContent" />
     </node>
+    <node concept="PrWs8" id="6Z4vEhQZ6sI" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:3m8H$lmFM60" resolve="IDocumentable" />
+    </node>
     <node concept="1QGGSu" id="cEt5uj8Nnj" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/instance.png" />
     </node>
@@ -348,9 +352,6 @@
     <property role="3GE5qa" value="components" />
     <property role="TrG5h" value="IPortType" />
     <property role="EcuMT" value="7804632404594156401" />
-    <node concept="PrWs8" id="4A8SzOV9V0X" role="PrDN$">
-      <ref role="PrY4T" to="138:3NBP8_OgMVd" resolve="IAttributed" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7Zvsa54vnWq">
     <property role="3GE5qa" value="components.substructure" />
@@ -1146,7 +1147,7 @@
     <property role="3GE5qa" value="components.iface" />
     <property role="TrG5h" value="ComponentInterface" />
     <property role="34LRSv" value="component interface" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6Y_kjZqWvHl" resolve="AbstractComponentInterface" />
     <node concept="1TJgyj" id="x8tpS_RkBA" role="1TKVEi">
       <property role="IQ2ns" value="596856272727132646" />
       <property role="20lmBu" value="aggregation" />
@@ -1168,12 +1169,6 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="x8tpS_RkB_" resolve="IComponentInterfaceContent" />
     </node>
-    <node concept="PrWs8" id="x8tpS_RkAd" role="PzmwI">
-      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
-    </node>
-    <node concept="PrWs8" id="x8tpS_RkAo" role="PzmwI">
-      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
-    </node>
   </node>
   <node concept="PlHQZ" id="x8tpS_RkB_">
     <property role="EcuMT" value="596856272727132645" />
@@ -1190,6 +1185,20 @@
     </node>
     <node concept="PrWs8" id="x8tpS_RowQ" role="PzmwI">
       <ref role="PrY4T" node="x8tpS_RkB_" resolve="IComponentInterfaceContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Y_kjZqWvHl">
+    <property role="EcuMT" value="8044925644065340245" />
+    <property role="3GE5qa" value="components.iface" />
+    <property role="TrG5h" value="AbstractComponentInterface" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="x8tpS_RkAd" role="PzmwI">
+      <ref role="PrY4T" node="6LfBX8Yi4pr" resolve="IComponentContent" />
+    </node>
+    <node concept="PrWs8" id="x8tpS_RkAo" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
     </node>
   </node>
 </model>

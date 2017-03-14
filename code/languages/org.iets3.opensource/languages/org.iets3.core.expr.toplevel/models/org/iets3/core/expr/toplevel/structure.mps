@@ -2,17 +2,25 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
   </languages>
   <imports>
     <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
+    <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" />
     <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
         <property id="1225118933224" name="comment" index="YLQ7P" />
@@ -32,7 +40,9 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -79,6 +89,12 @@
     </node>
     <node concept="PrWs8" id="5ElkanPXvCr" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
+    <node concept="PrWs8" id="5DizcGO7Wwe" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiJ" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/function.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8gFfG">
@@ -167,6 +183,15 @@
     <node concept="PrWs8" id="3npF9QXsbIv" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3npF9QXr$3G" resolve="IDisallowSideEffect" />
     </node>
+    <node concept="PrWs8" id="MaFTCbUr7q" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+    <node concept="PrWs8" id="31yjPB$GKJm" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiN" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/constant.png" />
+    </node>
   </node>
   <node concept="PlHQZ" id="69zaTr1N3PK">
     <property role="TrG5h" value="IConstantScopeProvider" />
@@ -188,6 +213,9 @@
     </node>
     <node concept="PrWs8" id="6HHp2Wn7iob" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6XENO0rLj7" resolve="IIsSingleSymbol" />
+    </node>
+    <node concept="PrWs8" id="MaFTCbUMvi" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyKjdj">
@@ -219,6 +247,9 @@
       <node concept="asaX9" id="xu7xcKiozg" role="lGtFl">
         <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.IRecordDeclaration&quot;" />
       </node>
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiS" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/record.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="7D7uZV2dYyT">
@@ -294,6 +325,9 @@
     <node concept="PrWs8" id="54pTGl8jBb4" role="PzmwI">
       <ref role="PrY4T" to="hm2y:68xoVn7qAL8" resolve="ITyped" />
     </node>
+    <node concept="PrWs8" id="21vB0Vz1I_I" role="PzmwI">
+      <ref role="PrY4T" to="3673:5IKJrJHNBNb" resolve="ICanHaveTestCoverage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6HHp2Wn7mD6">
     <property role="TrG5h" value="SectionMarker" />
@@ -315,15 +349,15 @@
     <property role="34LRSv" value="type" />
     <property role="EcuMT" value="7740953487936183912" />
     <ref role="1TJDcQ" node="7zXSNv$jGoK" resolve="AbstractTypeDeclaration" />
+    <node concept="PrWs8" id="MaFTCbLvPm" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
+    </node>
     <node concept="1TJgyj" id="6HHp2WngtTF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="originalType" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7740953487936183915" />
       <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
-    </node>
-    <node concept="PrWs8" id="2S3ZC$oyCq6" role="PzmwI">
-      <ref role="PrY4T" to="hm2y:KaZMgy4Iiz" resolve="IContracted" />
     </node>
     <node concept="PrWs8" id="2S3ZC$oziAP" role="PzmwI">
       <ref role="PrY4T" to="vs0r:59HbAIOYkEn" resolve="IDetectCycle" />
@@ -333,6 +367,12 @@
     </node>
     <node concept="PrWs8" id="28GlH0_EVlo" role="PzmwI">
       <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="PrWs8" id="3aPPYyxz0xi" role="PzmwI">
+      <ref role="PrY4T" to="l80j:4pkidg67Lfn" resolve="ISolvable" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiQ" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/type.png" />
     </node>
   </node>
   <node concept="PlHQZ" id="6HHp2WngtUK">
@@ -353,6 +393,9 @@
       <property role="IQ2ns" value="7740953487936184023" />
       <ref role="20lvS9" node="6HHp2WngtTC" resolve="Typedef" />
     </node>
+    <node concept="PrWs8" id="69JueU2Zy8s" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69JueU2Zy6_" resolve="ISSDelegatingType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2S3ZC$oCfaF">
     <property role="3GE5qa" value="typedef" />
@@ -360,6 +403,9 @@
     <property role="34LRSv" value="it" />
     <property role="EcuMT" value="3315773615451992747" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="69JueU2AzxG" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="SRvqsNmWc8">
     <property role="3GE5qa" value="record" />
@@ -457,6 +503,9 @@
       <property role="TrG5h" value="qualified" />
       <property role="IQ2nx" value="7061117989424763681" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1QGGSu" id="1iu4bMrBNiU" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/enum.png" />
     </node>
   </node>
   <node concept="1TIwiD" id="67Y8mp$DMVh">
@@ -604,6 +653,47 @@
       <property role="20kJfa" value="literal" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="ub9nkyK62f">
+    <property role="TrG5h" value="Library" />
+    <property role="19KtqR" value="true" />
+    <property role="EcuMT" value="543569365052711055" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
+    <node concept="1TJgyj" id="ub9nkyK62i" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="543569365052711058" />
+      <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyj" id="5VEHrQcW_9v" role="1TKVEi">
+      <property role="IQ2ns" value="6839478809833656927" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="imports" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="vs0r:DubiFAXpld" resolve="DefaultGenericChunkDependency" />
+    </node>
+    <node concept="PrWs8" id="ub9nkyK62g" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:65XyadYKJgN" resolve="IIdentifierNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6HHp2WndiBB" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="6iqfHNBPlMI" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
+    <node concept="PrWs8" id="3pe7Y2RWGaO" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3pe7Y2RWByP" resolve="IIgnoreTrivialErrorsContext" />
+    </node>
+    <node concept="PrWs8" id="5ElkanQ9DBL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:5ElkanQ81eS" resolve="IDocumentableWordContainer" />
+    </node>
+    <node concept="PrWs8" id="5$JCxfbTgvm" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
+    </node>
+    <node concept="1QGGSu" id="5$yCC4GzH86" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/iets3-16.png" />
     </node>
   </node>
 </model>
