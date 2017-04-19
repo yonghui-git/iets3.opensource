@@ -16,9 +16,9 @@
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
-    <dependency reexport="false">c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.property.formulae)</dependency>
+    <dependency reexport="false">c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.modelproperty.formulae)</dependency>
     <dependency reexport="false">7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</dependency>
-    <dependency reexport="false">0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)</dependency>
+    <dependency reexport="false">0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)</dependency>
     <dependency reexport="false">12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)</dependency>
     <dependency reexport="false">a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)</dependency>
     <dependency reexport="false">2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)</dependency>
@@ -149,8 +149,8 @@
     <module reference="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" version="0" />
     <module reference="f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)" version="0" />
     <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
-    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
-    <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.property.formulae)" version="0" />
+    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)" version="0" />
+    <module reference="c020a239-d865-4312-adc3-cb4ab0a7a547(org.iets3.flow.modelproperty.formulae)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="f0094c7d-7df0-4fa9-9be7-4ba73a8db962(org.iets3.table.coolingbehaviortable)" version="0" />

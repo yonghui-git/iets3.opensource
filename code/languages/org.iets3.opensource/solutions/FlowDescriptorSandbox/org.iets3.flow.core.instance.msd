@@ -7,7 +7,7 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)</dependency>
+    <dependency reexport="false">0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)</dependency>
     <dependency reexport="false">a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)</dependency>
     <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
@@ -91,7 +91,7 @@
     <module reference="7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)" version="0" />
     <module reference="5b11054d-065d-4e5c-9a6d-175a4af103c2(org.iets3.flow.core.instance)" version="0" />
     <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
-    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.property)" version="0" />
+    <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)" version="0" />
     <module reference="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" version="0" />
     <module reference="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" version="0" />
     <module reference="7a870bb7-87b6-411e-92c2-eb3e9e856127(org.iets3.req.priority)" version="0" />
