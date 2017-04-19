@@ -490,14 +490,15 @@
                             <node concept="liA8E" id="18xeVvsDCl3" role="2OqNvi">
                               <ref role="37wK5l" to="w1kc:~SModelInternal.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
                               <node concept="pHN19" id="18xeVvsDFxz" role="37wK5m">
-                                <node concept="2V$Bhx" id="18xeVvsDHDS" role="2V$M_3">
-                                  <property role="2V$B1T" value="0ecea2a9-218f-4e3b-badc-a524a5addb7c" />
-                                  <property role="2V$B1Q" value="org.iets3.flow.property" />
+                                <node concept="2V$Bhx" id="5lB8QV$k6Lo" role="2V$M_3">
+                                  <property role="2V$B1T" value="3e3749e5-96c0-4132-8c4a-7309a74f9fd6" />
+                                  <property role="2V$B1Q" value="org.iets3.flow.modelproperty.gxw" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="5lB8QV$k4Ef" role="3cqZAp" />
                         <node concept="3clFbF" id="18xeVvsETdz" role="3cqZAp">
                           <node concept="2OqwBi" id="18xeVvsETd$" role="3clFbG">
                             <node concept="37vLTw" id="18xeVvsETd_" role="2Oq$k0">
@@ -531,7 +532,7 @@
                                   <node concept="liA8E" id="18xeVvsGNWl" role="2OqNvi">
                                     <ref role="37wK5l" to="w1kc:~SModelRepository.getModelDescriptor(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="getModelDescriptor" />
                                     <node concept="Xl_RD" id="18xeVvsGNWm" role="37wK5m">
-                                      <property role="Xl_RC" value="org.iets3.flow.property.structure" />
+                                      <property role="Xl_RC" value="org.iets3.flow.modelproperty.gxw.structure" />
                                     </node>
                                   </node>
                                 </node>
