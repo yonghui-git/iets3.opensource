@@ -146,6 +146,7 @@
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -1390,219 +1391,233 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="4MKUcPm3QRs" role="3cqZAp">
-          <node concept="3cpWsn" id="4MKUcPm3QRv" role="3cpWs9">
-            <property role="TrG5h" value="textGenFileName" />
-            <node concept="17QB3L" id="4MKUcPm3QRq" role="1tU5fm" />
-            <node concept="Xl_RD" id="4MKUcPlUoeJ" role="33vP2m">
-              <property role="Xl_RC" value="Formulaes.txt" />
+        <node concept="3clFbH" id="p7uByp22b1" role="3cqZAp" />
+        <node concept="3clFbJ" id="p7uByp2426" role="3cqZAp">
+          <node concept="3clFbS" id="p7uByp2428" role="3clFbx">
+            <node concept="3clFbF" id="4VZIwwKsJVd" role="3cqZAp">
+              <node concept="2YIFZM" id="4VZIwwKsJVe" role="3clFbG">
+                <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
+                <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
+                <node concept="37vLTw" id="4VZIwwKsJVf" role="37wK5m">
+                  <ref role="3cqZAo" node="4MKUcPm3M$6" resolve="results" />
+                </node>
+                <node concept="2OqwBi" id="4VZIwwKsJVg" role="37wK5m">
+                  <node concept="2OqwBi" id="4VZIwwKsJVh" role="2Oq$k0">
+                    <node concept="37vLTw" id="4VZIwwKsJVi" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4MKUcPlSE99" resolve="model" />
+                    </node>
+                    <node concept="2RRcyG" id="4VZIwwKsJVj" role="2OqNvi">
+                      <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+                    </node>
+                  </node>
+                  <node concept="1uHKPH" id="4VZIwwKsJVk" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="4VZIwwKsJVl" role="37wK5m">
+                  <property role="Xl_RC" value="No Requirement is present yet to analyze" />
+                </node>
+                <node concept="10M0yZ" id="4VZIwwKsJVm" role="37wK5m">
+                  <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
+                  <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
+                </node>
+                <node concept="Xl_RD" id="4VZIwwKsJVn" role="37wK5m">
+                  <property role="Xl_RC" value="FLOW language Custom Error" />
+                </node>
+                <node concept="10Nm6u" id="4VZIwwKsJVo" role="37wK5m" />
+              </node>
             </node>
+            <node concept="3clFbH" id="p7uByp2427" role="3cqZAp" />
           </node>
-        </node>
-        <node concept="3clFbH" id="4MKUcPmsEuL" role="3cqZAp" />
-        <node concept="3clFbH" id="4MKUcPm3VYg" role="3cqZAp" />
-        <node concept="3clFbH" id="4MKUcPm3Wpm" role="3cqZAp" />
-        <node concept="3clFbF" id="4MKUcPlSEfg" role="3cqZAp">
-          <node concept="2OqwBi" id="4MKUcPlSKO7" role="3clFbG">
-            <node concept="37vLTw" id="4MKUcPlSKkE" role="2Oq$k0">
+          <node concept="2OqwBi" id="p7uByp24ZW" role="3clFbw">
+            <node concept="37vLTw" id="p7uByp24BQ" role="2Oq$k0">
               <ref role="3cqZAo" node="4MKUcPlSKk$" resolve="nodeReqChunk" />
             </node>
-            <node concept="2qgKlT" id="4MKUcPlSKZm" role="2OqNvi">
-              <ref role="37wK5l" to="os8l:4MKUcPlT3vX" resolve="ConvertReqToFormulae" />
-              <node concept="37vLTw" id="4MKUcPm3RzE" role="37wK5m">
-                <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
-              </node>
-            </node>
+            <node concept="3w_OXm" id="p7uByp25o9" role="2OqNvi" />
           </node>
-        </node>
-        <node concept="3cpWs8" id="4VZIwwKsCly" role="3cqZAp">
-          <node concept="3cpWsn" id="4VZIwwKsClz" role="3cpWs9">
-            <property role="TrG5h" value="textGenFile" />
-            <node concept="3uibUv" id="4VZIwwKsCl$" role="1tU5fm">
-              <ref role="3uigEE" to="guwi:~File" resolve="File" />
-            </node>
-            <node concept="2ShNRf" id="4VZIwwKsCTB" role="33vP2m">
-              <node concept="1pGfFk" id="4VZIwwKsF$a" role="2ShVmc">
-                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                <node concept="37vLTw" id="4VZIwwKsGVB" role="37wK5m">
-                  <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="4VZIwwKsHws" role="3cqZAp">
-          <node concept="3clFbS" id="4VZIwwKsHwu" role="3clFbx">
-            <node concept="3clFbJ" id="4MKUcPmrMd9" role="3cqZAp">
-              <node concept="3clFbS" id="4MKUcPmrMdb" role="3clFbx">
-                <node concept="3clFbF" id="4MKUcPm3M$h" role="3cqZAp">
-                  <node concept="2YIFZM" id="4MKUcPm3M$i" role="3clFbG">
-                    <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
-                    <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
-                    <node concept="37vLTw" id="4MKUcPm3M$j" role="37wK5m">
-                      <ref role="3cqZAo" node="4MKUcPm3M$6" resolve="results" />
-                    </node>
-                    <node concept="2OqwBi" id="4MKUcPm3M$k" role="37wK5m">
-                      <node concept="2OqwBi" id="4MKUcPm3M$l" role="2Oq$k0">
-                        <node concept="37vLTw" id="4MKUcPm3M$m" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4MKUcPlSE99" resolve="model" />
-                        </node>
-                        <node concept="2RRcyG" id="4MKUcPm3M$n" role="2OqNvi">
-                          <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
-                        </node>
-                      </node>
-                      <node concept="1uHKPH" id="4MKUcPm3M$o" role="2OqNvi" />
-                    </node>
-                    <node concept="Xl_RD" id="4MKUcPm3M$p" role="37wK5m">
-                      <property role="Xl_RC" value="The requirements are not realizable" />
-                    </node>
-                    <node concept="10M0yZ" id="4MKUcPm3M$q" role="37wK5m">
-                      <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
-                      <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
-                    </node>
-                    <node concept="Xl_RD" id="4MKUcPm3M$r" role="37wK5m">
-                      <property role="Xl_RC" value="FLOW language Custom Error" />
-                    </node>
-                    <node concept="10Nm6u" id="4MKUcPm3M$s" role="37wK5m" />
+          <node concept="9aQIb" id="p7uByp27Kr" role="9aQIa">
+            <node concept="3clFbS" id="p7uByp27Ks" role="9aQI4">
+              <node concept="3cpWs8" id="4MKUcPm3QRs" role="3cqZAp">
+                <node concept="3cpWsn" id="4MKUcPm3QRv" role="3cpWs9">
+                  <property role="TrG5h" value="textGenFileName" />
+                  <node concept="17QB3L" id="4MKUcPm3QRq" role="1tU5fm" />
+                  <node concept="Xl_RD" id="4MKUcPlUoeJ" role="33vP2m">
+                    <property role="Xl_RC" value="Formulaes.txt" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="4MKUcPmrMda" role="3cqZAp" />
               </node>
-              <node concept="2OqwBi" id="4MKUcPmrUv2" role="3clFbw">
-                <node concept="2OqwBi" id="4MKUcPmrMWK" role="2Oq$k0">
-                  <node concept="37vLTw" id="4MKUcPmrMFk" role="2Oq$k0">
+              <node concept="3clFbH" id="4MKUcPmsEuL" role="3cqZAp" />
+              <node concept="3clFbH" id="4MKUcPm3VYg" role="3cqZAp" />
+              <node concept="3clFbH" id="4MKUcPm3Wpm" role="3cqZAp" />
+              <node concept="3clFbF" id="4MKUcPlSEfg" role="3cqZAp">
+                <node concept="2OqwBi" id="4MKUcPlSKO7" role="3clFbG">
+                  <node concept="37vLTw" id="4MKUcPlSKkE" role="2Oq$k0">
                     <ref role="3cqZAo" node="4MKUcPlSKk$" resolve="nodeReqChunk" />
                   </node>
-                  <node concept="2qgKlT" id="4MKUcPmrNej" role="2OqNvi">
-                    <ref role="37wK5l" to="os8l:4MKUcPmjdeS" resolve="GetSolverOutputString" />
-                    <node concept="2ShNRf" id="4MKUcPmrSkL" role="37wK5m">
-                      <node concept="1pGfFk" id="4MKUcPmrSJj" role="2ShVmc">
-                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                        <node concept="37vLTw" id="4MKUcPmrSUp" role="37wK5m">
-                          <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
-                        </node>
-                      </node>
+                  <node concept="2qgKlT" id="4MKUcPlSKZm" role="2OqNvi">
+                    <ref role="37wK5l" to="os8l:4MKUcPlT3vX" resolve="ConvertReqToFormulae" />
+                    <node concept="37vLTw" id="4MKUcPm3RzE" role="37wK5m">
+                      <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
                     </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="4MKUcPmrVi6" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="4MKUcPmrVqg" role="37wK5m">
-                    <property role="Xl_RC" value="Error:" />
-                  </node>
-                </node>
               </node>
-            </node>
-            <node concept="3clFbH" id="4VZIwwKsHwt" role="3cqZAp" />
-          </node>
-          <node concept="2OqwBi" id="4VZIwwKsIxA" role="3clFbw">
-            <node concept="37vLTw" id="4VZIwwKsI3q" role="2Oq$k0">
-              <ref role="3cqZAo" node="4VZIwwKsClz" resolve="textGenFile" />
-            </node>
-            <node concept="liA8E" id="4VZIwwKsJ1Z" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="4VZIwwKsJJv" role="9aQIa">
-            <node concept="3clFbS" id="4VZIwwKsJJw" role="9aQI4">
-              <node concept="3clFbF" id="4VZIwwKsJVd" role="3cqZAp">
-                <node concept="2YIFZM" id="4VZIwwKsJVe" role="3clFbG">
-                  <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
-                  <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
-                  <node concept="37vLTw" id="4VZIwwKsJVf" role="37wK5m">
-                    <ref role="3cqZAo" node="4MKUcPm3M$6" resolve="results" />
+              <node concept="3cpWs8" id="4VZIwwKsCly" role="3cqZAp">
+                <node concept="3cpWsn" id="4VZIwwKsClz" role="3cpWs9">
+                  <property role="TrG5h" value="textGenFile" />
+                  <node concept="3uibUv" id="4VZIwwKsCl$" role="1tU5fm">
+                    <ref role="3uigEE" to="guwi:~File" resolve="File" />
                   </node>
-                  <node concept="2OqwBi" id="4VZIwwKsJVg" role="37wK5m">
-                    <node concept="2OqwBi" id="4VZIwwKsJVh" role="2Oq$k0">
-                      <node concept="37vLTw" id="4VZIwwKsJVi" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4MKUcPlSE99" resolve="model" />
-                      </node>
-                      <node concept="2RRcyG" id="4VZIwwKsJVj" role="2OqNvi">
-                        <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
-                      </node>
-                    </node>
-                    <node concept="1uHKPH" id="4VZIwwKsJVk" role="2OqNvi" />
-                  </node>
-                  <node concept="Xl_RD" id="4VZIwwKsJVl" role="37wK5m">
-                    <property role="Xl_RC" value="No Requirement is present yet to analyze" />
-                  </node>
-                  <node concept="10M0yZ" id="4VZIwwKsJVm" role="37wK5m">
-                    <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
-                    <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
-                  </node>
-                  <node concept="Xl_RD" id="4VZIwwKsJVn" role="37wK5m">
-                    <property role="Xl_RC" value="FLOW language Custom Error" />
-                  </node>
-                  <node concept="10Nm6u" id="4VZIwwKsJVo" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4MKUcPm3M_a" role="3cqZAp" />
-        <node concept="3clFbH" id="4MKUcPms3SV" role="3cqZAp" />
-        <node concept="3clFbF" id="4MKUcPms4q7" role="3cqZAp">
-          <node concept="2OqwBi" id="4MKUcPms4q4" role="3clFbG">
-            <node concept="10M0yZ" id="4MKUcPms4q5" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="4MKUcPms4q6" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="4MKUcPms4UY" role="37wK5m">
-                <property role="Xl_RC" value="++++++++++++++++++++++++++++++++" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4MKUcPms6$T" role="3cqZAp">
-          <node concept="2OqwBi" id="4MKUcPms6$Q" role="3clFbG">
-            <node concept="10M0yZ" id="4MKUcPms6$R" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="4MKUcPms6$S" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="2OqwBi" id="4MKUcPms7lb" role="37wK5m">
-                <node concept="37vLTw" id="4MKUcPms7lc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4MKUcPlSKk$" resolve="nodeReqChunk" />
-                </node>
-                <node concept="2qgKlT" id="4MKUcPms7ld" role="2OqNvi">
-                  <ref role="37wK5l" to="os8l:4MKUcPmjdeS" resolve="GetSolverOutputString" />
-                  <node concept="2ShNRf" id="4MKUcPms7le" role="37wK5m">
-                    <node concept="1pGfFk" id="4MKUcPms7lf" role="2ShVmc">
+                  <node concept="2ShNRf" id="4VZIwwKsCTB" role="33vP2m">
+                    <node concept="1pGfFk" id="4VZIwwKsF$a" role="2ShVmc">
                       <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                      <node concept="37vLTw" id="4MKUcPms7lg" role="37wK5m">
+                      <node concept="37vLTw" id="4VZIwwKsGVB" role="37wK5m">
                         <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4MKUcPms5xP" role="3cqZAp">
-          <node concept="2OqwBi" id="4MKUcPms5xQ" role="3clFbG">
-            <node concept="10M0yZ" id="4MKUcPms5xR" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-              <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="4MKUcPms5xS" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="Xl_RD" id="4MKUcPms5xT" role="37wK5m">
-                <property role="Xl_RC" value="++++++++++++++++++++++++++++++++" />
+              <node concept="3clFbJ" id="4VZIwwKsHws" role="3cqZAp">
+                <node concept="3clFbS" id="4VZIwwKsHwu" role="3clFbx">
+                  <node concept="3clFbJ" id="4MKUcPmrMd9" role="3cqZAp">
+                    <node concept="3clFbS" id="4MKUcPmrMdb" role="3clFbx">
+                      <node concept="3clFbF" id="4MKUcPm3M$h" role="3cqZAp">
+                        <node concept="2YIFZM" id="4MKUcPm3M$i" role="3clFbG">
+                          <ref role="1Pybhc" to="phxh:3etVqSRRx7i" resolve="SpecificChecker" />
+                          <ref role="37wK5l" to="phxh:3etVqSRRx7z" resolve="addIssue" />
+                          <node concept="37vLTw" id="4MKUcPm3M$j" role="37wK5m">
+                            <ref role="3cqZAo" node="4MKUcPm3M$6" resolve="results" />
+                          </node>
+                          <node concept="2OqwBi" id="4MKUcPm3M$k" role="37wK5m">
+                            <node concept="2OqwBi" id="4MKUcPm3M$l" role="2Oq$k0">
+                              <node concept="37vLTw" id="4MKUcPm3M$m" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4MKUcPlSE99" resolve="model" />
+                              </node>
+                              <node concept="2RRcyG" id="4MKUcPm3M$n" role="2OqNvi">
+                                <ref role="2RRcyH" to="xwgo:23Wc6usReTa" resolve="DashboardHintDisplayer" />
+                              </node>
+                            </node>
+                            <node concept="1uHKPH" id="4MKUcPm3M$o" role="2OqNvi" />
+                          </node>
+                          <node concept="Xl_RD" id="4MKUcPm3M$p" role="37wK5m">
+                            <property role="Xl_RC" value="The requirements are not realizable" />
+                          </node>
+                          <node concept="10M0yZ" id="4MKUcPm3M$q" role="37wK5m">
+                            <ref role="3cqZAo" to="phxh:3etVqSRKzLr" resolve="SEVERITY_ERROR" />
+                            <ref role="1PxDUh" to="phxh:3etVqSRKzLq" resolve="ModelChecker" />
+                          </node>
+                          <node concept="Xl_RD" id="4MKUcPm3M$r" role="37wK5m">
+                            <property role="Xl_RC" value="FLOW language Custom Error" />
+                          </node>
+                          <node concept="10Nm6u" id="4MKUcPm3M$s" role="37wK5m" />
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="4MKUcPmrMda" role="3cqZAp" />
+                    </node>
+                    <node concept="2OqwBi" id="4MKUcPmrUv2" role="3clFbw">
+                      <node concept="2OqwBi" id="4MKUcPmrMWK" role="2Oq$k0">
+                        <node concept="37vLTw" id="4MKUcPmrMFk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4MKUcPlSKk$" resolve="nodeReqChunk" />
+                        </node>
+                        <node concept="2qgKlT" id="4MKUcPmrNej" role="2OqNvi">
+                          <ref role="37wK5l" to="os8l:4MKUcPmjdeS" resolve="GetSolverOutputString" />
+                          <node concept="2ShNRf" id="4MKUcPmrSkL" role="37wK5m">
+                            <node concept="1pGfFk" id="4MKUcPmrSJj" role="2ShVmc">
+                              <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                              <node concept="37vLTw" id="4MKUcPmrSUp" role="37wK5m">
+                                <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="4MKUcPmrVi6" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                        <node concept="Xl_RD" id="4MKUcPmrVqg" role="37wK5m">
+                          <property role="Xl_RC" value="Error:" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="4VZIwwKsHwt" role="3cqZAp" />
+                </node>
+                <node concept="2OqwBi" id="4VZIwwKsIxA" role="3clFbw">
+                  <node concept="37vLTw" id="4VZIwwKsI3q" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4VZIwwKsClz" resolve="textGenFile" />
+                  </node>
+                  <node concept="liA8E" id="4VZIwwKsJ1Z" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                  </node>
+                </node>
               </node>
+              <node concept="3clFbH" id="4MKUcPm3M_a" role="3cqZAp" />
+              <node concept="3clFbH" id="4MKUcPms3SV" role="3cqZAp" />
+              <node concept="3clFbF" id="4MKUcPms4q7" role="3cqZAp">
+                <node concept="2OqwBi" id="4MKUcPms4q4" role="3clFbG">
+                  <node concept="10M0yZ" id="4MKUcPms4q5" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="4MKUcPms4q6" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="Xl_RD" id="4MKUcPms4UY" role="37wK5m">
+                      <property role="Xl_RC" value="++++++++++++++++++++++++++++++++" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4MKUcPms6$T" role="3cqZAp">
+                <node concept="2OqwBi" id="4MKUcPms6$Q" role="3clFbG">
+                  <node concept="10M0yZ" id="4MKUcPms6$R" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="4MKUcPms6$S" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="2OqwBi" id="4MKUcPms7lb" role="37wK5m">
+                      <node concept="37vLTw" id="4MKUcPms7lc" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4MKUcPlSKk$" resolve="nodeReqChunk" />
+                      </node>
+                      <node concept="2qgKlT" id="4MKUcPms7ld" role="2OqNvi">
+                        <ref role="37wK5l" to="os8l:4MKUcPmjdeS" resolve="GetSolverOutputString" />
+                        <node concept="2ShNRf" id="4MKUcPms7le" role="37wK5m">
+                          <node concept="1pGfFk" id="4MKUcPms7lf" role="2ShVmc">
+                            <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                            <node concept="37vLTw" id="4MKUcPms7lg" role="37wK5m">
+                              <ref role="3cqZAo" node="4MKUcPm3QRv" resolve="textGenFileName" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4MKUcPms5xP" role="3cqZAp">
+                <node concept="2OqwBi" id="4MKUcPms5xQ" role="3clFbG">
+                  <node concept="10M0yZ" id="4MKUcPms5xR" role="2Oq$k0">
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                  </node>
+                  <node concept="liA8E" id="4MKUcPms5xS" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="Xl_RD" id="4MKUcPms5xT" role="37wK5m">
+                      <property role="Xl_RC" value="++++++++++++++++++++++++++++++++" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4MKUcPms52G" role="3cqZAp" />
+              <node concept="3clFbH" id="4MKUcPm3M_d" role="3cqZAp" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4MKUcPms52G" role="3cqZAp" />
+        <node concept="3clFbH" id="p7uByp2d5n" role="3cqZAp" />
         <node concept="3cpWs6" id="4MKUcPm3M_b" role="3cqZAp">
           <node concept="37vLTw" id="4MKUcPm3M_c" role="3cqZAk">
             <ref role="3cqZAo" node="4MKUcPm3M$6" resolve="results" />
           </node>
         </node>
-        <node concept="3clFbH" id="4MKUcPm3M_d" role="3cqZAp" />
+        <node concept="3clFbH" id="p7uByp2dBK" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="4MKUcPlSE9e" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
