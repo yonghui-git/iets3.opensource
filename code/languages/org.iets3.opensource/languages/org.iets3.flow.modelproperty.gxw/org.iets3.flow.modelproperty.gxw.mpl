@@ -55,7 +55,6 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)</dependency>
-    <dependency reexport="false">12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)</dependency>
@@ -138,7 +137,6 @@
     <module reference="10211132-9b5e-427a-9b37-1c1f28794a5e(org.iets3.flow.dashboard)" version="0" />
     <module reference="0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)" version="0" />
     <module reference="3e3749e5-96c0-4132-8c4a-7309a74f9fd6(org.iets3.flow.modelproperty.gxw)" version="0" />
-    <module reference="12df1801-5927-4e36-8290-a798dbf99230(org.iets3.utility)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>0ecea2a9-218f-4e3b-badc-a524a5addb7c(org.iets3.flow.modelproperty)</extendedLanguage>

@@ -53,5 +53,10 @@
     <property role="TrG5h" value="RequirementRealizable" />
     <ref role="1TJDcQ" to="oehh:5rwK$2qeY$r" resolve="ModelProperty" />
   </node>
+  <node concept="1TIwiD" id="p7uByp2AFH">
+    <property role="EcuMT" value="452464945956285165" />
+    <property role="TrG5h" value="AllGlossaryTermsUsed" />
+    <ref role="1TJDcQ" to="oehh:5rwK$2qeY$r" resolve="ModelProperty" />
+  </node>
 </model>
 
