@@ -576,6 +576,44 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="4VZIwwKuEk7" role="3cqZAp" />
+                        <node concept="3clFbF" id="4VZIwwKuHfI" role="3cqZAp">
+                          <node concept="2OqwBi" id="4VZIwwKuHyH" role="3clFbG">
+                            <node concept="2Sf5sV" id="4VZIwwKuHfG" role="2Oq$k0" />
+                            <node concept="2qgKlT" id="4VZIwwKuHRZ" role="2OqNvi">
+                              <ref role="37wK5l" to="21uu:5MdYwHWTJdG" resolve="fixModuleImports" />
+                              <node concept="2OqwBi" id="4VZIwwKuHW0" role="37wK5m">
+                                <node concept="2OqwBi" id="4VZIwwKuHW1" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="4VZIwwKuHW2" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="4VZIwwKuHW3" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="4VZIwwKuHW4" role="2Oq$k0">
+                                        <node concept="2Sf5sV" id="4VZIwwKuHW5" role="2Oq$k0" />
+                                        <node concept="3Tsc0h" id="4VZIwwKuHW6" role="2OqNvi">
+                                          <ref role="3TtcxE" to="f6re:4ciHkhthZzO" resolve="stateInstances" />
+                                        </node>
+                                      </node>
+                                      <node concept="1uHKPH" id="4VZIwwKuHW7" role="2OqNvi" />
+                                    </node>
+                                    <node concept="2Rf3mk" id="4VZIwwKuHW8" role="2OqNvi">
+                                      <node concept="1xMEDy" id="4VZIwwKuHW9" role="1xVPHs">
+                                        <node concept="chp4Y" id="4VZIwwKuHWa" role="ri$Ld">
+                                          <ref role="cht4Q" to="47lw:6$igfY83rGa" resolve="AtomicProperty" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="13MTOL" id="4VZIwwKuHWb" role="2OqNvi">
+                                    <ref role="13MTZf" to="tp25:2iMJRNxweHl" resolve="conceptDeclaration" />
+                                  </node>
+                                </node>
+                                <node concept="1uHKPH" id="4VZIwwKuHWc" role="2OqNvi" />
+                              </node>
+                              <node concept="37vLTw" id="4VZIwwKuIhV" role="37wK5m">
+                                <ref role="3cqZAo" node="2nJapj3oVXq" resolve="sourceModule" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbH" id="4MKUcPmyaKI" role="3cqZAp" />
                       </node>
                       <node concept="2OqwBi" id="18xeVvsCZmZ" role="3clFbw">

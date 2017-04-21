@@ -91,38 +91,6 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw">
-      <concept id="1051815187410019671" name="org.iets3.ears.gxw.structure.SystemResponse" flags="ng" index="otU$0">
-        <property id="7791775197210678918" name="action" index="Nkej4" />
-        <reference id="7791775197210678916" name="systemName" index="Nkej6" />
-      </concept>
-      <concept id="1051815187410019674" name="org.iets3.ears.gxw.structure.Trigger" flags="ng" index="otU$d">
-        <property id="6744041109748080144" name="text" index="OJvIS" />
-      </concept>
-      <concept id="135049047333306355" name="org.iets3.ears.gxw.structure.GlossaryChunk" flags="ng" index="2skrmn">
-        <property id="8920104694035884171" name="nameOfController" index="$xNHY" />
-        <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
-        <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
-        <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
-      </concept>
-      <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.SystemName" flags="ng" index="2uIZ38">
-        <property id="3487560082040701847" name="text" index="2uI0VX" />
-      </concept>
-      <concept id="6744041109748155995" name="org.iets3.ears.gxw.structure.RequirementChunk" flags="ng" index="OJ2fN">
-        <reference id="2964597654736293948" name="glossary" index="9DKRw" />
-        <child id="6744041109748155996" name="requirements" index="OJ2fO" />
-      </concept>
-      <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
-        <reference id="6744041109748014300" name="atom" index="OJJ_O" />
-      </concept>
-      <concept id="7886550726489248425" name="org.iets3.ears.gxw.structure.NormalUbiquitousReq" flags="ng" index="2Q3NEK">
-        <child id="7600310587779383283" name="systemResponse" index="1QgOn5" />
-      </concept>
-      <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
-        <property id="7444869022439316402" name="reqName" index="eBQts" />
-        <reference id="7600310587779488515" name="systemName" index="1Qhi4P" />
-      </concept>
-    </language>
   </registry>
   <node concept="2W8dSH" id="4MKUcPlIqDD">
     <node concept="Q7yLu" id="4MKUcPmsP6T" role="3KyWYK">
@@ -390,40 +358,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="OJ2fN" id="1pRfBxTLTzE">
-    <property role="TrG5h" value="Requirements For Liquid Mixer" />
-    <ref role="9DKRw" node="1pRfBxTLTzD" resolve="Glossary For Liquid Mixer" />
-    <node concept="2Q3NEK" id="4MKUcPmsP6t" role="OJ2fO">
-      <property role="eBQts" value="req1" />
-      <ref role="1Qhi4P" node="7YbGQey_vrY" resolve="emergency button" />
-      <node concept="OJJ_U" id="4MKUcPmsP6B" role="1QgOn5">
-        <ref role="OJJ_O" node="4MKUcPmsP6j" />
-      </node>
-    </node>
-    <node concept="2Q3NEK" id="4MKUcPmsVTb" role="OJ2fO">
-      <property role="eBQts" value="req2" />
-      <ref role="1Qhi4P" node="7YbGQey_vs5" resolve="start button" />
-    </node>
-  </node>
-  <node concept="2skrmn" id="1pRfBxTLTzD">
-    <property role="TrG5h" value="Glossary For Liquid Mixer" />
-    <property role="$xNHY" value="liquid mixer controller" />
-    <node concept="2uIZ38" id="7YbGQey_vrY" role="2skrmi">
-      <property role="TrG5h" value="emergency button" />
-      <property role="2uI0VX" value="the emergency button" />
-    </node>
-    <node concept="2uIZ38" id="7YbGQey_vs5" role="2skrmi">
-      <property role="TrG5h" value="start button" />
-      <property role="2uI0VX" value="the start button" />
-    </node>
-    <node concept="otU$d" id="4MKUcPmsP6a" role="2skrmg">
-      <property role="OJvIS" value="abc" />
-    </node>
-    <node concept="otU$0" id="4MKUcPmsP6j" role="2skrmv">
-      <property role="Nkej4" value="start" />
-      <ref role="Nkej6" node="7YbGQey_vrY" resolve="emergency button" />
     </node>
   </node>
 </model>
