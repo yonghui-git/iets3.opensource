@@ -2,19 +2,21 @@
 <model ref="r:f2229e5c-9085-48de-b0b8-2b935c9f9c0f(org.iets3.ears.gxw.examples.SlidingDoors)">
   <persistence version="9" />
   <languages>
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
-    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="-1" />
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
   </imports>
   <registry>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -62,7 +64,6 @@
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
       </concept>
       <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
-      <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
         <child id="8756612199931468805" name="aliasName" index="35gu1z" />
         <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
@@ -70,7 +71,6 @@
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
-        <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
         <property id="7444869022439316402" name="reqName" index="eBQts" />
@@ -83,9 +83,13 @@
   <node concept="OJ2fN" id="5ByxUIFBnAm">
     <property role="TrG5h" value="automatic door controller" />
     <ref role="9DKRw" node="5ByxUIFBn_4" resolve="automatic door controller" />
+    <node concept="9PVaO" id="6DHDeqn1b2t" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
+    </node>
     <node concept="sEiiz" id="5ByxUIFBnAy" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <node concept="3t3aUO" id="5ByxUIFBnAA" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvILd" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_m" />
       </node>
@@ -95,7 +99,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFBnAK" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3t3aUO" id="5ByxUIFBnAT" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvILh" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_r" />
       </node>
@@ -110,7 +113,6 @@
     </node>
     <node concept="sEiiz" id="45mh0Ct0Scw" role="OJ2fO">
       <property role="eBQts" value="Req3" />
-      <node concept="3t3aUO" id="45mh0Ct0Scy" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvIM2" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_H" />
       </node>
@@ -120,16 +122,12 @@
     </node>
     <node concept="sEiiz" id="45mh0Ct0Sd3" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3t3aUO" id="45mh0Ct0Sd5" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvIM6" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFBn_z" />
       </node>
       <node concept="35djRe" id="7A5J6qWQp27" role="32z5Zf">
         <ref role="35djRf" node="7A5J6qWPaXZ" />
       </node>
-    </node>
-    <node concept="9PVaO" id="6FIbR5rDHaX" role="3DRjlG">
-      <property role="3N1Lgt" value="models/" />
     </node>
   </node>
   <node concept="2skrmn" id="5ByxUIFBn_4">
@@ -153,6 +151,10 @@
     <node concept="2uIZ38" id="5ByxUIFBn_g" role="2skrmi">
       <property role="TrG5h" value="door closing limit sensor" />
       <property role="2uI0VX" value="a door closing limit sensor" />
+    </node>
+    <node concept="2uIZ38" id="6DHDeqn5v6e" role="2skrmi">
+      <property role="TrG5h" value="lala" />
+      <property role="2uI0VX" value="lala" />
     </node>
     <node concept="otU$d" id="5ByxUIFBn_m" role="2skrmg">
       <property role="OJvIS" value="is activated" />
@@ -181,6 +183,10 @@
     <node concept="otU$0" id="5ByxUIFBnA0" role="2skrmv">
       <property role="Nkej4" value="close" />
       <ref role="Nkej6" node="2$$ntKwwEOq" resolve="door" />
+    </node>
+    <node concept="otU$0" id="6DHDeqn5v6q" role="2skrmv">
+      <property role="Nkej4" value="do" />
+      <ref role="Nkej6" node="6DHDeqn5v6e" resolve="lala" />
     </node>
     <node concept="1JDFFW" id="7A5J6qWPaXZ" role="1JDDoy">
       <node concept="35YNXi" id="7A5J6qWPaY0" role="35gu1z">

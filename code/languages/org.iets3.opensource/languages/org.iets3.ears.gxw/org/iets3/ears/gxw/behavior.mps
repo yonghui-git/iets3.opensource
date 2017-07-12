@@ -1144,7 +1144,7 @@
                     <node concept="2OqwBi" id="6_TIzovgZhT" role="3uHU7B">
                       <node concept="2OqwBi" id="6_TIzovgZhU" role="2Oq$k0">
                         <node concept="1PxgMI" id="6_TIzovgZhV" role="2Oq$k0">
-                          <ref role="1m5ApE" to="q3w4:5QnDqxDalN5" resolve="AndFormulaSR" />
+                          <ref role="1m5ApE" to="q3w4:5QnDqxDalN6" resolve="OrFormulaSR" />
                           <node concept="13iPFW" id="6_TIzovgZhW" role="1m5AlR" />
                         </node>
                         <node concept="3TrEf2" id="6_TIzovgZhX" role="2OqNvi">
@@ -1162,7 +1162,7 @@
                   <node concept="2OqwBi" id="6_TIzovgZi0" role="3uHU7w">
                     <node concept="2OqwBi" id="6_TIzovgZi1" role="2Oq$k0">
                       <node concept="1PxgMI" id="6_TIzovgZi2" role="2Oq$k0">
-                        <ref role="1m5ApE" to="q3w4:5QnDqxDalN5" resolve="AndFormulaSR" />
+                        <ref role="1m5ApE" to="q3w4:5QnDqxDalN6" resolve="OrFormulaSR" />
                         <node concept="13iPFW" id="6_TIzovgZi3" role="1m5AlR" />
                       </node>
                       <node concept="3TrEf2" id="6_TIzovgZi4" role="2OqNvi">

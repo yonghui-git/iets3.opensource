@@ -2,17 +2,19 @@
 <model ref="r:e31313d9-8b17-41ac-8aba-3e6c8e20de62(org.iets3.ears.gxw.examples.QuizController)">
   <persistence version="9" />
   <languages>
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
-    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="-1" />
   </languages>
   <imports />
   <registry>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -60,7 +62,6 @@
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
       </concept>
       <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
-      <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
       </concept>
@@ -71,7 +72,6 @@
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
-        <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
         <property id="7444869022439316402" name="reqName" index="eBQts" />
@@ -206,6 +206,11 @@
   <node concept="OJ2fN" id="5ByxUIFAVCk">
     <property role="TrG5h" value="quiz controller" />
     <ref role="9DKRw" node="5ByxUIFAV_l" resolve="quiz controller" />
+    <node concept="9PVaO" id="6DHDeqn11pc" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
+    </node>
     <node concept="3v0$t_" id="5ByxUIFAVCl" role="OJ2fO">
       <property role="eBQts" value="Req1" />
       <node concept="3T_uu1" id="5ByxUIFAVCp" role="3v0$n0">
@@ -293,7 +298,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFBewr" role="OJ2fO">
       <property role="eBQts" value="Req6" />
-      <node concept="3t3aUO" id="5ByxUIFBewO" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWc8" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAVBf" />
       </node>
@@ -310,9 +314,6 @@
           <ref role="OJJ_O" node="5ByxUIFAVBp" />
         </node>
       </node>
-    </node>
-    <node concept="9PVaO" id="4GGvgnmftwm" role="3DRjlG">
-      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>

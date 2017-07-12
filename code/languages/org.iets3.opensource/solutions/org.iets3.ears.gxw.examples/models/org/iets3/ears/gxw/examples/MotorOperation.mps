@@ -2,9 +2,9 @@
 <model ref="r:43bee08d-0dd5-42fe-afb1-87610e62da05(org.iets3.ears.gxw.examples.MotorOperation)">
   <persistence version="9" />
   <languages>
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
@@ -62,7 +62,6 @@
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
       </concept>
       <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
-      <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
         <child id="8756612199931468805" name="aliasName" index="35gu1z" />
         <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
@@ -70,7 +69,6 @@
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
-        <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
         <property id="7444869022439316402" name="reqName" index="eBQts" />
@@ -180,9 +178,11 @@
   <node concept="OJ2fN" id="5ByxUIFAEjO">
     <property role="TrG5h" value="motor operation controller" />
     <ref role="9DKRw" node="5ByxUIFAm6u" resolve="motor operation controller" />
+    <node concept="9PVaO" id="6FIbR5rDHcJ" role="3DRjlG">
+      <property role="3N1Lgt" value="models" />
+    </node>
     <node concept="sEiiz" id="5ByxUIFAEjP" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <node concept="3t3aUO" id="5ByxUIFAMIZ" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcw" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEii" />
       </node>
@@ -197,7 +197,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVwO" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3t3aUO" id="5ByxUIFAVwZ" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcI" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiv" />
       </node>
@@ -212,7 +211,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVxt" role="OJ2fO">
       <property role="eBQts" value="Req3" />
-      <node concept="3t3aUO" id="5ByxUIFAVxI" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcW" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiD" />
       </node>
@@ -222,7 +220,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVy4" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3t3aUO" id="5ByxUIFAVyp" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWd0" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEin" />
       </node>
@@ -239,9 +236,6 @@
           <ref role="35djRf" node="2Bva3qemdAX" />
         </node>
       </node>
-    </node>
-    <node concept="9PVaO" id="6FIbR5rDHcJ" role="3DRjlG">
-      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>
