@@ -38,7 +38,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -67,7 +67,6 @@
       </concept>
       <concept id="8756612199926891352" name="org.iets3.ears.gxw.structure.TriggerAliasName" flags="ng" index="35YNWY" />
       <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
-      <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1333452220594854111" name="org.iets3.ears.gxw.structure.ComplexEventDrivenReq" flags="ng" index="3v0$t_">
         <child id="1333452220594854522" name="triggerWhile" index="3v0$n0" />
       </concept>
@@ -82,7 +81,6 @@
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
-        <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
         <property id="7444869022439316402" name="reqName" index="eBQts" />
@@ -265,7 +263,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAlw0" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3t3aUO" id="5ByxUIFAlx3" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWeM" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIED1a$" />
       </node>
@@ -287,7 +284,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAlUK" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3t3aUO" id="5ByxUIFAlVR" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWeU" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIED1aO" />
       </node>
@@ -307,7 +303,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAlXr" role="OJ2fO">
       <property role="eBQts" value="Req5" />
-      <node concept="3t3aUO" id="5ByxUIFAlYE" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWfi" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIED19B" />
       </node>
@@ -327,7 +322,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAm0a" role="OJ2fO">
       <property role="eBQts" value="Req6" />
-      <node concept="3t3aUO" id="5ByxUIFAm1v" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWfE" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIED19Y" />
       </node>
@@ -337,7 +331,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAm2T" role="OJ2fO">
       <property role="eBQts" value="Req7" />
-      <node concept="3t3aUO" id="5ByxUIFAm4i" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWfI" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIED1bH" />
       </node>

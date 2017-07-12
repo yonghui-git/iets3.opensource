@@ -66,7 +66,7 @@
     <node concept="1TJgyj" id="6_TIzoveJZN" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="systemResponse" />
-      <property role="20lbJX" value="0..1" />
+      <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7600310587779383283" />
       <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
     </node>
@@ -75,7 +75,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="45ipq1tYO43">
-    <property role="TrG5h" value="NormalEventDrivenReq" />
+    <property role="TrG5h" value="EventDrivenReq" />
     <property role="3GE5qa" value="TemplatesEventDriven" />
     <property role="EcuMT" value="4706936300001509635" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -308,31 +308,22 @@
     <property role="3GE5qa" value="TemplatesEventDriven" />
     <property role="TrG5h" value="AbstractEventDrivenReq" />
     <property role="EcuMT" value="7600310587779545046" />
-    <node concept="1TJgyj" id="7YbGQeyu2EC" role="1TKVEi">
-      <property role="IQ2ns" value="9190636705088547496" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="triggerModifier" />
-      <ref role="20lvS9" node="7YbGQeyu2Ex" resolve="TriggerModifier" />
-    </node>
     <node concept="1TJgyj" id="7A5J6qV2ueC" role="1TKVEi">
       <property role="IQ2ns" value="8756612199902471080" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
     </node>
     <node concept="1TJgyj" id="7A5J6qV2ueD" role="1TKVEi">
       <property role="IQ2ns" value="8756612199902471081" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="response" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
     </node>
     <node concept="PrWs8" id="6_TIzovfnvo" role="PrDN$">
       <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
-    </node>
-    <node concept="1TJgyi" id="1uHSzL6RpGJ" role="1TKVEl">
-      <property role="IQ2nx" value="1706268582358129455" />
-      <property role="TrG5h" value="controllerName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="PlHQZ" id="6_TIzovfnvn">
@@ -341,18 +332,6 @@
     <property role="EcuMT" value="7600310587779545047" />
     <node concept="PrWs8" id="6_TIzovfnvr" role="PrDN$">
       <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6_TIzovhfiI">
-    <property role="3GE5qa" value="TemplatesEventDriven" />
-    <property role="TrG5h" value="NormalEventDrivenOptionalFeatReq" />
-    <property role="EcuMT" value="7600310587780035758" />
-    <ref role="1TJDcQ" node="45ipq1tYO43" resolve="NormalEventDrivenReq" />
-    <node concept="1TJgyj" id="3cWp1ZaECrz" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="untilTrigger" />
-      <property role="IQ2ns" value="3691935882243901155" />
-      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
     </node>
   </node>
   <node concept="1TIwiD" id="3cWp1ZaEoeu">
@@ -475,15 +454,6 @@
       <ref role="PrY4T" node="7YbGQeyu2Ex" resolve="TriggerModifier" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1qavb4ejuEr">
-    <property role="EcuMT" value="1624247715511528091" />
-    <property role="3GE5qa" value="TemplatesEventDriven" />
-    <property role="TrG5h" value="NormalRisingEdgeReq" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1qavb4ejuEs" role="PzmwI">
-      <ref role="PrY4T" node="6_TIzovfnvm" resolve="AbstractEventDrivenReq" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1a1nVFdwLzv">
     <property role="EcuMT" value="1333452220594854111" />
     <property role="3GE5qa" value="TemplatesComplex" />
@@ -496,26 +466,8 @@
       <property role="IQ2ns" value="1333452220594854522" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="triggerWhile" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="1a1nVFdwSVi">
-    <property role="EcuMT" value="1333452220594884306" />
-    <property role="TrG5h" value="AbstractedUnwantedReq" />
-    <property role="3GE5qa" value="TemplatesUnwanted" />
-    <node concept="1TJgyj" id="1a1nVFd$Tcl" role="1TKVEi">
-      <property role="IQ2ns" value="1333452220595933973" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="triggerModifier" />
-      <ref role="20lvS9" node="7YbGQeyu2Ex" resolve="TriggerModifier" />
-    </node>
-    <node concept="1TJgyi" id="1a1nVFdyeT6" role="1TKVEl">
-      <property role="IQ2nx" value="1333452220595236422" />
-      <property role="TrG5h" value="controllerName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1a1nVFdwSVj" role="PrDN$">
-      <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
   </node>
   <node concept="1TIwiD" id="1a1nVFdwSVl">
@@ -523,26 +475,15 @@
     <property role="TrG5h" value="UnwantedReq" />
     <property role="3GE5qa" value="TemplatesUnwanted" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1a1nVFdwSW0" role="1TKVEi">
-      <property role="IQ2ns" value="1333452220594884352" />
+    <node concept="1TJgyj" id="77JpJoP7f54" role="1TKVEi">
+      <property role="IQ2ns" value="8209893853358780740" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="triggerWhile" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
     </node>
-    <node concept="1TJgyj" id="1a1nVFdwSW1" role="1TKVEi">
-      <property role="IQ2ns" value="1333452220594884353" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="triggerIf" />
-      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
-    </node>
-    <node concept="1TJgyj" id="1a1nVFdwSW2" role="1TKVEi">
-      <property role="IQ2ns" value="1333452220594884354" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="systemResponse" />
-      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
-    </node>
-    <node concept="PrWs8" id="1a1nVFdwSVm" role="PzmwI">
-      <ref role="PrY4T" node="1a1nVFdwSVi" resolve="AbstractedUnwantedReq" />
+    <node concept="PrWs8" id="77JpJoP7f4Y" role="PzmwI">
+      <ref role="PrY4T" node="6DHDeqn9ndW" resolve="AbstractStateDrivenReq" />
     </node>
   </node>
   <node concept="1TIwiD" id="1pRfBxTOoi4">
@@ -566,43 +507,6 @@
     </node>
     <node concept="PrWs8" id="7A5J6qWL5Km" role="PzmwI">
       <ref role="PrY4T" node="5ByxUIF95HA" resolve="Alias" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7ql_X0U5kb$">
-    <property role="EcuMT" value="8544902788588847844" />
-    <property role="3GE5qa" value="TemplatesEventDriven" />
-    <property role="TrG5h" value="ComplexEventDrivenUntil" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7ql_X0U5maF" role="1TKVEi">
-      <property role="IQ2ns" value="8544902788588855979" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="triggerWhile" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
-    </node>
-    <node concept="1TJgyj" id="7ql_X0U5maG" role="1TKVEi">
-      <property role="IQ2ns" value="8544902788588855980" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="triggerWhen" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
-    </node>
-    <node concept="1TJgyj" id="7ql_X0U5maH" role="1TKVEi">
-      <property role="IQ2ns" value="8544902788588855981" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="systemResponse" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
-    </node>
-    <node concept="1TJgyj" id="7ql_X0U5maL" role="1TKVEi">
-      <property role="IQ2ns" value="8544902788588855985" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="untilTrigger" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
-    </node>
-    <node concept="PrWs8" id="7ql_X0U5kb_" role="PzmwI">
-      <ref role="PrY4T" node="6_TIzovfnvm" resolve="AbstractEventDrivenReq" />
     </node>
   </node>
   <node concept="PlHQZ" id="5ByxUIF95HA">
@@ -689,6 +593,37 @@
     </node>
     <node concept="PrWs8" id="7A5J6qWG873" role="PzmwI">
       <ref role="PrY4T" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6DHDeqn9ndV">
+    <property role="EcuMT" value="7668967050767070075" />
+    <property role="3GE5qa" value="TemplatesStateDriven" />
+    <property role="TrG5h" value="StateDrivenReq" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6DHDeqn9ndZ" role="PzmwI">
+      <ref role="PrY4T" node="6DHDeqn9ndW" resolve="AbstractStateDrivenReq" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6DHDeqn9ndW">
+    <property role="EcuMT" value="7668967050767070076" />
+    <property role="3GE5qa" value="TemplatesStateDriven" />
+    <property role="TrG5h" value="AbstractStateDrivenReq" />
+    <node concept="1TJgyj" id="6DHDeqnd_cq" role="1TKVEi">
+      <property role="IQ2ns" value="7668967050768175898" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+    <node concept="1TJgyj" id="6DHDeqnd_cr" role="1TKVEi">
+      <property role="IQ2ns" value="7668967050768175899" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="response" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+    <node concept="PrWs8" id="6DHDeqnd_QL" role="PrDN$">
+      <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
   </node>
 </model>

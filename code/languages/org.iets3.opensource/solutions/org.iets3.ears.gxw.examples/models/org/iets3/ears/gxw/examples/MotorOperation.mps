@@ -38,7 +38,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -63,7 +63,6 @@
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
       </concept>
       <concept id="8756612199926891316" name="org.iets3.ears.gxw.structure.ResponseAliasName" flags="ng" index="35YNXi" />
-      <concept id="9190636705089527255" name="org.iets3.ears.gxw.structure.Occurs" flags="ng" index="3t3aUO" />
       <concept id="1618831278223754372" name="org.iets3.ears.gxw.structure.ResponseAlias" flags="ng" index="1JDFFW">
         <child id="8756612199931468805" name="aliasName" index="35gu1z" />
         <child id="8756612199926891298" name="responseFormula" index="35YNX4" />
@@ -71,7 +70,6 @@
       <concept id="7600310587779545046" name="org.iets3.ears.gxw.structure.AbstractEventDrivenReq" flags="ng" index="1QhcRw">
         <child id="8756612199902471080" name="trigger" index="32z5Ze" />
         <child id="8756612199902471081" name="response" index="32z5Zf" />
-        <child id="9190636705088547496" name="triggerModifier" index="3tWTBb" />
       </concept>
       <concept id="7600310587779545043" name="org.iets3.ears.gxw.structure.RequirementTemplate" flags="ng" index="1QhcR_">
         <property id="7444869022439316402" name="reqName" index="eBQts" />
@@ -183,7 +181,6 @@
     <ref role="9DKRw" node="5ByxUIFAm6u" resolve="motor operation controller" />
     <node concept="sEiiz" id="5ByxUIFAEjP" role="OJ2fO">
       <property role="eBQts" value="Req1" />
-      <node concept="3t3aUO" id="5ByxUIFAMIZ" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcw" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEii" />
       </node>
@@ -198,7 +195,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVwO" role="OJ2fO">
       <property role="eBQts" value="Req2" />
-      <node concept="3t3aUO" id="5ByxUIFAVwZ" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcI" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiv" />
       </node>
@@ -213,7 +209,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVxt" role="OJ2fO">
       <property role="eBQts" value="Req3" />
-      <node concept="3t3aUO" id="5ByxUIFAVxI" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWcW" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEiD" />
       </node>
@@ -223,7 +218,6 @@
     </node>
     <node concept="sEiiz" id="5ByxUIFAVy4" role="OJ2fO">
       <property role="eBQts" value="Req4" />
-      <node concept="3t3aUO" id="5ByxUIFAVyp" role="3tWTBb" />
       <node concept="3T_uu0" id="7A5J6qVvWd0" role="32z5Ze">
         <ref role="3T_uuC" node="5ByxUIFAEin" />
       </node>
