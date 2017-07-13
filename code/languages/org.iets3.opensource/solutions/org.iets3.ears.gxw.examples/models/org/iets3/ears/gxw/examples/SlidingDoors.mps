@@ -37,6 +37,7 @@
         <child id="135049047333306356" name="listOfTriggers" index="2skrmg" />
         <child id="135049047333306358" name="listOfComponents" index="2skrmi" />
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
+        <child id="8209893853363204000" name="listOfInvariants" index="14zK_m" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
       <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
@@ -60,6 +61,9 @@
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
       </concept>
+      <concept id="8209893853363203989" name="org.iets3.ears.gxw.structure.TriggerInvariant" flags="ng" index="14zK_z">
+        <child id="8209893853363203996" name="triggerInvariant" index="14zK_E" />
+      </concept>
       <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
       </concept>
@@ -78,6 +82,15 @@
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
         <reference id="3691935882243834807" name="atom" index="3T_uuC" />
       </concept>
+      <concept id="3691935882243834782" name="org.iets3.ears.gxw.structure.AndFormulaTr" flags="ng" index="3T_uu1" />
+      <concept id="3691935882243834792" name="org.iets3.ears.gxw.structure.UnaryFormulaTr" flags="ng" index="3T_uuR">
+        <child id="3691935882243834799" name="arg" index="3T_uuK" />
+      </concept>
+      <concept id="3691935882243834791" name="org.iets3.ears.gxw.structure.BinaryFormulaTr" flags="ng" index="3T_uuS">
+        <child id="3691935882243834794" name="arg2" index="3T_uuP" />
+        <child id="3691935882243834793" name="arg1" index="3T_uuQ" />
+      </concept>
+      <concept id="3691935882243834785" name="org.iets3.ears.gxw.structure.NotFormulaTr" flags="ng" index="3T_uuY" />
     </language>
   </registry>
   <node concept="OJ2fN" id="5ByxUIFBnAm">
@@ -152,10 +165,6 @@
       <property role="TrG5h" value="door closing limit sensor" />
       <property role="2uI0VX" value="a door closing limit sensor" />
     </node>
-    <node concept="2uIZ38" id="6DHDeqn5v6e" role="2skrmi">
-      <property role="TrG5h" value="lala" />
-      <property role="2uI0VX" value="lala" />
-    </node>
     <node concept="otU$d" id="5ByxUIFBn_m" role="2skrmg">
       <property role="OJvIS" value="is activated" />
       <ref role="3Np_ai" node="5ByxUIFBn_7" resolve="object proximity sensor" />
@@ -184,10 +193,6 @@
       <property role="Nkej4" value="close" />
       <ref role="Nkej6" node="2$$ntKwwEOq" resolve="door" />
     </node>
-    <node concept="otU$0" id="6DHDeqn5v6q" role="2skrmv">
-      <property role="Nkej4" value="do" />
-      <ref role="Nkej6" node="6DHDeqn5v6e" resolve="lala" />
-    </node>
     <node concept="1JDFFW" id="7A5J6qWPaXZ" role="1JDDoy">
       <node concept="35YNXi" id="7A5J6qWPaY0" role="35gu1z">
         <property role="TrG5h" value="stop door" />
@@ -202,6 +207,23 @@
           <node concept="OJJ_U" id="7A5J6qWPaYw" role="9Cqx7">
             <ref role="OJJ_O" node="5ByxUIFBn_S" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14zK_z" id="77JpJoPyK2h" role="14zK_m">
+      <node concept="3T_uu1" id="77JpJoPyK2l" role="14zK_E">
+        <node concept="3T_uu0" id="77JpJoPyK2s" role="3T_uuQ">
+          <ref role="3T_uuC" node="5ByxUIFBn_z" />
+        </node>
+        <node concept="3T_uu0" id="77JpJoPyK2v" role="3T_uuP">
+          <ref role="3T_uuC" node="5ByxUIFBn_r" />
+        </node>
+      </node>
+    </node>
+    <node concept="14zK_z" id="77JpJoPyK2C" role="14zK_m">
+      <node concept="3T_uuY" id="77JpJoPyK2L" role="14zK_E">
+        <node concept="3T_uu0" id="77JpJoPyK2Q" role="3T_uuK">
+          <ref role="3T_uuC" node="5ByxUIFBn_H" />
         </node>
       </node>
     </node>

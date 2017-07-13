@@ -610,6 +610,17 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3F2HdR" id="77JpJoPtNx9" role="3EZMnx">
+        <property role="S$F3r" value="false" />
+        <ref role="1NtTu8" to="q3w4:77JpJoPo6Yw" resolve="listOfInvariants" />
+        <node concept="2iRkQZ" id="77JpJoPtOCc" role="2czzBx" />
+        <node concept="ljvvj" id="77JpJoPtO_$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="77JpJoPtOC8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F0ifn" id="2Bva3qeP3$p" role="3EZMnx">
         <property role="3F0ifm" value="" />
         <node concept="pVoyu" id="2Bva3qeP4gE" role="3F10Kt">
@@ -1173,13 +1184,13 @@
         <property role="3F0ifm" value="While" />
       </node>
       <node concept="3F1sOY" id="1a1nVFdwSV$" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW0" resolve="triggerWhile" />
+        <ref role="1NtTu8" to="q3w4:77JpJoP7f54" resolve="triggerWhile" />
       </node>
       <node concept="3F0ifn" id="1a1nVFdwSVA" role="3EZMnx">
         <property role="3F0ifm" value=", if " />
       </node>
-      <node concept="3F1sOY" id="1a1nVFdwSVB" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW1" resolve="triggerIf" />
+      <node concept="3F1sOY" id="77JpJoPqJ6l" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:6DHDeqnd_cq" resolve="trigger" />
       </node>
       <node concept="3F0ifn" id="1a1nVFdwSVC" role="3EZMnx">
         <property role="3F0ifm" value=" the " />
@@ -1239,8 +1250,8 @@
       <node concept="3F0ifn" id="1a1nVFdwSVE" role="3EZMnx">
         <property role="3F0ifm" value="shall" />
       </node>
-      <node concept="3F1sOY" id="1a1nVFdwSVF" role="3EZMnx">
-        <ref role="1NtTu8" to="q3w4:1a1nVFdwSW2" resolve="systemResponse" />
+      <node concept="3F1sOY" id="77JpJoPqJoR" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:6DHDeqnd_cr" resolve="response" />
       </node>
       <node concept="3F0ifn" id="1a1nVFdwSVJ" role="3EZMnx">
         <property role="3F0ifm" value="." />
@@ -1418,6 +1429,26 @@
         <property role="3F0ifm" value="." />
       </node>
       <node concept="l2Vlx" id="6DHDeqnd_dk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="77JpJoPt_6i">
+    <property role="3GE5qa" value="Invariants" />
+    <ref role="1XX52x" to="q3w4:77JpJoPo6Ym" resolve="ResponseInvariant" />
+    <node concept="3EZMnI" id="77JpJoPtMOx" role="2wV5jI">
+      <node concept="l2Vlx" id="77JpJoPtMOy" role="2iSdaV" />
+      <node concept="3F1sOY" id="77JpJoPt_6k" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:77JpJoPo6Yu" resolve="responseInvariant" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="77JpJoPt_6v">
+    <property role="3GE5qa" value="Invariants" />
+    <ref role="1XX52x" to="q3w4:77JpJoPo6Yl" resolve="TriggerInvariant" />
+    <node concept="3EZMnI" id="77JpJoPtMOr" role="2wV5jI">
+      <node concept="l2Vlx" id="77JpJoPtMOs" role="2iSdaV" />
+      <node concept="3F1sOY" id="77JpJoPt_6x" role="3EZMnx">
+        <ref role="1NtTu8" to="q3w4:77JpJoPo6Ys" resolve="triggerInvariant" />
+      </node>
     </node>
   </node>
 </model>

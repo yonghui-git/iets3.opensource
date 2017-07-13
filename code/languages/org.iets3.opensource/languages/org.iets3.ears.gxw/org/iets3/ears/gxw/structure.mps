@@ -159,9 +159,16 @@
     <node concept="1TJgyj" id="7vMAitzBZV" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="listOfResponses" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1..n" />
       <property role="IQ2ns" value="135049047333306363" />
       <ref role="20lvS9" node="UoN5smVQln" resolve="ComponentResponse" />
+    </node>
+    <node concept="1TJgyj" id="77JpJoPo6Yw" role="1TKVEi">
+      <property role="IQ2ns" value="8209893853363204000" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listOfInvariants" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="77JpJoPo6Yn" resolve="Invariant" />
     </node>
     <node concept="1TJgyj" id="1pRfBxTOqxq" role="1TKVEi">
       <property role="IQ2ns" value="1618831278223763546" />
@@ -625,6 +632,43 @@
     <node concept="PrWs8" id="6DHDeqnd_QL" role="PrDN$">
       <ref role="PrY4T" node="6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="77JpJoPo6Yl">
+    <property role="EcuMT" value="8209893853363203989" />
+    <property role="TrG5h" value="TriggerInvariant" />
+    <property role="3GE5qa" value="Invariants" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="77JpJoPo6Yq" role="PzmwI">
+      <ref role="PrY4T" node="77JpJoPo6Yn" resolve="Invariant" />
+    </node>
+    <node concept="1TJgyj" id="77JpJoPo6Ys" role="1TKVEi">
+      <property role="IQ2ns" value="8209893853363203996" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="triggerInvariant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3cWp1ZaEoe_" resolve="PropositionalFormulaTr" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="77JpJoPo6Ym">
+    <property role="EcuMT" value="8209893853363203990" />
+    <property role="TrG5h" value="ResponseInvariant" />
+    <property role="3GE5qa" value="Invariants" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="77JpJoPo6Yo" role="PzmwI">
+      <ref role="PrY4T" node="77JpJoPo6Yn" resolve="Invariant" />
+    </node>
+    <node concept="1TJgyj" id="77JpJoPo6Yu" role="1TKVEi">
+      <property role="IQ2ns" value="8209893853363203998" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="responseInvariant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5QnDqxDalN2" resolve="PropositionalFormulaSR" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="77JpJoPo6Yn">
+    <property role="EcuMT" value="8209893853363203991" />
+    <property role="TrG5h" value="Invariant" />
+    <property role="3GE5qa" value="Invariants" />
   </node>
 </model>
 
