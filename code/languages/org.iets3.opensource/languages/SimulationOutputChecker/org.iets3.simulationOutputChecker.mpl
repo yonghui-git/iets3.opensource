@@ -52,6 +52,7 @@
   </generators>
   <stubModelEntries>
     <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
+    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -61,6 +62,7 @@
     <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
+    <dependency reexport="false">0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
@@ -108,6 +110,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)" version="0" />
+    <module reference="0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
     <module reference="a482b416-d0c9-473f-8f67-725ed642b3f3(com.mbeddr.mpsutil.breadcrumb)" version="0" />

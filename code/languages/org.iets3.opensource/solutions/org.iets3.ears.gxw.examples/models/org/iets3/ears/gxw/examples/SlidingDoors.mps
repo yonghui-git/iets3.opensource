@@ -2,10 +2,10 @@
 <model ref="r:f2229e5c-9085-48de-b0b8-2b935c9f9c0f(org.iets3.ears.gxw.examples.SlidingDoors)">
   <persistence version="9" />
   <languages>
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
-    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="-1" />
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
@@ -145,6 +145,23 @@
   </node>
   <node concept="2skrmn" id="5ByxUIFBn_4">
     <property role="TrG5h" value="automatic door controller" />
+    <node concept="14zK_z" id="77JpJoPyK2h" role="14zK_m">
+      <node concept="3T_uu1" id="77JpJoPyK2l" role="14zK_E">
+        <node concept="3T_uu0" id="77JpJoPyK2s" role="3T_uuQ">
+          <ref role="3T_uuC" node="5ByxUIFBn_z" />
+        </node>
+        <node concept="3T_uu0" id="77JpJoPyK2v" role="3T_uuP">
+          <ref role="3T_uuC" node="5ByxUIFBn_r" />
+        </node>
+      </node>
+    </node>
+    <node concept="14zK_z" id="77JpJoPyK2C" role="14zK_m">
+      <node concept="3T_uuY" id="77JpJoPyK2L" role="14zK_E">
+        <node concept="3T_uu0" id="77JpJoPyK2Q" role="3T_uuK">
+          <ref role="3T_uuC" node="5ByxUIFBn_H" />
+        </node>
+      </node>
+    </node>
     <node concept="2uIZ38" id="2$$ntKwwEOq" role="2skrmi">
       <property role="TrG5h" value="door" />
       <property role="2uI0VX" value="the automatic door" />
@@ -207,23 +224,6 @@
           <node concept="OJJ_U" id="7A5J6qWPaYw" role="9Cqx7">
             <ref role="OJJ_O" node="5ByxUIFBn_S" />
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="14zK_z" id="77JpJoPyK2h" role="14zK_m">
-      <node concept="3T_uu1" id="77JpJoPyK2l" role="14zK_E">
-        <node concept="3T_uu0" id="77JpJoPyK2s" role="3T_uuQ">
-          <ref role="3T_uuC" node="5ByxUIFBn_z" />
-        </node>
-        <node concept="3T_uu0" id="77JpJoPyK2v" role="3T_uuP">
-          <ref role="3T_uuC" node="5ByxUIFBn_r" />
-        </node>
-      </node>
-    </node>
-    <node concept="14zK_z" id="77JpJoPyK2C" role="14zK_m">
-      <node concept="3T_uuY" id="77JpJoPyK2L" role="14zK_E">
-        <node concept="3T_uu0" id="77JpJoPyK2Q" role="3T_uuK">
-          <ref role="3T_uuC" node="5ByxUIFBn_H" />
         </node>
       </node>
     </node>

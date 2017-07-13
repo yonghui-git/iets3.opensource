@@ -2,20 +2,19 @@
 <model ref="r:43bee08d-0dd5-42fe-afb1-87610e62da05(org.iets3.ears.gxw.examples.MotorOperation)">
   <persistence version="9" />
   <languages>
-    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="0" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
+    <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
+    <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
   </imports>
   <registry>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
-        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -38,7 +37,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -179,6 +178,9 @@
   <node concept="OJ2fN" id="5ByxUIFAEjO">
     <property role="TrG5h" value="motor operation controller" />
     <ref role="9DKRw" node="5ByxUIFAm6u" resolve="motor operation controller" />
+    <node concept="9PVaO" id="6FIbR5rDHcJ" role="3DRjlG">
+      <property role="3N1Lgt" value="models" />
+    </node>
     <node concept="sEiiz" id="5ByxUIFAEjP" role="OJ2fO">
       <property role="eBQts" value="Req1" />
       <node concept="3T_uu0" id="7A5J6qVvWcw" role="32z5Ze">
@@ -234,11 +236,6 @@
           <ref role="35djRf" node="2Bva3qemdAX" />
         </node>
       </node>
-    </node>
-    <node concept="9PVaO" id="5bowr9XldeR" role="3DRjlG">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>

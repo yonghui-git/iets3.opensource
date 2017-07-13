@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
-    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="0" />
-    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
-    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
+    <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="-1" />
   </languages>
   <imports />
   <registry>
@@ -38,7 +38,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -249,6 +249,11 @@
   <node concept="OJ2fN" id="5ByxUIErCkT">
     <property role="TrG5h" value="liquid mixer controller" />
     <ref role="9DKRw" node="5ByxUIEmNLj" resolve="liquid mixer controller" />
+    <node concept="9PVaO" id="6DHDeqn11ph" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
+    </node>
     <node concept="3v0$t_" id="5ByxUIFAlsQ" role="OJ2fO">
       <property role="eBQts" value="Req1" />
       <node concept="35djRb" id="7A5J6qXAqvZ" role="3v0$n0">
@@ -352,11 +357,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="9PVaO" id="6DHDeqn11ph" role="3DRjlG">
-      <property role="1RwFax" value="true" />
-      <property role="3kgbRO" value="false" />
-      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>
