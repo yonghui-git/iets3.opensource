@@ -11,8 +11,8 @@
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ukfn" ref="r:7d42abc9-1d49-48bb-b7a8-cbebdd46866a(org.iets3.simulink.resultmodel.intentions)" implicit="true" />
   </imports>
@@ -35,6 +35,10 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
+      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
+        <child id="1173175577737" name="index" index="AHEQo" />
+        <child id="1173175590490" name="array" index="AHHXb" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -68,7 +72,11 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -79,6 +87,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -86,6 +95,7 @@
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -103,6 +113,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -123,6 +136,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -130,8 +144,20 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
+      <concept id="1184950988562" name="jetbrains.mps.baseLanguage.structure.ArrayCreator" flags="nn" index="3$_iS1">
+        <child id="1184951007469" name="componentType" index="3$_nBY" />
+        <child id="1184952969026" name="dimensionExpression" index="3$GQph" />
+      </concept>
+      <concept id="1184952934362" name="jetbrains.mps.baseLanguage.structure.DimensionExpression" flags="nn" index="3$GHV9">
+        <child id="1184953288404" name="expression" index="3$I4v7" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
@@ -1474,6 +1500,132 @@
           </node>
         </node>
         <node concept="3clFbH" id="5uxx$av$R16" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7pulzJf6amK" role="13h7CS">
+      <property role="TrG5h" value="createInputArray" />
+      <node concept="3Tm1VV" id="7pulzJf6amL" role="1B3o_S" />
+      <node concept="10Q1$e" id="7pulzJf6cEP" role="3clF45">
+        <node concept="10P55v" id="7pulzJf6cED" role="10Q1$1" />
+      </node>
+      <node concept="3clFbS" id="7pulzJf6amN" role="3clF47">
+        <node concept="3cpWs8" id="7pulzJf6cSX" role="3cqZAp">
+          <node concept="3cpWsn" id="7pulzJf6cSY" role="3cpWs9">
+            <property role="TrG5h" value="doubleArray" />
+            <node concept="10Q1$e" id="7pulzJf6cSZ" role="1tU5fm">
+              <node concept="10P55v" id="7pulzJf6dhJ" role="10Q1$1" />
+            </node>
+            <node concept="2ShNRf" id="7pulzJf6cVH" role="33vP2m">
+              <node concept="3$_iS1" id="7pulzJf6dh6" role="2ShVmc">
+                <node concept="3$GHV9" id="7pulzJf6dh8" role="3$GQph">
+                  <node concept="2OqwBi" id="7pulzJf6euL" role="3$I4v7">
+                    <node concept="37vLTw" id="7pulzJf6dij" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7pulzJf6cGF" resolve="arrayJRadioButtons" />
+                    </node>
+                    <node concept="liA8E" id="7pulzJf6hIj" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~ArrayList.size():int" resolve="size" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="10P55v" id="7pulzJf6dg9" role="3$_nBY" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7pulzJf6hVj" role="3cqZAp">
+          <node concept="3cpWsn" id="7pulzJf6hVm" role="3cpWs9">
+            <property role="TrG5h" value="index" />
+            <node concept="10Oyi0" id="7pulzJf6hVh" role="1tU5fm" />
+            <node concept="3cmrfG" id="7pulzJf6hXV" role="33vP2m">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7pulzJf6hTm" role="3cqZAp">
+          <node concept="2GrKxI" id="7pulzJf6hTo" role="2Gsz3X">
+            <property role="TrG5h" value="item" />
+          </node>
+          <node concept="37vLTw" id="7pulzJf6hZJ" role="2GsD0m">
+            <ref role="3cqZAo" node="7pulzJf6cGF" resolve="arrayJRadioButtons" />
+          </node>
+          <node concept="3clFbS" id="7pulzJf6hTs" role="2LFqv$">
+            <node concept="3cpWs8" id="2wqYdLi7V3N" role="3cqZAp">
+              <node concept="3cpWsn" id="2wqYdLi7V3O" role="3cpWs9">
+                <property role="TrG5h" value="selected" />
+                <node concept="10P_77" id="2wqYdLi7V3E" role="1tU5fm" />
+                <node concept="2OqwBi" id="2wqYdLi7V3P" role="33vP2m">
+                  <node concept="2OqwBi" id="2wqYdLi7V3Q" role="2Oq$k0">
+                    <node concept="37vLTw" id="2wqYdLi7V3R" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7pulzJf6cGF" resolve="arrayJRadioButtons" />
+                    </node>
+                    <node concept="liA8E" id="2wqYdLi7V3S" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                      <node concept="37vLTw" id="2wqYdLi7V3T" role="37wK5m">
+                        <ref role="3cqZAo" node="7pulzJf6hVm" resolve="index" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2wqYdLi7V3U" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~AbstractButton.isSelected():boolean" resolve="isSelected" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2wqYdLi7X6b" role="3cqZAp">
+              <node concept="3cpWsn" id="2wqYdLi7X6e" role="3cpWs9">
+                <property role="TrG5h" value="myInt" />
+                <node concept="10Oyi0" id="2wqYdLi7X69" role="1tU5fm" />
+                <node concept="3K4zz7" id="2wqYdLi7Xcg" role="33vP2m">
+                  <node concept="1eOMI4" id="2wqYdLi7XcV" role="3K4Cdx">
+                    <node concept="37vLTw" id="2wqYdLi7Xdw" role="1eOMHV">
+                      <ref role="3cqZAo" node="2wqYdLi7V3O" resolve="selected" />
+                    </node>
+                  </node>
+                  <node concept="3cmrfG" id="2wqYdLi7XdU" role="3K4E3e">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="3cmrfG" id="2wqYdLi7Xeu" role="3K4GZi">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7pulzJf6l1P" role="3cqZAp">
+              <node concept="37vLTI" id="7pulzJf6lzq" role="3clFbG">
+                <node concept="AH0OO" id="7pulzJf6l67" role="37vLTJ">
+                  <node concept="37vLTw" id="7pulzJf6laJ" role="AHEQo">
+                    <ref role="3cqZAo" node="7pulzJf6hVm" resolve="index" />
+                  </node>
+                  <node concept="37vLTw" id="7pulzJf6l1O" role="AHHXb">
+                    <ref role="3cqZAo" node="7pulzJf6cSY" resolve="doubleArray" />
+                  </node>
+                </node>
+                <node concept="1eOMI4" id="2wqYdLi7WKa" role="37vLTx">
+                  <node concept="10QFUN" id="2wqYdLi7WK7" role="1eOMHV">
+                    <node concept="10P55v" id="2wqYdLi7WYm" role="10QFUM" />
+                    <node concept="37vLTw" id="2wqYdLi7Xjd" role="10QFUP">
+                      <ref role="3cqZAo" node="2wqYdLi7X6e" resolve="myInt" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7pulzJf6zjY" role="3cqZAp">
+          <node concept="37vLTw" id="7pulzJf6ztE" role="3cqZAk">
+            <ref role="3cqZAo" node="7pulzJf6cSY" resolve="doubleArray" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7pulzJf6cGF" role="3clF46">
+        <property role="TrG5h" value="arrayJRadioButtons" />
+        <node concept="3uibUv" id="7pulzJf6cGE" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
+          <node concept="3uibUv" id="7pulzJf6cOH" role="11_B2D">
+            <ref role="3uigEE" to="dxuu:~JRadioButton" resolve="JRadioButton" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="1O7Kc2mNQlQ" role="13h7CW">

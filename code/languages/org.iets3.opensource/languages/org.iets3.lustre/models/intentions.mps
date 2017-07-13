@@ -4746,6 +4746,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2aNf2oqVOUU" role="3cqZAp">
+          <node concept="37vLTI" id="2aNf2oqVQ23" role="3clFbG">
+            <node concept="2OqwBi" id="2aNf2oqVR1Q" role="37vLTx">
+              <node concept="2OqwBi" id="2aNf2oqVQke" role="2Oq$k0">
+                <node concept="2Sf5sV" id="2aNf2oqVQ8E" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2aNf2oqVQ_7" role="2OqNvi">
+                  <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="2aNf2oqVR_g" role="2OqNvi">
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2aNf2oqVPfI" role="37vLTJ">
+              <node concept="37vLTw" id="2aNf2oqVOUS" role="2Oq$k0">
+                <ref role="3cqZAo" node="7C$xkK6Y4fz" resolve="outputChecker" />
+              </node>
+              <node concept="3TrcHB" id="2aNf2oqVPya" role="2OqNvi">
+                <ref role="3TsBF5" to="sgle:2aNf2oqVf7h" resolve="filePath" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="45mh0CsZu7R" role="3cqZAp">
           <node concept="3cpWsn" id="45mh0CsZu7U" role="3cpWs9">
             <property role="TrG5h" value="simulinkResult" />

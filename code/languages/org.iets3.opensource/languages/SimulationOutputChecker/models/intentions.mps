@@ -16,6 +16,7 @@
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" implicit="true" />
     <import index="6bz1" ref="r:d3905048-7598-4a84-931a-cbbcbcda146d(jetbrains.mps.lang.intentions.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -24,6 +25,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -62,6 +66,7 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -82,6 +87,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -91,6 +97,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -309,6 +316,8 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2aNf2oqXA9T" role="3cqZAp" />
+        <node concept="3clFbH" id="2aNf2oqXASB" role="3cqZAp" />
         <node concept="SfApY" id="1NfcMgLn$tR" role="3cqZAp">
           <node concept="3clFbS" id="1NfcMgLn$tS" role="SfCbr">
             <node concept="3cpWs8" id="5uxx$avAJq9" role="3cqZAp">
@@ -319,22 +328,120 @@
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="5uxx$avA$gL" role="3cqZAp">
-              <node concept="3cpWsn" id="5uxx$avA$gM" role="3cpWs9">
-                <property role="TrG5h" value="fis" />
-                <node concept="3uibUv" id="5uxx$avA$gN" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
-                </node>
-                <node concept="2ShNRf" id="5uxx$avA$vs" role="33vP2m">
-                  <node concept="1pGfFk" id="5uxx$avAACG" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.lang.String)" resolve="FileInputStream" />
-                    <node concept="Xl_RD" id="5uxx$avAAHj" role="37wK5m">
-                      <property role="Xl_RC" value="simulation_output.txt" />
+            <node concept="3clFbH" id="2aNf2oqXzwp" role="3cqZAp" />
+            <node concept="3cpWs8" id="2aNf2oqWfK$" role="3cqZAp">
+              <node concept="3cpWsn" id="2aNf2oqWfK_" role="3cpWs9">
+                <property role="TrG5h" value="testCaseFilePath" />
+                <property role="3TUv4t" value="true" />
+                <node concept="17QB3L" id="2aNf2oqWfKA" role="1tU5fm" />
+                <node concept="3cpWs3" id="2aNf2oqWfKB" role="33vP2m">
+                  <node concept="Xl_RD" id="2aNf2oqWfKC" role="3uHU7w">
+                    <property role="Xl_RC" value="/testcaseResult.txt" />
+                  </node>
+                  <node concept="2OqwBi" id="2aNf2oqWfKD" role="3uHU7B">
+                    <node concept="37vLTw" id="2aNf2oqXF9b" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7pulzJf1Z34" resolve="node" />
+                    </node>
+                    <node concept="3TrcHB" id="2aNf2oqWfKF" role="2OqNvi">
+                      <ref role="3TsBF5" to="sgle:2aNf2oqVf7h" resolve="filePath" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="2aNf2oqW5S$" role="3cqZAp">
+              <node concept="3cpWsn" id="2aNf2oqW5SB" role="3cpWs9">
+                <property role="TrG5h" value="stepByStepFilePath" />
+                <property role="3TUv4t" value="true" />
+                <node concept="17QB3L" id="2aNf2oqW5Sy" role="1tU5fm" />
+                <node concept="3cpWs3" id="2aNf2oqWa_c" role="33vP2m">
+                  <node concept="Xl_RD" id="2aNf2oqWaRW" role="3uHU7w">
+                    <property role="Xl_RC" value="/StepByStepResult.txt" />
+                  </node>
+                  <node concept="2OqwBi" id="2aNf2oqW77y" role="3uHU7B">
+                    <node concept="37vLTw" id="2aNf2oqXFrN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7pulzJf1Z34" resolve="node" />
+                    </node>
+                    <node concept="3TrcHB" id="2aNf2oqW7tp" role="2OqNvi">
+                      <ref role="3TsBF5" to="sgle:2aNf2oqVf7h" resolve="filePath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="2aNf2oqXSLn" role="3cqZAp">
+              <node concept="3cpWsn" id="2aNf2oqXSLo" role="3cpWs9">
+                <property role="TrG5h" value="fis" />
+                <node concept="3uibUv" id="2aNf2oqXSLp" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2aNf2oqXBBm" role="3cqZAp" />
+            <node concept="3clFbH" id="2aNf2oqXRVr" role="3cqZAp" />
+            <node concept="3cpWs8" id="2aNf2oqX8jU" role="3cqZAp">
+              <node concept="3cpWsn" id="2aNf2oqX8jV" role="3cpWs9">
+                <property role="TrG5h" value="file" />
+                <node concept="3uibUv" id="2aNf2oqX8jW" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="2aNf2oqX8Cf" role="33vP2m">
+                  <node concept="1pGfFk" id="2aNf2oqXgBr" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="2aNf2oqXgYD" role="37wK5m">
+                      <ref role="3cqZAo" node="2aNf2oqW5SB" resolve="stepByStepFilePath" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="2aNf2oqXKl9" role="3cqZAp">
+              <node concept="3clFbS" id="2aNf2oqXKlb" role="3clFbx">
+                <node concept="3clFbF" id="2aNf2oqXU2g" role="3cqZAp">
+                  <node concept="37vLTI" id="2aNf2oqXUvw" role="3clFbG">
+                    <node concept="2ShNRf" id="2aNf2oqXUwT" role="37vLTx">
+                      <node concept="1pGfFk" id="2aNf2oqXV2Z" role="2ShVmc">
+                        <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.lang.String)" resolve="FileInputStream" />
+                        <node concept="37vLTw" id="2aNf2oqXVht" role="37wK5m">
+                          <ref role="3cqZAo" node="2aNf2oqW5SB" resolve="stepByStepFilePath" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="2aNf2oqXU2e" role="37vLTJ">
+                      <ref role="3cqZAo" node="2aNf2oqXSLo" resolve="fis" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2aNf2oqXN47" role="3clFbw">
+                <node concept="37vLTw" id="2aNf2oqXM_I" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2aNf2oqX8jV" resolve="file" />
+                </node>
+                <node concept="liA8E" id="2aNf2oqXNSL" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="2aNf2oqXVzc" role="9aQIa">
+                <node concept="3clFbS" id="2aNf2oqXVzd" role="9aQI4">
+                  <node concept="3clFbF" id="2aNf2oqXVMg" role="3cqZAp">
+                    <node concept="37vLTI" id="2aNf2oqXVMh" role="3clFbG">
+                      <node concept="2ShNRf" id="2aNf2oqXVMi" role="37vLTx">
+                        <node concept="1pGfFk" id="2aNf2oqXVMj" role="2ShVmc">
+                          <ref role="37wK5l" to="guwi:~FileInputStream.&lt;init&gt;(java.lang.String)" resolve="FileInputStream" />
+                          <node concept="37vLTw" id="2aNf2oqXW4Z" role="37wK5m">
+                            <ref role="3cqZAo" node="2aNf2oqWfK_" resolve="testCaseFilePath" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="2aNf2oqXVMl" role="37vLTJ">
+                        <ref role="3cqZAo" node="2aNf2oqXSLo" resolve="fis" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2aNf2oqXH$T" role="3cqZAp" />
             <node concept="3cpWs8" id="5uxx$avABif" role="3cqZAp">
               <node concept="3cpWsn" id="5uxx$avABig" role="3cpWs9">
                 <property role="TrG5h" value="isr" />
@@ -344,8 +451,8 @@
                 <node concept="2ShNRf" id="5uxx$avAB_Y" role="33vP2m">
                   <node concept="1pGfFk" id="5uxx$avACNd" role="2ShVmc">
                     <ref role="37wK5l" to="guwi:~InputStreamReader.&lt;init&gt;(java.io.InputStream)" resolve="InputStreamReader" />
-                    <node concept="37vLTw" id="5uxx$avACRf" role="37wK5m">
-                      <ref role="3cqZAo" node="5uxx$avA$gM" resolve="fis" />
+                    <node concept="37vLTw" id="2aNf2oqXXEB" role="37wK5m">
+                      <ref role="3cqZAo" node="2aNf2oqXSLo" resolve="fis" />
                     </node>
                   </node>
                 </node>

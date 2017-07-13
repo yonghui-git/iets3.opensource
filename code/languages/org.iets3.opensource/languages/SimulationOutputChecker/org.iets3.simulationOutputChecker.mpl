@@ -62,6 +62,7 @@
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
     <dependency reexport="false">0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)</dependency>
     <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
+    <dependency reexport="false">4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
