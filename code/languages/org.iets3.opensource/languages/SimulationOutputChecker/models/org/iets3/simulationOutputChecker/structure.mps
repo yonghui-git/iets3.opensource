@@ -33,31 +33,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="7C$xkK6QkIe">
-    <property role="EcuMT" value="8801306133367704462" />
-    <property role="TrG5h" value="OutputCheckerSimulink" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="45mh0CsZ54w" role="1TKVEi">
-      <property role="IQ2ns" value="4708025270689091872" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="simulinkResult" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="qd5k:5uxx$av$zSW" resolve="SimulinkResult" />
-    </node>
-    <node concept="1TJgyj" id="45mh0CsZroe" role="1TKVEi">
-      <property role="IQ2ns" value="4708025270689183246" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inputCells" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="qd5k:5uxx$av$zT0" resolve="InputCell" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7kjiFf88uGM">
-    <property role="EcuMT" value="8436168663012338482" />
-    <property role="TrG5h" value="Aaaaaeee" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="1TIwiD" id="obzvELmgLn">
     <property role="EcuMT" value="435597896828128343" />
     <property role="TrG5h" value="SimulinkResultDisplayer" />

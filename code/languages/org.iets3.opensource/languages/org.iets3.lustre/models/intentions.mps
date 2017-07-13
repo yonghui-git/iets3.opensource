@@ -32,6 +32,8 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="v5o" ref="r:dd170bea-bb48-472d-839e-c838bddb8943(org.iets3.graphicalLustre.intentions)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -4275,15 +4277,19 @@
             </node>
             <node concept="3clFbH" id="3q$2SldUhiV" role="3cqZAp" />
             <node concept="3clFbH" id="3q$2SldV4b0" role="3cqZAp" />
-            <node concept="3clFbF" id="3q$2SldUfi$" role="3cqZAp">
-              <node concept="2OqwBi" id="3q$2SldUfi_" role="3clFbG">
-                <node concept="37vLTw" id="3q$2SldUfiA" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                </node>
-                <node concept="liA8E" id="3q$2SldUfiB" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="Xl_RD" id="3q$2SldUfiC" role="37wK5m">
-                    <property role="Xl_RC" value="AutoLayout('simulinkModel')  \n" />
+            <node concept="1X3_iC" id="5qy7$dHwezo" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="3q$2SldUfi$" role="8Wnug">
+                <node concept="2OqwBi" id="3q$2SldUfi_" role="3clFbG">
+                  <node concept="37vLTw" id="3q$2SldUfiA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                  </node>
+                  <node concept="liA8E" id="3q$2SldUfiB" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                    <node concept="Xl_RD" id="3q$2SldUfiC" role="37wK5m">
+                      <property role="Xl_RC" value="AutoLayout('simulinkModel')  \n" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4323,6 +4329,40 @@
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="1LmummRLRIB" role="37wK5m">
                     <property role="Xl_RC" value="set_param (cset, 'StartTime', '0'); \n " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="5aySj_v8lub" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="5T0u6EwOh$p" role="8Wnug">
+                <node concept="2OqwBi" id="5T0u6EwOh$q" role="3clFbG">
+                  <node concept="37vLTw" id="5T0u6EwOh$r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                  </node>
+                  <node concept="liA8E" id="5T0u6EwOh$s" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                    <node concept="Xl_RD" id="5T0u6EwOh$t" role="37wK5m">
+                      <property role="Xl_RC" value="save_system(sys)\n" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="5aySj_v8luc" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="5T0u6EwPo$p" role="8Wnug">
+                <node concept="2OqwBi" id="5T0u6EwPo$q" role="3clFbG">
+                  <node concept="37vLTw" id="5T0u6EwPo$r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                  </node>
+                  <node concept="liA8E" id="5T0u6EwPo$s" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                    <node concept="Xl_RD" id="5T0u6EwPo$t" role="37wK5m">
+                      <property role="Xl_RC" value="close_system(sys)\n" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4575,6 +4615,23 @@
                 </node>
               </node>
             </node>
+            <node concept="1X3_iC" id="1X$vxN3PMN_" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="6SEzNCy9UDw" role="8Wnug">
+                <node concept="2OqwBi" id="6SEzNCy9Xf7" role="3clFbG">
+                  <node concept="37vLTw" id="6SEzNCy9UDu" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PV9vzKfE85" resolve="startMatlab" />
+                  </node>
+                  <node concept="liA8E" id="6SEzNCy9YdZ" role="2OqNvi">
+                    <ref role="37wK5l" to="972b:~MatlabEngine.eval(java.lang.String):void" resolve="eval" />
+                    <node concept="Xl_RD" id="6SEzNCy9YHW" role="37wK5m">
+                      <property role="Xl_RC" value="addpath '/home/abid/Desktop/matlab' " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="1X3_iC" id="77myoO0paOe" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -4614,6 +4671,16 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="4MKUcPmju7t" role="3cqZAp">
+              <node concept="2YIFZM" id="4MKUcPmju7u" role="3clFbG">
+                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                <node concept="10Nm6u" id="4MKUcPmju7v" role="37wK5m" />
+                <node concept="Xl_RD" id="4MKUcPmju7$" role="37wK5m">
+                  <property role="Xl_RC" value="The model generation is complete!" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="5eCGQxo6wBI" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="3q$2SldV2iE" role="TEbGg">
@@ -4643,6 +4710,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="5T0u6EwQtam" role="3cqZAp" />
             </node>
           </node>
         </node>

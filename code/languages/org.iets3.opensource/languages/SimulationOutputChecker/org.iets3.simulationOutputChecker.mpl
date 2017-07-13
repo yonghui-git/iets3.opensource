@@ -51,17 +51,17 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
+    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">be728f68-d295-4af5-a9af-f280cb60ec85(org.iets3.simulink.resultmodel)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
     <dependency reexport="false">0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)</dependency>
+    <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
