@@ -662,60 +662,96 @@
       <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
     </node>
   </node>
-  <node concept="2RkC6H" id="1XQPC7dtFlq">
+  <node concept="2RkC6H" id="2b9Eo_fyO58">
     <property role="SnWRR" value="/home/abid/Desktop/matlab" />
-    <node concept="38cVxY" id="1XQPC7dtFlr" role="2RkARD">
+    <node concept="38cVxY" id="2b9Eo_fyO59" role="2RkARD">
       <property role="TrG5h" value="Simulink Result" />
-      <node concept="38cNUh" id="1XQPC7dtFlw" role="38cVw6">
-        <node concept="38cVxZ" id="1XQPC7dtFlx" role="38cNUk">
-          <node concept="38cVxW" id="1XQPC7dtFly" role="38cVwC">
-            <node concept="38cVw2" id="1XQPC7dtFlz" role="38cVwN">
-              <property role="TrG5h" value="GIdoorclosinglimitsensorisactivated " />
+      <node concept="38cNUh" id="2b9Eo_fyO5e" role="38cVw6">
+        <node concept="38cVxZ" id="2b9Eo_fyO5f" role="38cNUk">
+          <node concept="38cVxW" id="2b9Eo_fyO5g" role="38cVwC">
+            <node concept="38cVw2" id="2b9Eo_fyO5h" role="38cVwN">
+              <property role="TrG5h" value="door closing limit sensor is activated" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="1XQPC7dtFl$" role="38cVwN">
-              <property role="TrG5h" value="GIdooropeninglimitsensorisactivated " />
+            <node concept="38cVw2" id="2b9Eo_fyO5i" role="38cVwN">
+              <property role="TrG5h" value="door opening limit sensor is activated" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="1XQPC7dtFl_" role="38cVwN">
-              <property role="TrG5h" value="GIobjectproximitysensorisactivated " />
+            <node concept="38cVw2" id="2b9Eo_fyO5j" role="38cVwN">
+              <property role="TrG5h" value="object proximity sensor is activated" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="1XQPC7dtFlA" role="38cVwN">
-              <property role="TrG5h" value="GItimerexpires " />
+            <node concept="38cVw2" id="2b9Eo_fyO5k" role="38cVwN">
+              <property role="TrG5h" value="timer expires" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="1XQPC7dtFlB" role="38cVwI">
-            <node concept="38cVw3" id="1XQPC7dtFlC" role="38cVwR">
+          <node concept="38cVxX" id="2b9Eo_fyO5l" role="38cVwI">
+            <node concept="38cVw3" id="2b9Eo_fyO5m" role="38cVwR">
               <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="timerstart " />
+              <property role="TrG5h" value="timer start" />
             </node>
-            <node concept="38cVw3" id="1XQPC7dtFlD" role="38cVwR">
+            <node concept="38cVw3" id="2b9Eo_fyO5n" role="38cVwR">
               <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="doorclose " />
+              <property role="TrG5h" value="door close" />
             </node>
-            <node concept="38cVw3" id="1XQPC7dtFlE" role="38cVwR">
+            <node concept="38cVw3" id="2b9Eo_fyO5o" role="38cVwR">
               <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="dooropen " />
+              <property role="TrG5h" value="door open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="2b9Eo_fyO5p" role="38cVw6">
+        <node concept="38cVxZ" id="2b9Eo_fyO5q" role="38cNUk">
+          <node concept="38cVxW" id="2b9Eo_fyO5r" role="38cVwC">
+            <node concept="38cVw2" id="2b9Eo_fyO5s" role="38cVwN">
+              <property role="TrG5h" value="door closing limit sensor is activated" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="2b9Eo_fyO5t" role="38cVwN">
+              <property role="TrG5h" value="door opening limit sensor is activated" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="2b9Eo_fyO5u" role="38cVwN">
+              <property role="TrG5h" value="object proximity sensor is activated" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="2b9Eo_fyO5v" role="38cVwN">
+              <property role="TrG5h" value="timer expires" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="2b9Eo_fyO5w" role="38cVwI">
+            <node concept="38cVw3" id="2b9Eo_fyO5x" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="timer start" />
+            </node>
+            <node concept="38cVw3" id="2b9Eo_fyO5y" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="door close" />
+            </node>
+            <node concept="38cVw3" id="2b9Eo_fyO5z" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="door open" />
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="38cVw2" id="1XQPC7dtFls" role="2RkARI">
+    <node concept="38cVw2" id="2b9Eo_fyO5a" role="2RkARI">
       <property role="TrG5h" value="door closing limit sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="1XQPC7dtFlt" role="2RkARI">
+    <node concept="38cVw2" id="2b9Eo_fyO5b" role="2RkARI">
       <property role="TrG5h" value="door opening limit sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="1XQPC7dtFlu" role="2RkARI">
+    <node concept="38cVw2" id="2b9Eo_fyO5c" role="2RkARI">
       <property role="TrG5h" value="object proximity sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="1XQPC7dtFlv" role="2RkARI">
+    <node concept="38cVw2" id="2b9Eo_fyO5d" role="2RkARI">
       <property role="TrG5h" value="timer expires" />
       <property role="38cVwL" value="0" />
     </node>
