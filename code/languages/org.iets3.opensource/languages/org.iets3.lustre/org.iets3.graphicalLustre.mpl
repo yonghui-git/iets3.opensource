@@ -8,7 +8,7 @@
   <accessoryModels />
   <generators />
   <stubModelEntries>
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabControl.lib/matlabcontrol-4.1.0.jar" />
+    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -17,7 +17,6 @@
     <dependency reexport="false">4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">be728f68-d295-4af5-a9af-f280cb60ec85(org.iets3.simulink.resultmodel)</dependency>
-    <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
     <dependency reexport="false">d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</dependency>
     <dependency reexport="false">0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)</dependency>
   </dependencies>
@@ -70,7 +69,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)" version="0" />
     <module reference="0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
@@ -98,9 +96,6 @@
     <module reference="4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)" version="0" />
     <module reference="be728f68-d295-4af5-a9af-f280cb60ec85(org.iets3.simulink.resultmodel)" version="0" />
   </dependencyVersions>
-  <runtime>
-    <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
-  </runtime>
   <extendedLanguages />
 </language>
 

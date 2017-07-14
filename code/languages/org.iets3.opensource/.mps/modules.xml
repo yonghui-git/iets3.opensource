@@ -28,13 +28,11 @@
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/org.iets3.robot.instructionset.mpl" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.robot.instructionset/sandbox/org.iets3.robot.instructionset.sandbox.msd" folder="robotics" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.simulink.resultmodel/org.iets3.simulink.resultmodel.mpl" folder="gxw" />
-      <modulePath path="$PROJECT_DIR$/languages/org.iets3.simulink.resultmodel/sandbox/org.iets3.simulink.resultmodel.sandbox.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.core/org.iets3.table.core.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.table.diehltable/org.iets3.table.coolingbehaviortable.mpl" folder="tablelanguage" />
       <modulePath path="$PROJECT_DIR$/languages/org.iets3.utility/org.iets3.utility.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/languages/testLanguage/org.iets3.flow.dashboard.mpl" folder="flow" />
       <modulePath path="$PROJECT_DIR$/solutions/FlowDescriptorSandbox/org.iets3.flow.core.instance.msd" folder="flow" />
-      <modulePath path="$PROJECT_DIR$/solutions/MatlabControl.lib/MatlabControl.lib.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/MatlabEngine.lib/MatlabEngine.lib.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.ears.gxw.examples/org.iets3.ears.gxw.examples.msd" folder="gxw" />
       <modulePath path="$PROJECT_DIR$/solutions/org.iets3.opensource.allScripts.build/org.iets3.opensource.allScripts.build.msd" folder="_build" />

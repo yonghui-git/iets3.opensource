@@ -19,6 +19,7 @@
         <usedDevKit>a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language slang="l:4796fa81-3510-44f2-9810-887e950aacc3:SimulationOutputChecker" version="-1" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
         <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -34,7 +35,6 @@
         <language slang="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" version="0" />
         <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="4" />
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-        <language slang="l:4796fa81-3510-44f2-9810-887e950aacc3:SimulationOutputChecker" version="-1" />
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -51,7 +51,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
+    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -61,7 +61,6 @@
     <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
     <dependency reexport="false">7731a166-da1f-472e-a40a-2283f5e47dc5(org.iets3.ears.gxw)</dependency>
     <dependency reexport="false">0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)</dependency>
-    <dependency reexport="false">66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)</dependency>
     <dependency reexport="false">4796fa81-3510-44f2-9810-887e950aacc3(org.iets3.simulationOutputChecker)</dependency>
   </dependencies>
   <usedDevKits>
@@ -109,7 +108,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="66251041-821b-42f2-8059-2a0e90ec97b2(MatlabControl.lib)" version="0" />
     <module reference="0b6b7b3c-cdda-4a45-903d-ee5f7706c340(MatlabEngine.lib)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="0" />
     <module reference="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" version="0" />
