@@ -6,6 +6,7 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
+    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -142,6 +143,30 @@
       <property role="20kJfa" value="results" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5uxx$av$zSX" resolve="Result" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="AqjEmQUjAr">
+    <property role="EcuMT" value="691951966400100763" />
+    <property role="TrG5h" value="RefList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="AqjEmQUpoF" role="1TKVEi">
+      <property role="IQ2ns" value="691951966400124459" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="refHolderList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="AqjEmQUjAs" resolve="RefHolder" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="AqjEmQUjAs">
+    <property role="EcuMT" value="691951966400100764" />
+    <property role="TrG5h" value="RefHolder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="AqjEmQUjDP" role="1TKVEi">
+      <property role="IQ2ns" value="691951966400100981" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="reqTemplate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="q3w4:6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
   </node>
 </model>

@@ -36,6 +36,9 @@
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
+      <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
+        <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
       <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
@@ -142,6 +145,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1184950988562" name="jetbrains.mps.baseLanguage.structure.ArrayCreator" flags="nn" index="3$_iS1">
@@ -1607,6 +1611,13 @@
                       <ref role="3cqZAo" node="2wqYdLi7X6e" resolve="myInt" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5GF6vRQ$zfk" role="3cqZAp">
+              <node concept="3uNrnE" id="5GF6vRQ$$9l" role="3clFbG">
+                <node concept="37vLTw" id="5GF6vRQ$$9n" role="2$L3a6">
+                  <ref role="3cqZAo" node="7pulzJf6hVm" resolve="index" />
                 </node>
               </node>
             </node>
