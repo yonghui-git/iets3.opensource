@@ -12,10 +12,28 @@
   </imports>
   <registry>
     <language id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel">
+      <concept id="6314475773253302483" name="org.iets3.simulink.resultmodel.structure.Sequence" flags="ng" index="38cNUh">
+        <child id="6314475773253302486" name="results" index="38cNUk" />
+      </concept>
       <concept id="6314475773253271104" name="org.iets3.simulink.resultmodel.structure.InputCell" flags="ng" index="38cVw2">
         <property id="6314475773253271155" name="inputValue" index="38cVwL" />
       </concept>
-      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY" />
+      <concept id="6314475773253271105" name="org.iets3.simulink.resultmodel.structure.OutputCell" flags="ng" index="38cVw3">
+        <property id="6314475773253271159" name="outputValue" index="38cVwP" />
+      </concept>
+      <concept id="6314475773253271102" name="org.iets3.simulink.resultmodel.structure.Input" flags="ng" index="38cVxW">
+        <child id="6314475773253271153" name="inputCell" index="38cVwN" />
+      </concept>
+      <concept id="6314475773253271103" name="org.iets3.simulink.resultmodel.structure.Output" flags="ng" index="38cVxX">
+        <child id="6314475773253271157" name="outputCell" index="38cVwR" />
+      </concept>
+      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY">
+        <child id="6314475773253271108" name="sequence" index="38cVw6" />
+      </concept>
+      <concept id="6314475773253271101" name="org.iets3.simulink.resultmodel.structure.Result" flags="ng" index="38cVxZ">
+        <child id="6314475773253271146" name="input" index="38cVwC" />
+        <child id="6314475773253271148" name="output" index="38cVwI" />
+      </concept>
     </language>
     <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
       <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
@@ -644,24 +662,60 @@
       <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
     </node>
   </node>
-  <node concept="2RkC6H" id="55uImYqQIXC">
+  <node concept="2RkC6H" id="1XQPC7dtFlq">
     <property role="SnWRR" value="/home/abid/Desktop/matlab" />
-    <node concept="38cVxY" id="55uImYqQIXD" role="2RkARD">
+    <node concept="38cVxY" id="1XQPC7dtFlr" role="2RkARD">
       <property role="TrG5h" value="Simulink Result" />
+      <node concept="38cNUh" id="1XQPC7dtFlw" role="38cVw6">
+        <node concept="38cVxZ" id="1XQPC7dtFlx" role="38cNUk">
+          <node concept="38cVxW" id="1XQPC7dtFly" role="38cVwC">
+            <node concept="38cVw2" id="1XQPC7dtFlz" role="38cVwN">
+              <property role="TrG5h" value="GIdoorclosinglimitsensorisactivated " />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1XQPC7dtFl$" role="38cVwN">
+              <property role="TrG5h" value="GIdooropeninglimitsensorisactivated " />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1XQPC7dtFl_" role="38cVwN">
+              <property role="TrG5h" value="GIobjectproximitysensorisactivated " />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1XQPC7dtFlA" role="38cVwN">
+              <property role="TrG5h" value="GItimerexpires " />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1XQPC7dtFlB" role="38cVwI">
+            <node concept="38cVw3" id="1XQPC7dtFlC" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="timerstart " />
+            </node>
+            <node concept="38cVw3" id="1XQPC7dtFlD" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="doorclose " />
+            </node>
+            <node concept="38cVw3" id="1XQPC7dtFlE" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="dooropen " />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="38cVw2" id="55uImYqQIXE" role="2RkARI">
+    <node concept="38cVw2" id="1XQPC7dtFls" role="2RkARI">
       <property role="TrG5h" value="door closing limit sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="55uImYqQIXF" role="2RkARI">
+    <node concept="38cVw2" id="1XQPC7dtFlt" role="2RkARI">
       <property role="TrG5h" value="door opening limit sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="55uImYqQIXG" role="2RkARI">
+    <node concept="38cVw2" id="1XQPC7dtFlu" role="2RkARI">
       <property role="TrG5h" value="object proximity sensor is activated" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="55uImYqQIXH" role="2RkARI">
+    <node concept="38cVw2" id="1XQPC7dtFlv" role="2RkARI">
       <property role="TrG5h" value="timer expires" />
       <property role="38cVwL" value="0" />
     </node>
