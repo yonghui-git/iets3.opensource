@@ -1229,554 +1229,2864 @@
       <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
     </node>
   </node>
-  <node concept="2RkC6H" id="4JGRoYF5_or">
+  <node concept="2RkC6H" id="1gXz2429X7n">
     <property role="SnWRR" value="/Applications/MATLAB_R2017a.app/ears_ctrl_lib" />
-    <node concept="38cVxY" id="4JGRoYF5_os" role="2RkARD">
+    <node concept="38cVxY" id="1gXz2429X7o" role="2RkARD">
       <property role="TrG5h" value="Simulink Result" />
-      <node concept="38cNUh" id="4JGRoYF5_oz" role="38cVw6">
-        <node concept="38cVxZ" id="4JGRoYF5_o$" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_o_" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_oA" role="38cVwN">
+      <node concept="38cNUh" id="1gXz2429X7v" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X7w" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X7x" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X7y" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oB" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7z" role="38cVwN">
               <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oC" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7$" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oD" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7_" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oE" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7A" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oF" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7B" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_oG" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_oH" role="38cVwR">
+          <node concept="38cVxX" id="1gXz2429X7C" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X7D" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oI" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7E" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oJ" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7F" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oK" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7G" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oL" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7H" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oM" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7I" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
           </node>
         </node>
-        <node concept="38cVxZ" id="4JGRoYF5_oN" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_oO" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_oP" role="38cVwN">
+        <node concept="38cVxZ" id="1gXz2429X7J" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X7K" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X7L" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oQ" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7M" role="38cVwN">
               <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oR" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7N" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oS" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7O" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oT" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7P" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_oU" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X7Q" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_oV" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_oW" role="38cVwR">
+          <node concept="38cVxX" id="1gXz2429X7R" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X7S" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oX" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7T" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oY" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7U" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_oZ" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7V" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_p0" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7W" role="38cVwR">
               <property role="38cVwP" value="On " />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_p1" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X7X" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="38cNUh" id="4JGRoYF5_p2" role="38cVw6">
-        <node concept="38cVxZ" id="4JGRoYF5_p3" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_p4" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_p5" role="38cVwN">
+      <node concept="38cNUh" id="1gXz2429X7Y" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X7Z" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X80" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X81" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_p6" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X82" role="38cVwN">
               <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_p7" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X83" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_p8" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X84" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_p9" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X85" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_pa" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X86" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_pb" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_pc" role="38cVwR">
+          <node concept="38cVxX" id="1gXz2429X87" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X88" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pd" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X89" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pe" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8a" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pf" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8b" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pg" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8c" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_ph" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8d" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
           </node>
         </node>
-        <node concept="38cVxZ" id="4JGRoYF5_pi" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_pj" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_pk" role="38cVwN">
+        <node concept="38cVxZ" id="1gXz2429X8e" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X8f" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X8g" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_pl" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8h" role="38cVwN">
               <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_pm" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8i" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_pn" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8j" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_po" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8k" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_pp" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8l" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_pq" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_pr" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="one minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_ps" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="two minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pt" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="stirring motor start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pu" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 0 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pv" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 1 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pw" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 2 open" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="38cNUh" id="4JGRoYF5_px" role="38cVw6">
-        <node concept="38cVxZ" id="4JGRoYF5_py" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_pz" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_p$" role="38cVwN">
-              <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="On " />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_p_" role="38cVwN">
-              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pA" role="38cVwN">
-              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pB" role="38cVwN">
-              <property role="TrG5h" value="one minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pC" role="38cVwN">
-              <property role="TrG5h" value="start button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pD" role="38cVwN">
-              <property role="TrG5h" value="two minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-          </node>
-          <node concept="38cVxX" id="4JGRoYF5_pE" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_pF" role="38cVwR">
+          <node concept="38cVxX" id="1gXz2429X8m" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X8n" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pG" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8o" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pH" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="stirring motor start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pI" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 0 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pJ" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 1 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pK" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 2 open" />
-            </node>
-          </node>
-        </node>
-        <node concept="38cVxZ" id="4JGRoYF5_pL" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_pM" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_pN" role="38cVwN">
-              <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pO" role="38cVwN">
-              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pP" role="38cVwN">
-              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pQ" role="38cVwN">
-              <property role="TrG5h" value="one minute timer expired" />
-              <property role="38cVwL" value="On " />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pR" role="38cVwN">
-              <property role="TrG5h" value="start button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_pS" role="38cVwN">
-              <property role="TrG5h" value="two minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-          </node>
-          <node concept="38cVxX" id="4JGRoYF5_pT" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_pU" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="one minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pV" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="two minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_pW" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8p" role="38cVwR">
               <property role="38cVwP" value="On " />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pX" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8q" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pY" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8r" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_pZ" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="valve 2 open" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="38cNUh" id="4JGRoYF5_q0" role="38cVw6">
-        <node concept="38cVxZ" id="4JGRoYF5_q1" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_q2" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_q3" role="38cVwN">
-              <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="On " />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_q4" role="38cVwN">
-              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_q5" role="38cVwN">
-              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_q6" role="38cVwN">
-              <property role="TrG5h" value="one minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_q7" role="38cVwN">
-              <property role="TrG5h" value="start button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_q8" role="38cVwN">
-              <property role="TrG5h" value="two minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-          </node>
-          <node concept="38cVxX" id="4JGRoYF5_q9" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_qa" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="one minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qb" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="two minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qc" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="stirring motor start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qd" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 0 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qe" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 1 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qf" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 2 open" />
-            </node>
-          </node>
-        </node>
-        <node concept="38cVxZ" id="4JGRoYF5_qg" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_qh" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_qi" role="38cVwN">
-              <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_qj" role="38cVwN">
-              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_qk" role="38cVwN">
-              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_ql" role="38cVwN">
-              <property role="TrG5h" value="one minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_qm" role="38cVwN">
-              <property role="TrG5h" value="start button is pressed" />
-              <property role="38cVwL" value="On " />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_qn" role="38cVwN">
-              <property role="TrG5h" value="two minute timer expired" />
-              <property role="38cVwL" value="Off" />
-            </node>
-          </node>
-          <node concept="38cVxX" id="4JGRoYF5_qo" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_qp" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="one minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qq" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="two minute timer start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qr" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="stirring motor start" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qs" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="valve 0 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qt" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="valve 1 open" />
-            </node>
-            <node concept="38cVw3" id="4JGRoYF5_qu" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8s" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="38cNUh" id="4JGRoYF5_qv" role="38cVw6">
-        <node concept="38cVxZ" id="4JGRoYF5_qw" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_qx" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_qy" role="38cVwN">
+      <node concept="38cNUh" id="1gXz2429X8t" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X8u" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X8v" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X8w" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="4JGRoYF5_qz" role="38cVwN">
-              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_q$" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8x" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X8y" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_q_" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8z" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qA" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8$" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qB" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8_" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_qC" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_qD" role="38cVwR">
+          <node concept="38cVxX" id="1gXz2429X8A" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X8B" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qE" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8C" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qF" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8D" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qG" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8E" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qH" role="38cVwR">
-              <property role="38cVwP" value="On " />
+            <node concept="38cVw3" id="1gXz2429X8F" role="38cVwR">
+              <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qI" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8G" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
           </node>
         </node>
-        <node concept="38cVxZ" id="4JGRoYF5_qJ" role="38cNUk">
-          <node concept="38cVxW" id="4JGRoYF5_qK" role="38cVwC">
-            <node concept="38cVw2" id="4JGRoYF5_qL" role="38cVwN">
+        <node concept="38cVxZ" id="1gXz2429X8H" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X8I" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X8J" role="38cVwN">
               <property role="TrG5h" value="emergency button is pressed" />
-              <property role="38cVwL" value="On " />
+              <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qM" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8K" role="38cVwN">
               <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qN" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8L" role="38cVwN">
               <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qO" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8M" role="38cVwN">
               <property role="TrG5h" value="one minute timer expired" />
-              <property role="38cVwL" value="Off" />
+              <property role="38cVwL" value="On " />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qP" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8N" role="38cVwN">
               <property role="TrG5h" value="start button is pressed" />
               <property role="38cVwL" value="Off" />
             </node>
-            <node concept="38cVw2" id="4JGRoYF5_qQ" role="38cVwN">
+            <node concept="38cVw2" id="1gXz2429X8O" role="38cVwN">
               <property role="TrG5h" value="two minute timer expired" />
               <property role="38cVwL" value="Off" />
             </node>
           </node>
-          <node concept="38cVxX" id="4JGRoYF5_qR" role="38cVwI">
-            <node concept="38cVw3" id="4JGRoYF5_qS" role="38cVwR">
-              <property role="38cVwP" value="Off" />
+          <node concept="38cVxX" id="1gXz2429X8P" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X8Q" role="38cVwR">
+              <property role="38cVwP" value="On " />
               <property role="TrG5h" value="one minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qT" role="38cVwR">
-              <property role="38cVwP" value="Off" />
+            <node concept="38cVw3" id="1gXz2429X8R" role="38cVwR">
+              <property role="38cVwP" value="On " />
               <property role="TrG5h" value="two minute timer start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qU" role="38cVwR">
-              <property role="38cVwP" value="Off" />
+            <node concept="38cVw3" id="1gXz2429X8S" role="38cVwR">
+              <property role="38cVwP" value="On " />
               <property role="TrG5h" value="stirring motor start" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qV" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8T" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 0 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qW" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8U" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 1 open" />
             </node>
-            <node concept="38cVw3" id="4JGRoYF5_qX" role="38cVwR">
+            <node concept="38cVw3" id="1gXz2429X8V" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429X8W" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X8X" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X8Y" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X8Z" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X90" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X91" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X92" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X93" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X94" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429X95" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X96" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X97" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X98" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X99" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9a" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9b" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429X9c" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X9d" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X9e" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9f" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9g" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9h" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9i" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9j" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429X9k" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X9l" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9m" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9n" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9o" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9p" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9q" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429X9r" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X9s" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X9t" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X9u" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9v" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9w" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9x" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9y" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9z" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429X9$" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X9_" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9A" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9B" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9C" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9D" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9E" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429X9F" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X9G" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X9H" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9I" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9J" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9K" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9L" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9M" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429X9N" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429X9O" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9P" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9Q" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9R" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9S" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429X9T" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429X9U" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429X9V" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429X9W" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429X9X" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9Y" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429X9Z" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xa0" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xa1" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xa2" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xa3" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xa4" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa6" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa7" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa8" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa9" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xaa" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xab" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xac" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xad" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xae" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xaf" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xag" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xah" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xai" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xaj" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xak" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xal" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xam" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xan" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xao" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xap" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xaq" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xar" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xas" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xat" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xau" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xav" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xaw" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xax" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xay" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xaz" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa$" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xa_" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaA" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaB" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaC" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XaD" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XaE" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XaF" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaG" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaH" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaI" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaJ" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaK" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XaL" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XaM" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaN" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaO" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaP" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaQ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XaR" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XaS" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XaT" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XaU" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XaV" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaW" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaX" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaY" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XaZ" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xb0" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xb1" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xb2" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb3" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb4" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb6" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb7" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xb8" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xb9" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xba" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbb" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbc" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbd" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbe" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbf" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xbg" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xbh" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbi" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbj" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbk" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbl" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbm" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xbn" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xbo" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xbp" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xbq" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbr" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbs" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbt" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbu" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xbv" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xbw" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xbx" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xby" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xbz" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb$" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xb_" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbA" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XbB" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XbC" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XbD" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbE" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbF" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbG" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbH" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbI" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XbJ" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XbK" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbL" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbM" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbN" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbO" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XbP" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XbQ" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XbR" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XbS" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XbT" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbU" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbV" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbW" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbX" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XbY" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XbZ" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xc0" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc1" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc2" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc3" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc4" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xc6" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xc7" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xc8" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xc9" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xca" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcb" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcc" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcd" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xce" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xcf" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcg" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xch" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xci" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcj" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xck" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xcl" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xcm" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xcn" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xco" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcp" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcq" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcr" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xcs" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xct" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xcu" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xcv" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcw" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcx" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcy" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xcz" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xc$" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xc_" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XcA" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XcB" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcC" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcD" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcE" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcF" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcG" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XcH" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XcI" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcJ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcK" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcL" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcM" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcN" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XcO" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XcP" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XcQ" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XcR" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcS" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcT" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcU" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcV" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XcW" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XcX" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XcY" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XcZ" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xd0" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xd1" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xd2" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xd3" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xd4" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xd5" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xd6" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xd7" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xd8" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xd9" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xda" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdb" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xdc" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xdd" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xde" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdf" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdg" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdh" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdi" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xdj" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xdk" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xdl" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xdm" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdn" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdo" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdp" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdq" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xdr" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xds" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xdt" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdu" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdv" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdw" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdx" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xdy" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xdz" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xd$" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xd_" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdA" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdB" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdC" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdD" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdE" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XdF" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XdG" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdH" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdI" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdJ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdK" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdL" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XdM" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XdN" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XdO" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XdP" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdQ" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdR" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdS" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdT" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XdU" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XdV" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XdW" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdX" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdY" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XdZ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xe0" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xe1" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xe2" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xe3" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xe4" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe5" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe6" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe7" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe8" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe9" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xea" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xeb" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xec" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xed" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xee" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xef" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xeg" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xeh" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xei" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xej" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xek" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xel" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xem" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xen" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xeo" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xep" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xeq" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xer" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xes" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xet" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xeu" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xev" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xew" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xex" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xey" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xez" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe$" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xe_" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeA" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeB" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeC" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XeD" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XeE" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeF" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeG" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeH" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeI" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeJ" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XeK" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XeL" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XeM" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XeN" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeO" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeP" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeQ" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeR" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XeS" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XeT" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XeU" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeV" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeW" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeX" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeY" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XeZ" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xf0" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xf1" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xf2" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf3" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf4" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf5" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf6" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf7" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xf8" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xf9" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfa" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfb" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfc" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfd" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfe" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xff" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xfg" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xfh" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xfi" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfj" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfk" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfl" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfm" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfn" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xfo" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xfp" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfq" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfr" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfs" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xft" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xfu" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xfv" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xfw" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xfx" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfy" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xfz" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf$" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xf_" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfA" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XfB" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XfC" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfD" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfE" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfF" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfG" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfH" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XfI" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XfJ" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XfK" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XfL" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfM" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfN" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfO" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfP" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XfQ" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XfR" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XfS" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfT" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfU" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfV" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfW" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XfX" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XfY" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XfZ" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xg0" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg1" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg2" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg3" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg4" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg5" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xg6" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xg7" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xg8" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xg9" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xga" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgb" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgc" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xgd" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xge" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xgf" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xgg" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgh" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgi" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgj" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgk" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgl" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xgm" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xgn" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgo" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgp" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgq" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgr" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xgs" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xgt" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xgu" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xgv" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgw" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgx" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgy" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xgz" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xg$" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xg_" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XgA" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgB" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgC" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgD" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgE" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgF" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XgG" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XgH" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XgI" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XgJ" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgK" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgL" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgM" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgN" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgO" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XgP" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XgQ" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgR" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgS" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgT" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgU" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XgV" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XgW" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XgX" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XgY" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XgZ" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xh0" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xh1" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xh2" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xh3" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xh4" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xh5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xh6" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xh7" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xh8" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xh9" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xha" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xhb" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xhc" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xhd" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xhe" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhf" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhg" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhh" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhi" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhj" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xhk" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xhl" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xhm" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xhn" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xho" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xhp" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xhq" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xhr" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xhs" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xht" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhu" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhv" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhw" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhx" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xhy" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xhz" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xh$" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xh_" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhA" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhB" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhC" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhD" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XhE" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XhF" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XhG" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XhH" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhI" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhJ" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhK" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhL" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhM" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XhN" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XhO" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhP" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhQ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhR" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhS" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XhT" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XhU" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XhV" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XhW" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhX" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhY" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XhZ" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xi0" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xi1" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xi2" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xi3" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi4" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi6" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi7" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi8" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xi9" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xia" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xib" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xic" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xid" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xie" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xif" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xig" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xih" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xii" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xij" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xik" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xil" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xim" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xin" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xio" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xip" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xiq" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xir" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xis" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xit" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xiu" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xiv" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xiw" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xix" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xiy" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xiz" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi$" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xi_" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiA" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiB" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XiC" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XiD" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XiE" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XiF" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiG" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiH" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiI" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiJ" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiK" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XiL" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XiM" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiN" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiO" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiP" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiQ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XiR" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XiS" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XiT" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XiU" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiV" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiW" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiX" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiY" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XiZ" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xj0" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xj1" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj2" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj3" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj4" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj5" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj6" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429Xj7" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429Xj8" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xj9" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xja" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjb" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjc" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjd" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xje" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjf" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xjg" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xjh" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xji" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjj" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjk" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjl" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjm" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429Xjn" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429Xjo" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429Xjp" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjq" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjr" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjs" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xjt" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429Xju" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429Xjv" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429Xjw" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjx" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjy" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xjz" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj$" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xj_" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="38cNUh" id="1gXz2429XjA" role="38cVw6">
+        <node concept="38cVxZ" id="1gXz2429XjB" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XjC" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XjD" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjE" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjF" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjG" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjH" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjI" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="On " />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XjJ" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XjK" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XjL" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XjM" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XjN" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XjO" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429XjP" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+        <node concept="38cVxZ" id="1gXz2429XjQ" role="38cNUk">
+          <node concept="38cVxW" id="1gXz2429XjR" role="38cVwC">
+            <node concept="38cVw2" id="1gXz2429XjS" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjT" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjU" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjV" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjW" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+            </node>
+            <node concept="38cVw2" id="1gXz2429XjX" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+            </node>
+          </node>
+          <node concept="38cVxX" id="1gXz2429XjY" role="38cVwI">
+            <node concept="38cVw3" id="1gXz2429XjZ" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xk0" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xk1" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xk2" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xk3" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="1gXz2429Xk4" role="38cVwR">
               <property role="38cVwP" value="Off" />
               <property role="TrG5h" value="valve 2 open" />
             </node>
@@ -1784,27 +4094,27 @@
         </node>
       </node>
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_ot" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7p" role="2RkARI">
       <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_ou" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7q" role="2RkARI">
       <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_ov" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7r" role="2RkARI">
       <property role="TrG5h" value="emergency button is pressed" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_ow" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7s" role="2RkARI">
       <property role="TrG5h" value="one minute timer expired" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_ox" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7t" role="2RkARI">
       <property role="TrG5h" value="two minute timer expired" />
       <property role="38cVwL" value="0" />
     </node>
-    <node concept="38cVw2" id="4JGRoYF5_oy" role="2RkARI">
+    <node concept="38cVw2" id="1gXz2429X7u" role="2RkARI">
       <property role="TrG5h" value="start button is pressed" />
       <property role="38cVwL" value="0" />
     </node>
