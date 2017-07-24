@@ -1767,7 +1767,7 @@
                                               <ref role="3cqZAo" node="7pulzJf4zCO" resolve="matlabEngine" />
                                             </node>
                                             <node concept="liA8E" id="7pulzJf72L0" role="2OqNvi">
-                                              <ref role="37wK5l" to="972b:~MatlabEngine.fevalAsync(int,java.lang.String,java.lang.Object...):java.util.concurrent.Future" resolve="fevalAsync" />
+                                              <ref role="37wK5l" to="972b:~MatlabEngine.feval(int,java.lang.String,java.lang.Object...):java.lang.Object" resolve="feval" />
                                               <node concept="3cmrfG" id="7yk6SGRi9Yy" role="37wK5m">
                                                 <property role="3cmrfH" value="0" />
                                               </node>
