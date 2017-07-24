@@ -12,7 +12,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ukfn" ref="r:7d42abc9-1d49-48bb-b7a8-cbebdd46866a(org.iets3.simulink.resultmodel.intentions)" implicit="true" />
   </imports>
@@ -42,6 +44,9 @@
       <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
+      </concept>
+      <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
+        <child id="1188220173759" name="item" index="2BsfMF" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -180,7 +185,11 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -209,6 +218,11 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
+        <property id="779128492853935960" name="anchorTag" index="1K8rD$" />
+        <property id="779128492853934523" name="cellId" index="1K8rM7" />
+        <property id="779128492853699361" name="side" index="1Kfyot" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
@@ -256,6 +270,64 @@
   </registry>
   <node concept="13h7C7" id="1O7Kc2mNQlP">
     <ref role="13h7C2" to="sgle:obzvELmgLn" resolve="SimulinkResultDisplayer" />
+    <node concept="13i0hz" id="45gtC4lp5Kn" role="13h7CS">
+      <property role="TrG5h" value="getMatLabReference" />
+      <node concept="3Tm1VV" id="45gtC4lp5Ko" role="1B3o_S" />
+      <node concept="3uibUv" id="45gtC4lpeyY" role="3clF45">
+        <ref role="3uigEE" to="972b:~MatlabEngine" resolve="MatlabEngine" />
+      </node>
+      <node concept="3clFbS" id="45gtC4lp5Kq" role="3clF47">
+        <node concept="3clFbF" id="45gtC4lpe_s" role="3cqZAp">
+          <node concept="10QFUN" id="45gtC4lpkkT" role="3clFbG">
+            <node concept="3uibUv" id="45gtC4lpknF" role="10QFUM">
+              <ref role="3uigEE" to="972b:~MatlabEngine" resolve="MatlabEngine" />
+            </node>
+            <node concept="1eOMI4" id="45gtC4lpkhG" role="10QFUP">
+              <node concept="2OqwBi" id="45gtC4lpf$g" role="1eOMHV">
+                <node concept="2JrnkZ" id="45gtC4lpfr5" role="2Oq$k0">
+                  <node concept="13iPFW" id="45gtC4lpk5v" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="45gtC4lpfPT" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getUserObject(java.lang.Object):java.lang.Object" resolve="getUserObject" />
+                  <node concept="Xl_RD" id="45gtC4lpfQH" role="37wK5m">
+                    <property role="Xl_RC" value="SIMULINK_REF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="45gtC4lpkqL" role="13h7CS">
+      <property role="TrG5h" value="setMatLabReference" />
+      <node concept="3Tm1VV" id="45gtC4lpkqM" role="1B3o_S" />
+      <node concept="3cqZAl" id="45gtC4lpl9q" role="3clF45" />
+      <node concept="3clFbS" id="45gtC4lpkqO" role="3clF47">
+        <node concept="3clFbF" id="45gtC4lplb_" role="3cqZAp">
+          <node concept="2OqwBi" id="45gtC4lpm5u" role="3clFbG">
+            <node concept="2JrnkZ" id="45gtC4lplWl" role="2Oq$k0">
+              <node concept="13iPFW" id="45gtC4lplb$" role="2JrQYb" />
+            </node>
+            <node concept="liA8E" id="45gtC4lpmn9" role="2OqNvi">
+              <ref role="37wK5l" to="mhbf:~SNode.putUserObject(java.lang.Object,java.lang.Object):void" resolve="putUserObject" />
+              <node concept="Xl_RD" id="45gtC4lpmnT" role="37wK5m">
+                <property role="Xl_RC" value="SIMULINK_REF" />
+              </node>
+              <node concept="37vLTw" id="45gtC4lpmKc" role="37wK5m">
+                <ref role="3cqZAo" node="45gtC4lplam" resolve="matLabRef" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="45gtC4lplam" role="3clF46">
+        <property role="TrG5h" value="matLabRef" />
+        <node concept="3uibUv" id="45gtC4lplal" role="1tU5fm">
+          <ref role="3uigEE" to="972b:~MatlabEngine" resolve="MatlabEngine" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="1O7Kc2mNQm0" role="13h7CS">
       <property role="TrG5h" value="setProperDisplayName" />
       <node concept="3Tm1VV" id="1O7Kc2mNQm1" role="1B3o_S" />
@@ -2218,7 +2290,107 @@
       </node>
     </node>
     <node concept="13hLZK" id="1O7Kc2mNQlQ" role="13h7CW">
-      <node concept="3clFbS" id="1O7Kc2mNQlR" role="2VODD2" />
+      <node concept="3clFbS" id="1O7Kc2mNQlR" role="2VODD2">
+        <node concept="3cpWs8" id="77myoO0oBW1" role="3cqZAp">
+          <node concept="3cpWsn" id="77myoO0oBW2" role="3cpWs9">
+            <property role="TrG5h" value="options" />
+            <property role="3TUv4t" value="true" />
+            <node concept="10Q1$e" id="77myoO0oGj3" role="1tU5fm">
+              <node concept="3uibUv" id="77myoO0oBW3" role="10Q1$1">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+            </node>
+            <node concept="2BsdOp" id="77myoO0oH8t" role="33vP2m">
+              <node concept="Xl_RD" id="77myoO0oHDE" role="2BsfMF">
+                <property role="Xl_RC" value="-noFigureWindows" />
+              </node>
+              <node concept="Xl_RD" id="77myoO0oLG1" role="2BsfMF">
+                <property role="Xl_RC" value="-r" />
+              </node>
+              <node concept="Xl_RD" id="77myoO0oNnB" role="2BsfMF">
+                <property role="Xl_RC" value="-cd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="45gtC4lprsW" role="3cqZAp">
+          <node concept="3cpWsn" id="45gtC4lprsX" role="3cpWs9">
+            <property role="TrG5h" value="startMatlab" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="45gtC4lprsY" role="1tU5fm">
+              <ref role="3uigEE" to="972b:~MatlabEngine" resolve="MatlabEngine" />
+            </node>
+          </node>
+        </node>
+        <node concept="SfApY" id="45gtC4lpzpf" role="3cqZAp">
+          <node concept="3clFbS" id="45gtC4lpzph" role="SfCbr">
+            <node concept="3clFbF" id="5T0u6EwQYLF" role="3cqZAp">
+              <node concept="37vLTI" id="5T0u6EwR2CQ" role="3clFbG">
+                <node concept="37vLTw" id="5T0u6EwR3rC" role="37vLTJ">
+                  <ref role="3cqZAo" node="45gtC4lprsX" resolve="startMatlab" />
+                </node>
+                <node concept="2YIFZM" id="7PV9vzKfE86" role="37vLTx">
+                  <ref role="1Pybhc" to="972b:~MatlabEngine" resolve="MatlabEngine" />
+                  <ref role="37wK5l" to="972b:~MatlabEngine.startMatlab(java.lang.String[]):com.mathworks.engine.MatlabEngine" resolve="startMatlab" />
+                  <node concept="37vLTw" id="51Y4ts8hv9C" role="37wK5m">
+                    <ref role="3cqZAo" node="77myoO0oBW2" resolve="options" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="45gtC4lpF6a" role="3cqZAp">
+              <node concept="2OqwBi" id="45gtC4lpFhj" role="3clFbG">
+                <node concept="13iPFW" id="45gtC4lpF68" role="2Oq$k0" />
+                <node concept="2qgKlT" id="45gtC4lpFzK" role="2OqNvi">
+                  <ref role="37wK5l" node="45gtC4lpkqL" resolve="setMatLabReference" />
+                  <node concept="37vLTw" id="45gtC4lpFBR" role="37wK5m">
+                    <ref role="3cqZAo" node="45gtC4lprsX" resolve="startMatlab" />
+                    <node concept="1KehLL" id="45gtC4lpFO4" role="lGtFl">
+                      <property role="1K8rM7" value="property_name" />
+                      <property role="1K8rD$" value="default_RTransform" />
+                      <property role="1Kfyot" value="right" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="45gtC4lpzpi" role="TEbGg">
+            <node concept="3cpWsn" id="45gtC4lpzpk" role="TDEfY">
+              <property role="TrG5h" value="ex" />
+              <node concept="3uibUv" id="45gtC4lpzLE" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+            <node concept="3clFbS" id="45gtC4lpzpo" role="TDEfX">
+              <node concept="3clFbF" id="45gtC4lp$1s" role="3cqZAp">
+                <node concept="2OqwBi" id="45gtC4lp$1p" role="3clFbG">
+                  <node concept="10M0yZ" id="45gtC4lp$1q" role="2Oq$k0">
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                  </node>
+                  <node concept="liA8E" id="45gtC4lp$1r" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                    <node concept="3cpWs3" id="45gtC4lp$w5" role="37wK5m">
+                      <node concept="2OqwBi" id="45gtC4lp$NI" role="3uHU7w">
+                        <node concept="37vLTw" id="45gtC4lp$zg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="45gtC4lpzpk" resolve="ex" />
+                        </node>
+                        <node concept="liA8E" id="45gtC4lp_8A" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.toString():java.lang.String" resolve="toString" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="45gtC4lp_cj" role="3uHU7B">
+                        <property role="Xl_RC" value="Exception" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

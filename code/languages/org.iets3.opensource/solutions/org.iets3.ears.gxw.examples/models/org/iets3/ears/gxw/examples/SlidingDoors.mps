@@ -11,30 +11,6 @@
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
   </imports>
   <registry>
-    <language id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel">
-      <concept id="6314475773253302483" name="org.iets3.simulink.resultmodel.structure.Sequence" flags="ng" index="38cNUh">
-        <child id="6314475773253302486" name="results" index="38cNUk" />
-      </concept>
-      <concept id="6314475773253271104" name="org.iets3.simulink.resultmodel.structure.InputCell" flags="ng" index="38cVw2">
-        <property id="6314475773253271155" name="inputValue" index="38cVwL" />
-      </concept>
-      <concept id="6314475773253271105" name="org.iets3.simulink.resultmodel.structure.OutputCell" flags="ng" index="38cVw3">
-        <property id="6314475773253271159" name="outputValue" index="38cVwP" />
-      </concept>
-      <concept id="6314475773253271102" name="org.iets3.simulink.resultmodel.structure.Input" flags="ng" index="38cVxW">
-        <child id="6314475773253271153" name="inputCell" index="38cVwN" />
-      </concept>
-      <concept id="6314475773253271103" name="org.iets3.simulink.resultmodel.structure.Output" flags="ng" index="38cVxX">
-        <child id="6314475773253271157" name="outputCell" index="38cVwR" />
-      </concept>
-      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY">
-        <child id="6314475773253271108" name="sequence" index="38cVw6" />
-      </concept>
-      <concept id="6314475773253271101" name="org.iets3.simulink.resultmodel.structure.Result" flags="ng" index="38cVxZ">
-        <child id="6314475773253271146" name="input" index="38cVwC" />
-        <child id="6314475773253271148" name="output" index="38cVwI" />
-      </concept>
-    </language>
     <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
       <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
         <child id="2196020025663654779" name="listofWires" index="ja_ZJ" />
@@ -132,13 +108,6 @@
       </concept>
       <concept id="3691935882243834783" name="org.iets3.ears.gxw.structure.AtomicFormulaTr" flags="ng" index="3T_uu0">
         <reference id="3691935882243834807" name="atom" index="3T_uuC" />
-      </concept>
-    </language>
-    <language id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker">
-      <concept id="435597896828128343" name="org.iets3.simulationOutputChecker.structure.SimulinkResultDisplayer" flags="ng" index="2RkC6H">
-        <property id="2500408352478917073" name="filePath" index="SnWRR" />
-        <child id="435597896828182547" name="simulinkResult" index="2RkARD" />
-        <child id="435597896828182548" name="inputCells" index="2RkARI" />
       </concept>
     </language>
   </registry>
@@ -660,64 +629,6 @@
     <node concept="3hDZ04" id="4JGRoYF5MNV" role="3hDZ0U">
       <property role="TrG5h" value="Not_3dooropen" />
       <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-  </node>
-  <node concept="2RkC6H" id="15j1aO7mBak">
-    <property role="SnWRR" value="/Applications/MATLAB_R2017a.app/ears_ctrl_lib" />
-    <node concept="38cVxY" id="15j1aO7mBal" role="2RkARD">
-      <property role="TrG5h" value="Simulink Result" />
-      <node concept="38cNUh" id="15j1aO7mBja" role="38cVw6">
-        <node concept="38cVxZ" id="15j1aO7mBjb" role="38cNUk">
-          <node concept="38cVxW" id="15j1aO7mBjc" role="38cVwC">
-            <node concept="38cVw2" id="15j1aO7mBjd" role="38cVwN">
-              <property role="TrG5h" value="door closing limit sensor is activated" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="15j1aO7mBje" role="38cVwN">
-              <property role="TrG5h" value="door opening limit sensor is activated" />
-              <property role="38cVwL" value="Off" />
-            </node>
-            <node concept="38cVw2" id="15j1aO7mBjf" role="38cVwN">
-              <property role="TrG5h" value="object proximity sensor is activated" />
-              <property role="38cVwL" value="On " />
-            </node>
-            <node concept="38cVw2" id="15j1aO7mBjg" role="38cVwN">
-              <property role="TrG5h" value="timer expires" />
-              <property role="38cVwL" value="Off" />
-            </node>
-          </node>
-          <node concept="38cVxX" id="15j1aO7mBjh" role="38cVwI">
-            <node concept="38cVw3" id="15j1aO7mBji" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="timer start" />
-            </node>
-            <node concept="38cVw3" id="15j1aO7mBjj" role="38cVwR">
-              <property role="38cVwP" value="Off" />
-              <property role="TrG5h" value="door close" />
-            </node>
-            <node concept="38cVw3" id="15j1aO7mBjk" role="38cVwR">
-              <property role="38cVwP" value="On " />
-              <property role="TrG5h" value="door open" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="38cVw2" id="15j1aO7mBam" role="2RkARI">
-      <property role="TrG5h" value="door closing limit sensor is activated" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="15j1aO7mBan" role="2RkARI">
-      <property role="TrG5h" value="door opening limit sensor is activated" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="15j1aO7mBao" role="2RkARI">
-      <property role="TrG5h" value="object proximity sensor is activated" />
-      <property role="38cVwL" value="0" />
-    </node>
-    <node concept="38cVw2" id="15j1aO7mBap" role="2RkARI">
-      <property role="TrG5h" value="timer expires" />
-      <property role="38cVwL" value="0" />
     </node>
   </node>
 </model>
