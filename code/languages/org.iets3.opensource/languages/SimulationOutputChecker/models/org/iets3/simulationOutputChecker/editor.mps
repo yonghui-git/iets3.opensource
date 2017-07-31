@@ -194,6 +194,10 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1170075670744" name="jetbrains.mps.baseLanguage.structure.SynchronizedStatement" flags="nn" index="1HWtB8">
+        <child id="1170075728144" name="expression" index="1HWFw0" />
+        <child id="1170075736412" name="block" index="1HWHxc" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
@@ -1761,34 +1765,40 @@
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3clFbF" id="7yk6SGRhWHT" role="3cqZAp">
-                                          <node concept="2OqwBi" id="7pulzJf72KY" role="3clFbG">
-                                            <node concept="37vLTw" id="7pulzJf72KZ" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="7pulzJf4zCO" resolve="matlabEngine" />
-                                            </node>
-                                            <node concept="liA8E" id="7pulzJf72L0" role="2OqNvi">
-                                              <ref role="37wK5l" to="972b:~MatlabEngine.feval(int,java.lang.String,java.lang.Object...):java.lang.Object" resolve="feval" />
-                                              <node concept="3cmrfG" id="7yk6SGRi9Yy" role="37wK5m">
-                                                <property role="3cmrfH" value="0" />
-                                              </node>
-                                              <node concept="Xl_RD" id="7pulzJf72L1" role="37wK5m">
-                                                <property role="Xl_RC" value="getOutputByInput" />
-                                              </node>
-                                              <node concept="37vLTw" id="7pulzJf72L2" role="37wK5m">
-                                                <ref role="3cqZAo" node="7pulzJf6Xb3" resolve="inputArray" />
-                                              </node>
-                                              <node concept="2OqwBi" id="2aNf2oqWemN" role="37wK5m">
-                                                <node concept="37vLTw" id="2aNf2oqW9_L" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="2aNf2oqW5SB" resolve="stepByStepFilePath" />
+                                        <node concept="3clFbH" id="2SdsJPYpwmp" role="3cqZAp" />
+                                        <node concept="1HWtB8" id="2SdsJPYpExn" role="3cqZAp">
+                                          <node concept="1Q80Hx" id="2SdsJPYpIWV" role="1HWFw0" />
+                                          <node concept="3clFbS" id="2SdsJPYpExr" role="1HWHxc">
+                                            <node concept="3clFbF" id="7yk6SGRhWHT" role="3cqZAp">
+                                              <node concept="2OqwBi" id="7pulzJf72KY" role="3clFbG">
+                                                <node concept="37vLTw" id="7pulzJf72KZ" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="7pulzJf4zCO" resolve="matlabEngine" />
                                                 </node>
-                                                <node concept="liA8E" id="2aNf2oqWff7" role="2OqNvi">
-                                                  <ref role="37wK5l" to="wyt6:~String.toCharArray():char[]" resolve="toCharArray" />
+                                                <node concept="liA8E" id="7pulzJf72L0" role="2OqNvi">
+                                                  <ref role="37wK5l" to="972b:~MatlabEngine.feval(int,java.lang.String,java.lang.Object...):java.lang.Object" resolve="feval" />
+                                                  <node concept="3cmrfG" id="7yk6SGRi9Yy" role="37wK5m">
+                                                    <property role="3cmrfH" value="0" />
+                                                  </node>
+                                                  <node concept="Xl_RD" id="7pulzJf72L1" role="37wK5m">
+                                                    <property role="Xl_RC" value="getOutputByInput" />
+                                                  </node>
+                                                  <node concept="37vLTw" id="7pulzJf72L2" role="37wK5m">
+                                                    <ref role="3cqZAo" node="7pulzJf6Xb3" resolve="inputArray" />
+                                                  </node>
+                                                  <node concept="2OqwBi" id="2aNf2oqWemN" role="37wK5m">
+                                                    <node concept="37vLTw" id="2aNf2oqW9_L" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="2aNf2oqW5SB" resolve="stepByStepFilePath" />
+                                                    </node>
+                                                    <node concept="liA8E" id="2aNf2oqWff7" role="2OqNvi">
+                                                      <ref role="37wK5l" to="wyt6:~String.toCharArray():char[]" resolve="toCharArray" />
+                                                    </node>
+                                                  </node>
                                                 </node>
                                               </node>
                                             </node>
                                           </node>
                                         </node>
-                                        <node concept="3clFbH" id="7yk6SGRhWxg" role="3cqZAp" />
+                                        <node concept="3clFbH" id="2SdsJPYpCXT" role="3cqZAp" />
                                         <node concept="3clFbF" id="4LpLkiItkj5" role="3cqZAp">
                                           <node concept="2OqwBi" id="4LpLkiItkj2" role="3clFbG">
                                             <node concept="10M0yZ" id="4LpLkiItkj3" role="2Oq$k0">
