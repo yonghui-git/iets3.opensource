@@ -37,7 +37,7 @@
         <child id="135049047333306363" name="listOfResponses" index="2skrmv" />
         <child id="1618831278223763546" name="listOfAliases" index="1JDDoy" />
       </concept>
-      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.NormalEventDrivenReq" flags="ng" index="sEiiz" />
+      <concept id="4706936300001509635" name="org.iets3.ears.gxw.structure.EventDrivenReq" flags="ng" index="sEiiz" />
       <concept id="3487560082040667554" name="org.iets3.ears.gxw.structure.ComponentName" flags="ng" index="2uIZ38">
         <property id="3487560082040701847" name="text" index="2uI0VX" />
       </concept>
@@ -46,6 +46,7 @@
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
         <child id="4277291022322944233" name="tmpFilePath" index="3DRjlG" />
       </concept>
+      <concept id="6744041109748014274" name="org.iets3.ears.gxw.structure.PropositionalFormulaSR" flags="ng" index="OJJ_E" />
       <concept id="6744041109748014275" name="org.iets3.ears.gxw.structure.BinaryFormulaSR" flags="ng" index="OJJ_F">
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
         <child id="2964597654736467335" name="arg1" index="9Cqxr" />
@@ -57,6 +58,9 @@
       <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
+      </concept>
+      <concept id="7886550726489248425" name="org.iets3.ears.gxw.structure.NormalUbiquitousReq" flags="ng" index="2Q3NEK">
+        <child id="7600310587779383283" name="systemResponse" index="1QgOn5" />
       </concept>
       <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
@@ -236,6 +240,9 @@
           <ref role="35djRf" node="2Bva3qemdAX" />
         </node>
       </node>
+    </node>
+    <node concept="2Q3NEK" id="2Wm83_aBNov" role="OJ2fO">
+      <node concept="OJJ_E" id="2Wm83_aBNox" role="1QgOn5" />
     </node>
   </node>
 </model>

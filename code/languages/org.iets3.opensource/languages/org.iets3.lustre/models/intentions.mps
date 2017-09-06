@@ -4641,7 +4641,7 @@
                   <ref role="3cqZAo" node="7PV9vzKfE85" resolve="startMatlab" />
                 </node>
                 <node concept="liA8E" id="HwFWd0bsgH" role="2OqNvi">
-                  <ref role="37wK5l" to="972b:~MatlabEngine.eval(java.lang.String):void" resolve="eval" />
+                  <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
                   <node concept="Xl_RD" id="HwFWd0btL9" role="37wK5m">
                     <property role="Xl_RC" value="GxwModel" />
                   </node>
