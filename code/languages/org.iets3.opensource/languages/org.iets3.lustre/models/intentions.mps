@@ -16,8 +16,7 @@
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
-    <import index="3wy8" ref="66251041-821b-42f2-8059-2a0e90ec97b2/java:matlabcontrol(MatlabControl.lib/)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1439,8 +1438,8 @@
                           <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7c9YXXakXRW" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="3inSYB5xqWi" role="2OqNvi">
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                   </node>
@@ -1549,8 +1548,8 @@
                           <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7c9YXXakZvd" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                      <node concept="2qgKlT" id="3inSYB5xt9n" role="2OqNvi">
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
@@ -1582,8 +1581,8 @@
                             <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="7c9YXXal0iw" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <node concept="2qgKlT" id="3inSYB5xst0" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1613,8 +1612,8 @@
                             <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="7c9YXXal1dU" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <node concept="2qgKlT" id="3inSYB5xtQJ" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -4387,10 +4386,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="1LmummRLQld" role="3cqZAp" />
-            <node concept="3clFbH" id="1LmummRLO49" role="3cqZAp" />
-            <node concept="3clFbH" id="3q$2SlejYHk" role="3cqZAp" />
-            <node concept="3clFbH" id="1LmummRLLBH" role="3cqZAp" />
-            <node concept="3clFbH" id="3q$2Sle8HpA" role="3cqZAp" />
             <node concept="3clFbF" id="3q$2Sle8Ijn" role="3cqZAp">
               <node concept="2OqwBi" id="3q$2Sle8Ijo" role="3clFbG">
                 <node concept="37vLTw" id="3q$2Sle8Ijp" role="2Oq$k0">
@@ -4406,163 +4401,6 @@
             <node concept="3SKdUt" id="1yEH9AqMO8T" role="3cqZAp">
               <node concept="3SKdUq" id="1yEH9AqMO8V" role="3SKWNk">
                 <property role="3SKdUp" value="running MATLAB by command" />
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1I" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="5eCGQxo03oO" role="8Wnug">
-                <node concept="3cpWsn" id="5eCGQxo03oP" role="3cpWs9">
-                  <property role="TrG5h" value="builder" />
-                  <node concept="3uibUv" id="5eCGQxo03oN" role="1tU5fm">
-                    <ref role="3uigEE" to="3wy8:~MatlabProxyFactoryOptions$Builder" resolve="MatlabProxyFactoryOptions.Builder" />
-                  </node>
-                  <node concept="2ShNRf" id="5eCGQxo03oQ" role="33vP2m">
-                    <node concept="1pGfFk" id="5eCGQxo03oR" role="2ShVmc">
-                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.&lt;init&gt;()" resolve="MatlabProxyFactoryOptions.Builder" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1J" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbH" id="5eCGQxo3xeI" role="8Wnug" />
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1K" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="5eCGQxo3S$O" role="8Wnug">
-                <node concept="3cpWsn" id="5eCGQxo3S$P" role="3cpWs9">
-                  <property role="TrG5h" value="builder2" />
-                  <node concept="3uibUv" id="5eCGQxo3S$Q" role="1tU5fm">
-                    <ref role="3uigEE" to="3wy8:~MatlabProxyFactoryOptions$Builder" resolve="MatlabProxyFactoryOptions.Builder" />
-                  </node>
-                  <node concept="2OqwBi" id="5eCGQxo3XFS" role="33vP2m">
-                    <node concept="2OqwBi" id="5eCGQxo3Wgl" role="2Oq$k0">
-                      <node concept="2OqwBi" id="5eCGQxo3V6g" role="2Oq$k0">
-                        <node concept="2ShNRf" id="5eCGQxo3S$R" role="2Oq$k0">
-                          <node concept="1pGfFk" id="5eCGQxo3S$S" role="2ShVmc">
-                            <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.&lt;init&gt;()" resolve="MatlabProxyFactoryOptions.Builder" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="5eCGQxo3VAK" role="2OqNvi">
-                          <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setUsePreviouslyControlledSession(boolean):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setUsePreviouslyControlledSession" />
-                          <node concept="3clFbT" id="5eCGQxo3VSP" role="37wK5m">
-                            <property role="3clFbU" value="true" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="5eCGQxo3X0r" role="2OqNvi">
-                        <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setHidden(boolean):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setHidden" />
-                        <node concept="3clFbT" id="5eCGQxo3Xjs" role="37wK5m" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="5eCGQxo3YgG" role="2OqNvi">
-                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.setMatlabLocation(java.lang.String):matlabcontrol.MatlabProxyFactoryOptions$Builder" resolve="setMatlabLocation" />
-                      <node concept="10Nm6u" id="5eCGQxo3Y$w" role="37wK5m" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1L" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="5eCGQxo444H" role="8Wnug">
-                <node concept="3cpWsn" id="5eCGQxo444I" role="3cpWs9">
-                  <property role="TrG5h" value="proxyFactory" />
-                  <node concept="3uibUv" id="5eCGQxo444J" role="1tU5fm">
-                    <ref role="3uigEE" to="3wy8:~MatlabProxyFactory" resolve="MatlabProxyFactory" />
-                  </node>
-                  <node concept="2ShNRf" id="5eCGQxo4au1" role="33vP2m">
-                    <node concept="1pGfFk" id="5eCGQxo4aZj" role="2ShVmc">
-                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.&lt;init&gt;(matlabcontrol.MatlabProxyFactoryOptions)" resolve="MatlabProxyFactory" />
-                      <node concept="2OqwBi" id="5eCGQxo4bCD" role="37wK5m">
-                        <node concept="37vLTw" id="5eCGQxo4bha" role="2Oq$k0">
-                          <ref role="3cqZAo" node="5eCGQxo3S$P" resolve="builder2" />
-                        </node>
-                        <node concept="liA8E" id="5eCGQxo4c9i" role="2OqNvi">
-                          <ref role="37wK5l" to="3wy8:~MatlabProxyFactoryOptions$Builder.build():matlabcontrol.MatlabProxyFactoryOptions" resolve="build" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1M" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="5eCGQxo4ix1" role="8Wnug">
-                <node concept="3cpWsn" id="5eCGQxo4ix2" role="3cpWs9">
-                  <property role="TrG5h" value="proxy" />
-                  <node concept="3uibUv" id="5eCGQxo4iwY" role="1tU5fm">
-                    <ref role="3uigEE" to="3wy8:~MatlabProxy" resolve="MatlabProxy" />
-                  </node>
-                  <node concept="2OqwBi" id="5eCGQxo4ix3" role="33vP2m">
-                    <node concept="37vLTw" id="5eCGQxo4ix4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5eCGQxo444I" resolve="proxyFactory" />
-                    </node>
-                    <node concept="liA8E" id="5eCGQxo4ix5" role="2OqNvi">
-                      <ref role="37wK5l" to="3wy8:~MatlabProxyFactory.getProxy():matlabcontrol.MatlabProxy" resolve="getProxy" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1N" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbH" id="5eCGQxoaaaf" role="8Wnug" />
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1O" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3zv4WpR27RZ" role="8Wnug">
-                <node concept="2OqwBi" id="3zv4WpR28fF" role="3clFbG">
-                  <node concept="37vLTw" id="5eCGQxo5ucJ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
-                  </node>
-                  <node concept="liA8E" id="3zv4WpR28Nn" role="2OqNvi">
-                    <ref role="37wK5l" to="3wy8:~MatlabOperations.eval(java.lang.String):void" resolve="eval" />
-                    <node concept="Xl_RD" id="5eCGQxo5swv" role="37wK5m">
-                      <property role="Xl_RC" value="GxwModel" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1P" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="5eCGQxo6z7Z" role="8Wnug">
-                <node concept="2OqwBi" id="5eCGQxo6z80" role="3clFbG">
-                  <node concept="37vLTw" id="5eCGQxo6z81" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
-                  </node>
-                  <node concept="liA8E" id="5eCGQxo6z82" role="2OqNvi">
-                    <ref role="37wK5l" to="3wy8:~MatlabOperations.eval(java.lang.String):void" resolve="eval" />
-                    <node concept="Xl_RD" id="5eCGQxo6z83" role="37wK5m">
-                      <property role="Xl_RC" value="disp('helloWorld')" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3Eocz78uF1Q" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="5eCGQxoa6vt" role="8Wnug">
-                <node concept="2OqwBi" id="5eCGQxoa98w" role="3clFbG">
-                  <node concept="37vLTw" id="5eCGQxoa6vr" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5eCGQxo4ix2" resolve="proxy" />
-                  </node>
-                  <node concept="liA8E" id="5eCGQxoa9MO" role="2OqNvi">
-                    <ref role="37wK5l" to="3wy8:~MatlabProxy.disconnect():boolean" resolve="disconnect" />
-                  </node>
-                </node>
               </node>
             </node>
             <node concept="3clFbH" id="3q$2Sle8HQu" role="3cqZAp" />
@@ -4742,8 +4580,8 @@
                   <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="7c9YXXakVx1" role="2OqNvi">
-                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+              <node concept="2qgKlT" id="3inSYB5wx8d" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
             <node concept="2OqwBi" id="2aNf2oqVPfI" role="37vLTJ">

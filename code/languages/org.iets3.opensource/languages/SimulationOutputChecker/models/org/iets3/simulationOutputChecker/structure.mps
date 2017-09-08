@@ -62,6 +62,11 @@
       <property role="TrG5h" value="filePath" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="lkJvV9S0Pd" role="1TKVEl">
+      <property role="IQ2nx" value="384140770239581517" />
+      <property role="TrG5h" value="currentView" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

@@ -12,9 +12,11 @@
   </imports>
   <registry>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker_old" flags="ng" index="9PVaO" />
-      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker_old" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path_old" index="3N1Lgt" />
+      <concept id="2642765975824060179" name="com.mbeddr.core.base.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.core.base.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="9294901202237533" name="mayBeEmpty" index="3kgbRO" />
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -46,7 +48,6 @@
         <child id="6744041109748155996" name="requirements" index="OJ2fO" />
         <child id="4277291022322944233" name="tmpFilePath" index="3DRjlG" />
       </concept>
-      <concept id="6744041109748014274" name="org.iets3.ears.gxw.structure.PropositionalFormulaSR" flags="ng" index="OJJ_E" />
       <concept id="6744041109748014275" name="org.iets3.ears.gxw.structure.BinaryFormulaSR" flags="ng" index="OJJ_F">
         <child id="2964597654736467342" name="arg2" index="9Cqxi" />
         <child id="2964597654736467335" name="arg1" index="9Cqxr" />
@@ -58,9 +59,6 @@
       <concept id="6744041109748014279" name="org.iets3.ears.gxw.structure.NotFormulaSR" flags="ng" index="OJJ_J" />
       <concept id="6744041109748014290" name="org.iets3.ears.gxw.structure.AtomicFormulaSR" flags="ng" index="OJJ_U">
         <reference id="6744041109748014300" name="atom" index="OJJ_O" />
-      </concept>
-      <concept id="7886550726489248425" name="org.iets3.ears.gxw.structure.NormalUbiquitousReq" flags="ng" index="2Q3NEK">
-        <child id="7600310587779383283" name="systemResponse" index="1QgOn5" />
       </concept>
       <concept id="8756612199930167720" name="org.iets3.ears.gxw.structure.AliasFormulaSR" flags="ng" index="35djRe">
         <reference id="8756612199930167721" name="responseAlias" index="35djRf" />
@@ -182,9 +180,6 @@
   <node concept="OJ2fN" id="5ByxUIFAEjO">
     <property role="TrG5h" value="motor operation controller" />
     <ref role="9DKRw" node="5ByxUIFAm6u" resolve="motor operation controller" />
-    <node concept="9PVaO" id="6FIbR5rDHcJ" role="3DRjlG">
-      <property role="3N1Lgt" value="models" />
-    </node>
     <node concept="sEiiz" id="5ByxUIFAEjP" role="OJ2fO">
       <property role="eBQts" value="Req1" />
       <node concept="3T_uu0" id="7A5J6qVvWcw" role="32z5Ze">
@@ -241,8 +236,10 @@
         </node>
       </node>
     </node>
-    <node concept="2Q3NEK" id="2Wm83_aBNov" role="OJ2fO">
-      <node concept="OJJ_E" id="2Wm83_aBNox" role="1QgOn5" />
+    <node concept="9PVaO" id="3inSYB5vdiW" role="3DRjlG">
+      <property role="1RwFax" value="true" />
+      <property role="3kgbRO" value="false" />
+      <property role="3N1Lgt" value="models" />
     </node>
   </node>
 </model>
