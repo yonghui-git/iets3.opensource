@@ -31,6 +31,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -3694,7 +3695,7 @@
     <node concept="3EZMnI" id="5uxx$av$_uR" role="2wV5jI">
       <node concept="3F2HdR" id="5uxx$av$_uY" role="3EZMnx">
         <ref role="1NtTu8" to="sgle:6XEZarpcOBZ" resolve="listOfTraces" />
-        <node concept="2iRkQZ" id="5uxx$av$_v0" role="2czzBx" />
+        <node concept="2iRfu4" id="Ehk7cBWgj3" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="5uxx$av$_uU" role="2iSdaV" />
       <node concept="VPXOz" id="5uxx$av$EpN" role="3F10Kt">

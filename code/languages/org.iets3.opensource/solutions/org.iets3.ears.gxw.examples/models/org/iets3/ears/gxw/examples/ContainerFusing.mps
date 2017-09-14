@@ -10,11 +10,29 @@
   <imports />
   <registry>
     <language id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel">
+      <concept id="6314475773253302483" name="org.iets3.simulink.resultmodel.structure.Sequence" flags="ng" index="38cNUh">
+        <child id="6314475773253302486" name="results" index="38cNUk" />
+      </concept>
       <concept id="6314475773253271104" name="org.iets3.simulink.resultmodel.structure.InputCell" flags="ng" index="38cVw2">
         <property id="6314475773253271155" name="inputValue" index="38cVwL" />
         <child id="3266029839401567075" name="listOfRef" index="2u20uQ" />
       </concept>
-      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY" />
+      <concept id="6314475773253271105" name="org.iets3.simulink.resultmodel.structure.OutputCell" flags="ng" index="38cVw3">
+        <property id="6314475773253271159" name="outputValue" index="38cVwP" />
+      </concept>
+      <concept id="6314475773253271102" name="org.iets3.simulink.resultmodel.structure.Input" flags="ng" index="38cVxW">
+        <child id="6314475773253271153" name="inputCell" index="38cVwN" />
+      </concept>
+      <concept id="6314475773253271103" name="org.iets3.simulink.resultmodel.structure.Output" flags="ng" index="38cVxX">
+        <child id="6314475773253271157" name="outputCell" index="38cVwR" />
+      </concept>
+      <concept id="6314475773253271100" name="org.iets3.simulink.resultmodel.structure.SimulinkResult" flags="ng" index="38cVxY">
+        <child id="6314475773253271108" name="sequence" index="38cVw6" />
+      </concept>
+      <concept id="6314475773253271101" name="org.iets3.simulink.resultmodel.structure.Result" flags="ng" index="38cVxZ">
+        <child id="6314475773253271146" name="input" index="38cVwC" />
+        <child id="6314475773253271148" name="output" index="38cVwI" />
+      </concept>
     </language>
     <language id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre">
       <concept id="2196020025662531796" name="org.iets3.graphicalLustre.structure.ModelHolder" flags="ng" index="jeVL0">
@@ -136,7 +154,12 @@
       <concept id="3691935882243834785" name="org.iets3.ears.gxw.structure.NotFormulaTr" flags="ng" index="3T_uuY" />
     </language>
     <language id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker">
-      <concept id="8028507079280118270" name="org.iets3.simulationOutputChecker.structure.TraceablityList" flags="ng" index="2Qmrlo" />
+      <concept id="8028507079280118270" name="org.iets3.simulationOutputChecker.structure.TraceablityList" flags="ng" index="2Qmrlo">
+        <child id="8028507079280118271" name="listOfTraces" index="2Qmrlp" />
+      </concept>
+      <concept id="8028507079280118275" name="org.iets3.simulationOutputChecker.structure.TraceRef" flags="ng" index="2Qmrq_">
+        <reference id="8028507079280143981" name="referenceToRequirement" index="2Qmlbb" />
+      </concept>
       <concept id="435597896828128343" name="org.iets3.simulationOutputChecker.structure.SimulinkResultDisplayer" flags="ng" index="2RkC6H">
         <property id="2500408352478917073" name="filePath" index="SnWRR" />
         <property id="384140770239581517" name="currentView" index="3cHb2N" />
@@ -359,8 +382,8 @@
       </node>
       <node concept="OJJ_H" id="7A5J6qVvWfk" role="32z5Zf">
         <node concept="OJJ_H" id="7A5J6qVvWfq" role="9Cqxr">
-          <node concept="35djRe" id="2su1YOjiX_X" role="9Cqxr">
-            <ref role="35djRf" node="7A5J6qXy9cn" />
+          <node concept="OJJ_U" id="2PM1koKM01r" role="9Cqxr">
+            <ref role="OJJ_O" node="1qavb4eyKmf" />
           </node>
           <node concept="OJJ_U" id="7A5J6qVvWf$" role="9Cqxi">
             <ref role="OJJ_O" node="7HbJNetZttc" />
@@ -410,859 +433,940 @@
       <property role="3N1Lgt" value="models" />
     </node>
   </node>
-  <node concept="2RkC6H" id="6QvRzZn1jX7">
-    <property role="SnWRR" value="/Applications/MATLAB_R2017a.app/ears_ctrl_lib" />
-    <property role="3cHb2N" value="Simulation View" />
-    <node concept="38cVxY" id="6QvRzZn1jX8" role="2RkARD">
-      <property role="TrG5h" value="Simulink Result" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jXd" role="2RkARI">
-      <property role="TrG5h" value="emergency button is pressed" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXe" role="2u20uQ" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jXb" role="2RkARI">
-      <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXc" role="2u20uQ" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jX9" role="2RkARI">
-      <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXa" role="2u20uQ" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jXf" role="2RkARI">
-      <property role="TrG5h" value="one minute timer expired" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXg" role="2u20uQ" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jXj" role="2RkARI">
-      <property role="TrG5h" value="start button is pressed" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXk" role="2u20uQ" />
-    </node>
-    <node concept="38cVw2" id="6QvRzZn1jXh" role="2RkARI">
-      <property role="TrG5h" value="two minute timer expired" />
-      <property role="38cVwL" value="0" />
-      <node concept="2Qmrlo" id="6QvRzZn1jXi" role="2u20uQ" />
-    </node>
-  </node>
-  <node concept="3hDZ0V" id="2su1YOjl$lG">
-    <property role="TrG5h" value="Gate Descriptors" />
-    <node concept="3hDZ04" id="2su1YOjl$lI" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_0" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lL" role="3hDZ0U">
-      <property role="TrG5h" value="event0" />
-      <property role="3hDZ07" value="node And (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 and input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lN" role="3hDZ0U">
-      <property role="TrG5h" value="release0" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lP" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_1" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lR" role="3hDZ0U">
-      <property role="TrG5h" value="release1" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lT" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_2" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lW" role="3hDZ0U">
-      <property role="TrG5h" value="event2" />
-      <property role="3hDZ07" value="node And (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 and input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$lY" role="3hDZ0U">
-      <property role="TrG5h" value="release2" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m0" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_3" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m2" role="3hDZ0U">
-      <property role="TrG5h" value="release3" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m4" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_4" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m6" role="3hDZ0U">
-      <property role="TrG5h" value="release4" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m8" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_5" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$ma" role="3hDZ0U">
-      <property role="TrG5h" value="release5" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mc" role="3hDZ0U">
-      <property role="TrG5h" value="Ctrl_6" />
-      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$me" role="3hDZ0U">
-      <property role="TrG5h" value="release6" />
-      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mg" role="3hDZ0U">
-      <property role="TrG5h" value="Resoneminutetimerstart" />
-      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mi" role="3hDZ0U">
-      <property role="TrG5h" value="Restwominutetimerstart" />
-      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mk" role="3hDZ0U">
-      <property role="TrG5h" value="Resstirringmotorstart" />
-      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mm" role="3hDZ0U">
-      <property role="TrG5h" value="Not_4stirringmotorstart" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mo" role="3hDZ0U">
-      <property role="TrG5h" value="Not_6stirringmotorstart" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mq" role="3hDZ0U">
-      <property role="TrG5h" value="Resvalve0open" />
-      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$ms" role="3hDZ0U">
-      <property role="TrG5h" value="Not_1valve0open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mu" role="3hDZ0U">
-      <property role="TrG5h" value="Not_6valve0open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mw" role="3hDZ0U">
-      <property role="TrG5h" value="Resvalve1open" />
-      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$my" role="3hDZ0U">
-      <property role="TrG5h" value="Not_3valve1open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$m$" role="3hDZ0U">
-      <property role="TrG5h" value="Not_6valve1open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mA" role="3hDZ0U">
-      <property role="TrG5h" value="Resvalve2open" />
-      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mC" role="3hDZ0U">
-      <property role="TrG5h" value="Not_5valve2open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-    <node concept="3hDZ04" id="2su1YOjl$mE" role="3hDZ0U">
-      <property role="TrG5h" value="Not_6valve2open" />
-      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
-    </node>
-  </node>
-  <node concept="jeVL0" id="2su1YOjl$lF">
+  <node concept="jeVL0" id="2PM1koKM0dM">
     <property role="TrG5h" value="Controller Holder" />
-    <node concept="2PY9F9" id="2su1YOjl$lH" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0dO" role="jeVL3">
       <property role="TrG5h" value="Ctrl_0" />
-      <ref role="1mD$57" node="2su1YOjl$lI" resolve="Ctrl_0" />
+      <ref role="1mD$57" node="2PM1koKM0dP" resolve="Ctrl_0" />
     </node>
-    <node concept="2uYTzx" id="2su1YOjl$lJ" role="jeVL3">
+    <node concept="2uYTzx" id="2PM1koKM0dQ" role="jeVL3">
       <property role="TrG5h" value="liquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="pagM5" id="2su1YOjl$lK" role="jeVL3">
+    <node concept="pagM5" id="2PM1koKM0dR" role="jeVL3">
       <property role="TrG5h" value="event0" />
       <property role="2uYMyf" value="2" />
-      <ref role="1mD$57" node="2su1YOjl$lL" resolve="event0" />
+      <ref role="1mD$57" node="2PM1koKM0dS" resolve="event0" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$lM" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0dT" role="jeVL3">
       <property role="TrG5h" value="release0" />
       <property role="2uLcO4" value="2" />
-      <ref role="1mD$57" node="2su1YOjl$lN" resolve="release0" />
+      <ref role="1mD$57" node="2PM1koKM0dU" resolve="release0" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$lO" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0dV" role="jeVL3">
       <property role="TrG5h" value="Ctrl_1" />
-      <ref role="1mD$57" node="2su1YOjl$lP" resolve="Ctrl_1" />
+      <ref role="1mD$57" node="2PM1koKM0dW" resolve="Ctrl_1" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$lQ" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0dX" role="jeVL3">
       <property role="TrG5h" value="release1" />
       <property role="2uLcO4" value="3" />
-      <ref role="1mD$57" node="2su1YOjl$lR" resolve="release1" />
+      <ref role="1mD$57" node="2PM1koKM0dY" resolve="release1" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$lS" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0dZ" role="jeVL3">
       <property role="TrG5h" value="Ctrl_2" />
-      <ref role="1mD$57" node="2su1YOjl$lT" resolve="Ctrl_2" />
+      <ref role="1mD$57" node="2PM1koKM0e0" resolve="Ctrl_2" />
     </node>
-    <node concept="2uYTzx" id="2su1YOjl$lU" role="jeVL3">
+    <node concept="2uYTzx" id="2PM1koKM0e1" role="jeVL3">
       <property role="TrG5h" value="liquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="pagM5" id="2su1YOjl$lV" role="jeVL3">
+    <node concept="pagM5" id="2PM1koKM0e2" role="jeVL3">
       <property role="TrG5h" value="event2" />
       <property role="2uYMyf" value="2" />
-      <ref role="1mD$57" node="2su1YOjl$lW" resolve="event2" />
+      <ref role="1mD$57" node="2PM1koKM0e3" resolve="event2" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$lX" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0e4" role="jeVL3">
       <property role="TrG5h" value="release2" />
       <property role="2uLcO4" value="2" />
-      <ref role="1mD$57" node="2su1YOjl$lY" resolve="release2" />
+      <ref role="1mD$57" node="2PM1koKM0e5" resolve="release2" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$lZ" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0e6" role="jeVL3">
       <property role="TrG5h" value="Ctrl_3" />
-      <ref role="1mD$57" node="2su1YOjl$m0" resolve="Ctrl_3" />
+      <ref role="1mD$57" node="2PM1koKM0e7" resolve="Ctrl_3" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$m1" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0e8" role="jeVL3">
       <property role="TrG5h" value="release3" />
       <property role="2uLcO4" value="4" />
-      <ref role="1mD$57" node="2su1YOjl$m2" resolve="release3" />
+      <ref role="1mD$57" node="2PM1koKM0e9" resolve="release3" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$m3" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0ea" role="jeVL3">
       <property role="TrG5h" value="Ctrl_4" />
-      <ref role="1mD$57" node="2su1YOjl$m4" resolve="Ctrl_4" />
+      <ref role="1mD$57" node="2PM1koKM0eb" resolve="Ctrl_4" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$m5" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0ec" role="jeVL3">
       <property role="TrG5h" value="release4" />
       <property role="2uLcO4" value="3" />
-      <ref role="1mD$57" node="2su1YOjl$m6" resolve="release4" />
+      <ref role="1mD$57" node="2PM1koKM0ed" resolve="release4" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$m7" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0ee" role="jeVL3">
       <property role="TrG5h" value="Ctrl_5" />
-      <ref role="1mD$57" node="2su1YOjl$m8" resolve="Ctrl_5" />
+      <ref role="1mD$57" node="2PM1koKM0ef" resolve="Ctrl_5" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$m9" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0eg" role="jeVL3">
       <property role="TrG5h" value="release5" />
       <property role="2uLcO4" value="2" />
-      <ref role="1mD$57" node="2su1YOjl$ma" resolve="release5" />
+      <ref role="1mD$57" node="2PM1koKM0eh" resolve="release5" />
     </node>
-    <node concept="2PY9F9" id="2su1YOjl$mb" role="jeVL3">
+    <node concept="2PY9F9" id="2PM1koKM0ei" role="jeVL3">
       <property role="TrG5h" value="Ctrl_6" />
-      <ref role="1mD$57" node="2su1YOjl$mc" resolve="Ctrl_6" />
+      <ref role="1mD$57" node="2PM1koKM0ej" resolve="Ctrl_6" />
     </node>
-    <node concept="PxUE_" id="2su1YOjl$md" role="jeVL3">
+    <node concept="PxUE_" id="2PM1koKM0ek" role="jeVL3">
       <property role="TrG5h" value="release6" />
       <property role="2uLcO4" value="8" />
-      <ref role="1mD$57" node="2su1YOjl$me" resolve="release6" />
+      <ref role="1mD$57" node="2PM1koKM0el" resolve="release6" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$mf" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0em" role="jeVL3">
       <property role="TrG5h" value="Resoneminutetimerstart" />
-      <ref role="1mD$57" node="2su1YOjl$mg" resolve="Resoneminutetimerstart" />
+      <ref role="1mD$57" node="2PM1koKM0en" resolve="Resoneminutetimerstart" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$mh" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0eo" role="jeVL3">
       <property role="TrG5h" value="Restwominutetimerstart" />
-      <ref role="1mD$57" node="2su1YOjl$mi" resolve="Restwominutetimerstart" />
+      <ref role="1mD$57" node="2PM1koKM0ep" resolve="Restwominutetimerstart" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$mj" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0eq" role="jeVL3">
       <property role="TrG5h" value="Resstirringmotorstart" />
-      <ref role="1mD$57" node="2su1YOjl$mk" resolve="Resstirringmotorstart" />
+      <ref role="1mD$57" node="2PM1koKM0er" resolve="Resstirringmotorstart" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$ml" role="jeVL3">
-      <property role="TrG5h" value="Not_4stirringmotorstart" />
-      <ref role="1mD$57" node="2su1YOjl$mm" resolve="Not_4stirringmotorstart" />
-    </node>
-    <node concept="2PY9ES" id="2su1YOjl$mn" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0es" role="jeVL3">
       <property role="TrG5h" value="Not_6stirringmotorstart" />
-      <ref role="1mD$57" node="2su1YOjl$mo" resolve="Not_6stirringmotorstart" />
+      <ref role="1mD$57" node="2PM1koKM0et" resolve="Not_6stirringmotorstart" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$mp" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0eu" role="jeVL3">
       <property role="TrG5h" value="Resvalve0open" />
-      <ref role="1mD$57" node="2su1YOjl$mq" resolve="Resvalve0open" />
+      <ref role="1mD$57" node="2PM1koKM0ev" resolve="Resvalve0open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mr" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0ew" role="jeVL3">
       <property role="TrG5h" value="Not_1valve0open" />
-      <ref role="1mD$57" node="2su1YOjl$ms" resolve="Not_1valve0open" />
+      <ref role="1mD$57" node="2PM1koKM0ex" resolve="Not_1valve0open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mt" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0ey" role="jeVL3">
       <property role="TrG5h" value="Not_6valve0open" />
-      <ref role="1mD$57" node="2su1YOjl$mu" resolve="Not_6valve0open" />
+      <ref role="1mD$57" node="2PM1koKM0ez" resolve="Not_6valve0open" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$mv" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0e$" role="jeVL3">
       <property role="TrG5h" value="Resvalve1open" />
-      <ref role="1mD$57" node="2su1YOjl$mw" resolve="Resvalve1open" />
+      <ref role="1mD$57" node="2PM1koKM0e_" resolve="Resvalve1open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mx" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0eA" role="jeVL3">
       <property role="TrG5h" value="Not_3valve1open" />
-      <ref role="1mD$57" node="2su1YOjl$my" resolve="Not_3valve1open" />
+      <ref role="1mD$57" node="2PM1koKM0eB" resolve="Not_3valve1open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mz" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0eC" role="jeVL3">
       <property role="TrG5h" value="Not_6valve1open" />
-      <ref role="1mD$57" node="2su1YOjl$m$" resolve="Not_6valve1open" />
+      <ref role="1mD$57" node="2PM1koKM0eD" resolve="Not_6valve1open" />
     </node>
-    <node concept="2PXPBM" id="2su1YOjl$m_" role="jeVL3">
+    <node concept="2PXPBM" id="2PM1koKM0eE" role="jeVL3">
       <property role="TrG5h" value="Resvalve2open" />
-      <ref role="1mD$57" node="2su1YOjl$mA" resolve="Resvalve2open" />
+      <ref role="1mD$57" node="2PM1koKM0eF" resolve="Resvalve2open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mB" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0eG" role="jeVL3">
       <property role="TrG5h" value="Not_5valve2open" />
-      <ref role="1mD$57" node="2su1YOjl$mC" resolve="Not_5valve2open" />
+      <ref role="1mD$57" node="2PM1koKM0eH" resolve="Not_5valve2open" />
     </node>
-    <node concept="2PY9ES" id="2su1YOjl$mD" role="jeVL3">
+    <node concept="2PY9ES" id="2PM1koKM0eI" role="jeVL3">
       <property role="TrG5h" value="Not_6valve2open" />
-      <ref role="1mD$57" node="2su1YOjl$mE" resolve="Not_6valve2open" />
+      <ref role="1mD$57" node="2PM1koKM0eJ" resolve="Not_6valve2open" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mF" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eK" role="jeVL3">
       <property role="TrG5h" value="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mG" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eL" role="jeVL3">
       <property role="TrG5h" value="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mH" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eM" role="jeVL3">
       <property role="TrG5h" value="GIemergencybuttonispressed" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mI" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eN" role="jeVL3">
       <property role="TrG5h" value="GIoneminutetimerexpired" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mJ" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eO" role="jeVL3">
       <property role="TrG5h" value="GItwominutetimerexpired" />
     </node>
-    <node concept="2xkk2h" id="2su1YOjl$mK" role="jeVL3">
+    <node concept="2xkk2h" id="2PM1koKM0eP" role="jeVL3">
       <property role="TrG5h" value="GIstartbuttonispressed" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mL" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eQ" role="jeVL3">
       <property role="TrG5h" value="oneminutetimerstart" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mM" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eR" role="jeVL3">
       <property role="TrG5h" value="twominutetimerstart" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mN" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eS" role="jeVL3">
       <property role="TrG5h" value="stirringmotorstart" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mO" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eT" role="jeVL3">
       <property role="TrG5h" value="valve0open" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mP" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eU" role="jeVL3">
       <property role="TrG5h" value="valve1open" />
     </node>
-    <node concept="2xkk2g" id="2su1YOjl$mQ" role="jeVL3">
+    <node concept="2xkk2g" id="2PM1koKM0eV" role="jeVL3">
       <property role="TrG5h" value="valve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mR" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0eW" role="ja_ZJ">
       <property role="3px1z5" value="LogicalNot_liquidleveloffirstloadcycleequalslevell1.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lJ" resolve="liquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0dQ" resolve="liquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mS" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0eX" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidleveloffirstloadcycleequalslevell1" />
       <property role="3px1z5" value="event0.input" />
-      <ref role="jbjzf" node="2su1YOjl$lJ" resolve="liquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lK" resolve="event0" />
+      <ref role="jbjzf" node="2PM1koKM0dQ" resolve="liquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0dR" resolve="event0" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mT" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0eY" role="ja_ZJ">
       <property role="3px1z5" value="event0.input" />
       <property role="3px1z0" value="GIstartbuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$lK" resolve="event0" />
-      <ref role="jbjzf" node="2su1YOjl$mK" resolve="GIstartbuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0dR" resolve="event0" />
+      <ref role="jbjzf" node="2PM1koKM0eP" resolve="GIstartbuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mU" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0eZ" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_0.input" />
       <property role="3px1z0" value="event0.output" />
-      <ref role="jbjzK" node="2su1YOjl$lH" resolve="Ctrl_0" />
-      <ref role="jbjzf" node="2su1YOjl$lK" resolve="event0" />
+      <ref role="jbjzK" node="2PM1koKM0dO" resolve="Ctrl_0" />
+      <ref role="jbjzf" node="2PM1koKM0dR" resolve="event0" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mV" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f0" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_0.release" />
       <property role="3px1z0" value="release0.output" />
-      <ref role="jbjzK" node="2su1YOjl$lH" resolve="Ctrl_0" />
-      <ref role="jbjzf" node="2su1YOjl$lM" resolve="release0" />
+      <ref role="jbjzK" node="2PM1koKM0dO" resolve="Ctrl_0" />
+      <ref role="jbjzf" node="2PM1koKM0dT" resolve="release0" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mW" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f1" role="ja_ZJ">
       <property role="3px1z5" value="release0.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lM" resolve="release0" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0dT" resolve="release0" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mX" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f2" role="ja_ZJ">
       <property role="3px1z5" value="release0.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$lM" resolve="release0" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0dT" resolve="release0" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mY" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f3" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_1.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lO" resolve="Ctrl_1" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0dV" resolve="Ctrl_1" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$mZ" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f4" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_1.release" />
       <property role="3px1z0" value="release1.output" />
-      <ref role="jbjzK" node="2su1YOjl$lO" resolve="Ctrl_1" />
-      <ref role="jbjzf" node="2su1YOjl$lQ" resolve="release1" />
+      <ref role="jbjzK" node="2PM1koKM0dV" resolve="Ctrl_1" />
+      <ref role="jbjzf" node="2PM1koKM0dX" resolve="release1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n0" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f5" role="ja_ZJ">
       <property role="3px1z5" value="release1.input" />
       <property role="3px1z0" value="GIstartbuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$lQ" resolve="release1" />
-      <ref role="jbjzf" node="2su1YOjl$mK" resolve="GIstartbuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0dX" resolve="release1" />
+      <ref role="jbjzf" node="2PM1koKM0eP" resolve="GIstartbuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n1" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f6" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidleveloffirstloadcycleequalslevell1" />
       <property role="3px1z5" value="release1.input" />
-      <ref role="jbjzf" node="2su1YOjl$lJ" resolve="liquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lQ" resolve="release1" />
+      <ref role="jbjzf" node="2PM1koKM0dQ" resolve="liquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0dX" resolve="release1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n2" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f7" role="ja_ZJ">
       <property role="3px1z5" value="release1.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$lQ" resolve="release1" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0dX" resolve="release1" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n3" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f8" role="ja_ZJ">
       <property role="3px1z5" value="LogicalNot_liquidlevelofsecondloadcycleequalslevell2.input" />
       <property role="3px1z0" value="GIliquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$lU" resolve="liquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzf" node="2su1YOjl$mF" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0e1" resolve="liquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzf" node="2PM1koKM0eK" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n4" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f9" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidlevelofsecondloadcycleequalslevell2" />
       <property role="3px1z5" value="event2.input" />
-      <ref role="jbjzf" node="2su1YOjl$lU" resolve="liquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$lV" resolve="event2" />
+      <ref role="jbjzf" node="2PM1koKM0e1" resolve="liquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0e2" resolve="event2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n5" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fa" role="ja_ZJ">
       <property role="3px1z5" value="event2.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$lV" resolve="event2" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0e2" resolve="event2" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n6" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fb" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_2.input" />
       <property role="3px1z0" value="event2.output" />
-      <ref role="jbjzK" node="2su1YOjl$lS" resolve="Ctrl_2" />
-      <ref role="jbjzf" node="2su1YOjl$lV" resolve="event2" />
+      <ref role="jbjzK" node="2PM1koKM0dZ" resolve="Ctrl_2" />
+      <ref role="jbjzf" node="2PM1koKM0e2" resolve="event2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n7" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fc" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_2.release" />
       <property role="3px1z0" value="release2.output" />
-      <ref role="jbjzK" node="2su1YOjl$lS" resolve="Ctrl_2" />
-      <ref role="jbjzf" node="2su1YOjl$lX" resolve="release2" />
+      <ref role="jbjzK" node="2PM1koKM0dZ" resolve="Ctrl_2" />
+      <ref role="jbjzf" node="2PM1koKM0e4" resolve="release2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n8" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fd" role="ja_ZJ">
       <property role="3px1z5" value="release2.input" />
       <property role="3px1z0" value="GIliquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$lX" resolve="release2" />
-      <ref role="jbjzf" node="2su1YOjl$mF" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0e4" resolve="release2" />
+      <ref role="jbjzf" node="2PM1koKM0eK" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n9" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fe" role="ja_ZJ">
       <property role="3px1z5" value="release2.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$lX" resolve="release2" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0e4" resolve="release2" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$na" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0ff" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_3.input" />
       <property role="3px1z0" value="GIliquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzf" node="2su1YOjl$mF" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzf" node="2PM1koKM0eK" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nb" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fg" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_3.release" />
       <property role="3px1z0" value="release3.output" />
-      <ref role="jbjzK" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzf" node="2su1YOjl$m1" resolve="release3" />
+      <ref role="jbjzK" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzf" node="2PM1koKM0e8" resolve="release3" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nc" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fh" role="ja_ZJ">
       <property role="3px1z5" value="release3.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$m1" resolve="release3" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0e8" resolve="release3" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nd" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fi" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidlevelofsecondloadcycleequalslevell2" />
       <property role="3px1z5" value="release3.input" />
-      <ref role="jbjzf" node="2su1YOjl$lU" resolve="liquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$m1" resolve="release3" />
+      <ref role="jbjzf" node="2PM1koKM0e1" resolve="liquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0e8" resolve="release3" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ne" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fj" role="ja_ZJ">
       <property role="3px1z5" value="release3.input" />
       <property role="3px1z0" value="GIoneminutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$m1" resolve="release3" />
-      <ref role="jbjzf" node="2su1YOjl$mI" resolve="GIoneminutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0e8" resolve="release3" />
+      <ref role="jbjzf" node="2PM1koKM0eN" resolve="GIoneminutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nf" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fk" role="ja_ZJ">
       <property role="3px1z5" value="release3.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$m1" resolve="release3" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0e8" resolve="release3" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ng" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fl" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_4.input" />
       <property role="3px1z0" value="GIoneminutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzf" node="2su1YOjl$mI" resolve="GIoneminutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzf" node="2PM1koKM0eN" resolve="GIoneminutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nh" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fm" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_4.release" />
       <property role="3px1z0" value="release4.output" />
-      <ref role="jbjzK" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzf" node="2su1YOjl$m5" resolve="release4" />
+      <ref role="jbjzK" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzf" node="2PM1koKM0ec" resolve="release4" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ni" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fn" role="ja_ZJ">
       <property role="3px1z5" value="release4.input" />
       <property role="3px1z0" value="GIliquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$m5" resolve="release4" />
-      <ref role="jbjzf" node="2su1YOjl$mF" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0ec" resolve="release4" />
+      <ref role="jbjzf" node="2PM1koKM0eK" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nj" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fo" role="ja_ZJ">
       <property role="3px1z5" value="release4.input" />
       <property role="3px1z0" value="GItwominutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$m5" resolve="release4" />
-      <ref role="jbjzf" node="2su1YOjl$mJ" resolve="GItwominutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0ec" resolve="release4" />
+      <ref role="jbjzf" node="2PM1koKM0eO" resolve="GItwominutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nk" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fp" role="ja_ZJ">
       <property role="3px1z5" value="release4.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$m5" resolve="release4" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0ec" resolve="release4" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nl" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fq" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_5.input" />
       <property role="3px1z0" value="GItwominutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$m7" resolve="Ctrl_5" />
-      <ref role="jbjzf" node="2su1YOjl$mJ" resolve="GItwominutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0ee" resolve="Ctrl_5" />
+      <ref role="jbjzf" node="2PM1koKM0eO" resolve="GItwominutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nm" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fr" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_5.release" />
       <property role="3px1z0" value="release5.output" />
-      <ref role="jbjzK" node="2su1YOjl$m7" resolve="Ctrl_5" />
-      <ref role="jbjzf" node="2su1YOjl$m9" resolve="release5" />
+      <ref role="jbjzK" node="2PM1koKM0ee" resolve="Ctrl_5" />
+      <ref role="jbjzf" node="2PM1koKM0eg" resolve="release5" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nn" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fs" role="ja_ZJ">
       <property role="3px1z5" value="release5.input" />
       <property role="3px1z0" value="GIoneminutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$m9" resolve="release5" />
-      <ref role="jbjzf" node="2su1YOjl$mI" resolve="GIoneminutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0eg" resolve="release5" />
+      <ref role="jbjzf" node="2PM1koKM0eN" resolve="GIoneminutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$no" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0ft" role="ja_ZJ">
       <property role="3px1z5" value="release5.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$m9" resolve="release5" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0eg" resolve="release5" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$np" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fu" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_6.input" />
       <property role="3px1z0" value="GIemergencybuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzf" node="2su1YOjl$mH" resolve="GIemergencybuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzf" node="2PM1koKM0eM" resolve="GIemergencybuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nq" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fv" role="ja_ZJ">
       <property role="3px1z5" value="Ctrl_6.release" />
       <property role="3px1z0" value="release6.output" />
-      <ref role="jbjzK" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzf" node="2su1YOjl$md" resolve="release6" />
+      <ref role="jbjzK" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzf" node="2PM1koKM0ek" resolve="release6" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nr" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fw" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GIstartbuttonispressed" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mK" resolve="GIstartbuttonispressed" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eP" resolve="GIstartbuttonispressed" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ns" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fx" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidleveloffirstloadcycleequalslevell1" />
       <property role="3px1z5" value="release6.input" />
-      <ref role="jbjzf" node="2su1YOjl$lJ" resolve="liquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0dQ" resolve="liquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nt" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fy" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nu" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fz" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GIliquidleveloffirstloadcycleequalslevell1" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mG" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eL" resolve="GIliquidleveloffirstloadcycleequalslevell1" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nv" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f$" role="ja_ZJ">
       <property role="3px1z0" value="LogicalNot_liquidlevelofsecondloadcycleequalslevell2" />
       <property role="3px1z5" value="release6.input" />
-      <ref role="jbjzf" node="2su1YOjl$lU" resolve="liquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0e1" resolve="liquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nw" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0f_" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GIliquidlevelofsecondloadcycleequalslevell2" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mF" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eK" resolve="GIliquidlevelofsecondloadcycleequalslevell2" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nx" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fA" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GIoneminutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mI" resolve="GIoneminutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eN" resolve="GIoneminutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ny" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fB" role="ja_ZJ">
       <property role="3px1z5" value="release6.input" />
       <property role="3px1z0" value="GItwominutetimerexpired" />
-      <ref role="jbjzK" node="2su1YOjl$md" resolve="release6" />
-      <ref role="jbjzf" node="2su1YOjl$mJ" resolve="GItwominutetimerexpired" />
+      <ref role="jbjzK" node="2PM1koKM0ek" resolve="release6" />
+      <ref role="jbjzf" node="2PM1koKM0eO" resolve="GItwominutetimerexpired" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nz" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fC" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.output" />
       <property role="3px1z5" value="Resoneminutetimerstart.input0" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mf" resolve="Resoneminutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0em" resolve="Resoneminutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n$" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fD" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.dc" />
       <property role="3px1z5" value="Resoneminutetimerstart.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mf" resolve="Resoneminutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0em" resolve="Resoneminutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$n_" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fE" role="ja_ZJ">
       <property role="3px1z0" value="Resoneminutetimerstart.output" />
       <property role="3px1z5" value="GOoneminutetimerstart" />
-      <ref role="jbjzf" node="2su1YOjl$mf" resolve="Resoneminutetimerstart" />
-      <ref role="jbjzK" node="2su1YOjl$mL" resolve="oneminutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0em" resolve="Resoneminutetimerstart" />
+      <ref role="jbjzK" node="2PM1koKM0eQ" resolve="oneminutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nA" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fF" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_4.output" />
       <property role="3px1z5" value="Restwominutetimerstart.input0" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$mh" resolve="Restwominutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eo" resolve="Restwominutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nB" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fG" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_4.dc" />
       <property role="3px1z5" value="Restwominutetimerstart.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$mh" resolve="Restwominutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eo" resolve="Restwominutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nC" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fH" role="ja_ZJ">
       <property role="3px1z0" value="Restwominutetimerstart.output" />
       <property role="3px1z5" value="GOtwominutetimerstart" />
-      <ref role="jbjzf" node="2su1YOjl$mh" resolve="Restwominutetimerstart" />
-      <ref role="jbjzK" node="2su1YOjl$mM" resolve="twominutetimerstart" />
+      <ref role="jbjzf" node="2PM1koKM0eo" resolve="Restwominutetimerstart" />
+      <ref role="jbjzK" node="2PM1koKM0eR" resolve="twominutetimerstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nD" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_4.output" />
-      <property role="3px1z5" value="Not_4stirringmotorstart.input" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$ml" resolve="Not_4stirringmotorstart" />
-    </node>
-    <node concept="2PY9F8" id="2su1YOjl$nE" role="ja_ZJ">
-      <property role="3px1z5" value="Resstirringmotorstart.input0" />
-      <property role="3px1z0" value="Not_4stirringmotorstart.output" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
-      <ref role="jbjzf" node="2su1YOjl$ml" resolve="Not_4stirringmotorstart" />
-    </node>
-    <node concept="2PY9F8" id="2su1YOjl$nF" role="ja_ZJ">
-      <property role="3px1z0" value="Ctrl_4.dc" />
-      <property role="3px1z5" value="Resstirringmotorstart.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
-    </node>
-    <node concept="2PY9F8" id="2su1YOjl$nG" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fI" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.output" />
       <property role="3px1z5" value="Not_6stirringmotorstart.input" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mn" resolve="Not_6stirringmotorstart" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0es" resolve="Not_6stirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nH" role="ja_ZJ">
-      <property role="3px1z5" value="Resstirringmotorstart.input1" />
+    <node concept="2PY9F8" id="2PM1koKM0fJ" role="ja_ZJ">
+      <property role="3px1z5" value="Resstirringmotorstart.input0" />
       <property role="3px1z0" value="Not_6stirringmotorstart.output" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
-      <ref role="jbjzf" node="2su1YOjl$mn" resolve="Not_6stirringmotorstart" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
+      <ref role="jbjzf" node="2PM1koKM0es" resolve="Not_6stirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nI" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fK" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.dc" />
-      <property role="3px1z5" value="Resstirringmotorstart.dc1" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
+      <property role="3px1z5" value="Resstirringmotorstart.dc0" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nJ" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fL" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.output" />
-      <property role="3px1z5" value="Resstirringmotorstart.input2" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
+      <property role="3px1z5" value="Resstirringmotorstart.input1" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nK" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fM" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.dc" />
-      <property role="3px1z5" value="Resstirringmotorstart.dc2" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
+      <property role="3px1z5" value="Resstirringmotorstart.dc1" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nL" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fN" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_4.output" />
+      <property role="3px1z5" value="Resstirringmotorstart.input2" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
+    </node>
+    <node concept="2PY9F8" id="2PM1koKM0fO" role="ja_ZJ">
+      <property role="3px1z0" value="Ctrl_4.dc" />
+      <property role="3px1z5" value="Resstirringmotorstart.dc2" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
+    </node>
+    <node concept="2PY9F8" id="2PM1koKM0fP" role="ja_ZJ">
       <property role="3px1z0" value="Resstirringmotorstart.output" />
       <property role="3px1z5" value="GOstirringmotorstart" />
-      <ref role="jbjzf" node="2su1YOjl$mj" resolve="Resstirringmotorstart" />
-      <ref role="jbjzK" node="2su1YOjl$mN" resolve="stirringmotorstart" />
+      <ref role="jbjzf" node="2PM1koKM0eq" resolve="Resstirringmotorstart" />
+      <ref role="jbjzK" node="2PM1koKM0eS" resolve="stirringmotorstart" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nM" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fQ" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.output" />
       <property role="3px1z5" value="Not_1valve0open.input" />
-      <ref role="jbjzf" node="2su1YOjl$lO" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="2su1YOjl$mr" resolve="Not_1valve0open" />
+      <ref role="jbjzf" node="2PM1koKM0dV" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="2PM1koKM0ew" resolve="Not_1valve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nN" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fR" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve0open.input0" />
       <property role="3px1z0" value="Not_1valve0open.output" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
-      <ref role="jbjzf" node="2su1YOjl$mr" resolve="Not_1valve0open" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0ew" resolve="Not_1valve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nO" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fS" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_1.dc" />
       <property role="3px1z5" value="Resvalve0open.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$lO" resolve="Ctrl_1" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0dV" resolve="Ctrl_1" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nP" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fT" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.output" />
       <property role="3px1z5" value="Not_6valve0open.input" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mt" resolve="Not_6valve0open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0ey" resolve="Not_6valve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nQ" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fU" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve0open.input1" />
       <property role="3px1z0" value="Not_6valve0open.output" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
-      <ref role="jbjzf" node="2su1YOjl$mt" resolve="Not_6valve0open" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0ey" resolve="Not_6valve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nR" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fV" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.dc" />
       <property role="3px1z5" value="Resvalve0open.dc1" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nS" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fW" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_0.output" />
       <property role="3px1z5" value="Resvalve0open.input2" />
-      <ref role="jbjzf" node="2su1YOjl$lH" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0dO" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nT" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fX" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_0.dc" />
       <property role="3px1z5" value="Resvalve0open.dc2" />
-      <ref role="jbjzf" node="2su1YOjl$lH" resolve="Ctrl_0" />
-      <ref role="jbjzK" node="2su1YOjl$mp" resolve="Resvalve0open" />
+      <ref role="jbjzf" node="2PM1koKM0dO" resolve="Ctrl_0" />
+      <ref role="jbjzK" node="2PM1koKM0eu" resolve="Resvalve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nU" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fY" role="ja_ZJ">
       <property role="3px1z0" value="Resvalve0open.output" />
       <property role="3px1z5" value="GOvalve0open" />
-      <ref role="jbjzf" node="2su1YOjl$mp" resolve="Resvalve0open" />
-      <ref role="jbjzK" node="2su1YOjl$mO" resolve="valve0open" />
+      <ref role="jbjzf" node="2PM1koKM0eu" resolve="Resvalve0open" />
+      <ref role="jbjzK" node="2PM1koKM0eT" resolve="valve0open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nV" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0fZ" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.output" />
       <property role="3px1z5" value="Not_3valve1open.input" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mx" resolve="Not_3valve1open" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0eA" resolve="Not_3valve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nW" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g0" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve1open.input0" />
       <property role="3px1z0" value="Not_3valve1open.output" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
-      <ref role="jbjzf" node="2su1YOjl$mx" resolve="Not_3valve1open" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0eA" resolve="Not_3valve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nX" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g1" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_3.dc" />
       <property role="3px1z5" value="Resvalve1open.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$lZ" resolve="Ctrl_3" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0e6" resolve="Ctrl_3" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nY" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g2" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.output" />
       <property role="3px1z5" value="Not_6valve1open.input" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mz" resolve="Not_6valve1open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0eC" resolve="Not_6valve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$nZ" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g3" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve1open.input1" />
       <property role="3px1z0" value="Not_6valve1open.output" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
-      <ref role="jbjzf" node="2su1YOjl$mz" resolve="Not_6valve1open" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0eC" resolve="Not_6valve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o0" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g4" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.dc" />
       <property role="3px1z5" value="Resvalve1open.dc1" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o1" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g5" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_2.output" />
       <property role="3px1z5" value="Resvalve1open.input2" />
-      <ref role="jbjzf" node="2su1YOjl$lS" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0dZ" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o2" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g6" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_2.dc" />
       <property role="3px1z5" value="Resvalve1open.dc2" />
-      <ref role="jbjzf" node="2su1YOjl$lS" resolve="Ctrl_2" />
-      <ref role="jbjzK" node="2su1YOjl$mv" resolve="Resvalve1open" />
+      <ref role="jbjzf" node="2PM1koKM0dZ" resolve="Ctrl_2" />
+      <ref role="jbjzK" node="2PM1koKM0e$" resolve="Resvalve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o3" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g7" role="ja_ZJ">
       <property role="3px1z0" value="Resvalve1open.output" />
       <property role="3px1z5" value="GOvalve1open" />
-      <ref role="jbjzf" node="2su1YOjl$mv" resolve="Resvalve1open" />
-      <ref role="jbjzK" node="2su1YOjl$mP" resolve="valve1open" />
+      <ref role="jbjzf" node="2PM1koKM0e$" resolve="Resvalve1open" />
+      <ref role="jbjzK" node="2PM1koKM0eU" resolve="valve1open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o4" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g8" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_5.output" />
       <property role="3px1z5" value="Not_5valve2open.input" />
-      <ref role="jbjzf" node="2su1YOjl$m7" resolve="Ctrl_5" />
-      <ref role="jbjzK" node="2su1YOjl$mB" resolve="Not_5valve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ee" resolve="Ctrl_5" />
+      <ref role="jbjzK" node="2PM1koKM0eG" resolve="Not_5valve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o5" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0g9" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve2open.input0" />
       <property role="3px1z0" value="Not_5valve2open.output" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
-      <ref role="jbjzf" node="2su1YOjl$mB" resolve="Not_5valve2open" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0eG" resolve="Not_5valve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o6" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0ga" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_5.dc" />
       <property role="3px1z5" value="Resvalve2open.dc0" />
-      <ref role="jbjzf" node="2su1YOjl$m7" resolve="Ctrl_5" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ee" resolve="Ctrl_5" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o7" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0gb" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.output" />
       <property role="3px1z5" value="Not_6valve2open.input" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$mD" resolve="Not_6valve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0eI" resolve="Not_6valve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o8" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0gc" role="ja_ZJ">
       <property role="3px1z5" value="Resvalve2open.input1" />
       <property role="3px1z0" value="Not_6valve2open.output" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
-      <ref role="jbjzf" node="2su1YOjl$mD" resolve="Not_6valve2open" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0eI" resolve="Not_6valve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$o9" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0gd" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_6.dc" />
       <property role="3px1z5" value="Resvalve2open.dc1" />
-      <ref role="jbjzf" node="2su1YOjl$mb" resolve="Ctrl_6" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ei" resolve="Ctrl_6" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$oa" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0ge" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_4.output" />
       <property role="3px1z5" value="Resvalve2open.input2" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$ob" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0gf" role="ja_ZJ">
       <property role="3px1z0" value="Ctrl_4.dc" />
       <property role="3px1z5" value="Resvalve2open.dc2" />
-      <ref role="jbjzf" node="2su1YOjl$m3" resolve="Ctrl_4" />
-      <ref role="jbjzK" node="2su1YOjl$m_" resolve="Resvalve2open" />
+      <ref role="jbjzf" node="2PM1koKM0ea" resolve="Ctrl_4" />
+      <ref role="jbjzK" node="2PM1koKM0eE" resolve="Resvalve2open" />
     </node>
-    <node concept="2PY9F8" id="2su1YOjl$oc" role="ja_ZJ">
+    <node concept="2PY9F8" id="2PM1koKM0gg" role="ja_ZJ">
       <property role="3px1z0" value="Resvalve2open.output" />
       <property role="3px1z5" value="GOvalve2open" />
-      <ref role="jbjzf" node="2su1YOjl$m_" resolve="Resvalve2open" />
-      <ref role="jbjzK" node="2su1YOjl$mQ" resolve="valve2open" />
+      <ref role="jbjzf" node="2PM1koKM0eE" resolve="Resvalve2open" />
+      <ref role="jbjzK" node="2PM1koKM0eV" resolve="valve2open" />
     </node>
-    <node concept="3RfPnX" id="2su1YOjl$od" role="3DRjlG">
+    <node concept="3RfPnX" id="2PM1koKM0gh" role="3DRjlG">
       <property role="1RwFax" value="true" />
       <property role="3kgbRO" value="false" />
       <property role="3N1Lgt" value="/Applications/MATLAB_R2017a.app/ears_ctrl_lib" />
+    </node>
+  </node>
+  <node concept="3hDZ0V" id="2PM1koKM0dN">
+    <property role="TrG5h" value="Gate Descriptors" />
+    <node concept="3hDZ04" id="2PM1koKM0dP" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_0" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0dS" role="3hDZ0U">
+      <property role="TrG5h" value="event0" />
+      <property role="3hDZ07" value="node And (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 and input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0dU" role="3hDZ0U">
+      <property role="TrG5h" value="release0" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0dW" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_1" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0dY" role="3hDZ0U">
+      <property role="TrG5h" value="release1" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e0" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_2" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e3" role="3hDZ0U">
+      <property role="TrG5h" value="event2" />
+      <property role="3hDZ07" value="node And (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 and input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e5" role="3hDZ0U">
+      <property role="TrG5h" value="release2" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e7" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_3" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e9" role="3hDZ0U">
+      <property role="TrG5h" value="release3" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eb" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_4" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ed" role="3hDZ0U">
+      <property role="TrG5h" value="release4" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ef" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_5" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eh" role="3hDZ0U">
+      <property role="TrG5h" value="release5" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ej" role="3hDZ0U">
+      <property role="TrG5h" value="Ctrl_6" />
+      <property role="3hDZ07" value="node TrUB (input, release: bool) returns (output: int);&#10;var lock: bool;&#10;let &#9;&#10;&#9;lock = if input and not release then true&#10;&#9;       else if release then false&#10;&#9;       else false -&gt; pre(lock);&#10;&#9;output = if input and not release then 1&#10;&#9;&#9;else if release then 2&#10;&#9;&#9;else 2 -&gt; if pre(lock) then 1&#10;&#9;&#9;&#9;  else 2 ;&#10;&#9;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0el" role="3hDZ0U">
+      <property role="TrG5h" value="release6" />
+      <property role="3hDZ07" value="node Or (input1: int, input 2: int) returns (output: int);&#10;let &#10;&#9;output = if input1 = 1 or input2 = 1 then 1&#10; else output = 0&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0en" role="3hDZ0U">
+      <property role="TrG5h" value="Resoneminutetimerstart" />
+      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ep" role="3hDZ0U">
+      <property role="TrG5h" value="Restwominutetimerstart" />
+      <property role="3hDZ07" value="node Res1 (input0: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  then true&#10;             &#9; else if input0 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0er" role="3hDZ0U">
+      <property role="TrG5h" value="Resstirringmotorstart" />
+      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0et" role="3hDZ0U">
+      <property role="TrG5h" value="Not_6stirringmotorstart" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ev" role="3hDZ0U">
+      <property role="TrG5h" value="Resvalve0open" />
+      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ex" role="3hDZ0U">
+      <property role="TrG5h" value="Not_1valve0open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0ez" role="3hDZ0U">
+      <property role="TrG5h" value="Not_6valve0open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0e_" role="3hDZ0U">
+      <property role="TrG5h" value="Resvalve1open" />
+      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eB" role="3hDZ0U">
+      <property role="TrG5h" value="Not_3valve1open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eD" role="3hDZ0U">
+      <property role="TrG5h" value="Not_6valve1open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eF" role="3hDZ0U">
+      <property role="TrG5h" value="Resvalve2open" />
+      <property role="3hDZ07" value="node Res3 (input0 , input1 , input2: int; A: bool) returns (output: bool);&#10;let&#10;&#9;output = if input0 = 1  or input1 = 1  or input2 = 1  then true&#10;             &#9; else if input0 = 0  or input1 = 0  or input2 = 0  then false&#10;&#9;&#9; else A;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eH" role="3hDZ0U">
+      <property role="TrG5h" value="Not_5valve2open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+    <node concept="3hDZ04" id="2PM1koKM0eJ" role="3hDZ0U">
+      <property role="TrG5h" value="Not_6valve2open" />
+      <property role="3hDZ07" value="node TernaryNot (input: int) returns (output: int);&#10;let &#10;&#9;output = if input = 1 then 0&#10;&#9;&#9; else if input = 0 then 1&#10;&#9;&#9; else input;&#10;tel&#10;" />
+    </node>
+  </node>
+  <node concept="2RkC6H" id="2PM1koKM0gj">
+    <property role="SnWRR" value="/Applications/MATLAB_R2017a.app/ears_ctrl_lib" />
+    <property role="3cHb2N" value="Simulation View" />
+    <node concept="38cVxY" id="2PM1koKM0gk" role="2RkARD">
+      <property role="TrG5h" value="Simulink Result" />
+      <node concept="38cNUh" id="2PM1koKM1He" role="38cVw6">
+        <node concept="38cVxZ" id="2PM1koKM1Hf" role="38cNUk">
+          <node concept="38cVxW" id="2PM1koKM1Hg" role="38cVwC">
+            <node concept="38cVw2" id="2PM1koKM1Hh" role="38cVwN">
+              <property role="TrG5h" value="emergency button is pressed" />
+              <property role="38cVwL" value="Off" />
+              <node concept="2Qmrlo" id="2PM1koKM1Hc" role="2u20uQ">
+                <property role="TrG5h" value="emergency button" />
+                <node concept="2Qmrq_" id="2PM1koKM1Hd" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="25xu7e0Binv" />
+                </node>
+              </node>
+            </node>
+            <node concept="38cVw2" id="2PM1koKM1Hi" role="38cVwN">
+              <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+              <property role="38cVwL" value="Off" />
+              <node concept="2Qmrlo" id="2PM1koKM1H1" role="2u20uQ">
+                <property role="TrG5h" value="liquid level of first load cycle" />
+                <node concept="2Qmrq_" id="2PM1koKM1H2" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAlw0" />
+                </node>
+                <node concept="2Qmrq_" id="2PM1koKM1H3" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAlJ4" />
+                </node>
+              </node>
+            </node>
+            <node concept="38cVw2" id="2PM1koKM1Hj" role="38cVwN">
+              <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+              <property role="38cVwL" value="Off" />
+              <node concept="2Qmrlo" id="2PM1koKM1H7" role="2u20uQ">
+                <property role="TrG5h" value="liquid level of second load cycle" />
+                <node concept="2Qmrq_" id="2PM1koKM1H8" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAlUK" />
+                </node>
+              </node>
+            </node>
+            <node concept="38cVw2" id="2PM1koKM1Hk" role="38cVwN">
+              <property role="TrG5h" value="one minute timer expired" />
+              <property role="38cVwL" value="Off" />
+              <node concept="2Qmrlo" id="2PM1koKM1GK" role="2u20uQ">
+                <property role="TrG5h" value="one minute timer" />
+                <node concept="2Qmrq_" id="2PM1koKM1GL" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAlXr" />
+                </node>
+              </node>
+            </node>
+            <node concept="38cVw2" id="2PM1koKM1Hl" role="38cVwN">
+              <property role="TrG5h" value="start button is pressed" />
+              <property role="38cVwL" value="On " />
+              <node concept="2Qmrlo" id="2PM1koKM1GU" role="2u20uQ">
+                <property role="TrG5h" value="start button" />
+                <node concept="2Qmrq_" id="2PM1koKM1GV" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAlsQ" />
+                </node>
+              </node>
+            </node>
+            <node concept="38cVw2" id="2PM1koKM1Hm" role="38cVwN">
+              <property role="TrG5h" value="two minute timer expired" />
+              <property role="38cVwL" value="Off" />
+              <node concept="2Qmrlo" id="2PM1koKM1GP" role="2u20uQ">
+                <property role="TrG5h" value="two minute timer" />
+                <node concept="2Qmrq_" id="2PM1koKM1GQ" role="2Qmrlp">
+                  <ref role="2Qmlbb" node="5ByxUIFAm0a" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="38cVxX" id="2PM1koKM1Hn" role="38cVwI">
+            <node concept="38cVw3" id="2PM1koKM1Ho" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="one minute timer start" />
+            </node>
+            <node concept="38cVw3" id="2PM1koKM1Hp" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="two minute timer start" />
+            </node>
+            <node concept="38cVw3" id="2PM1koKM1Hq" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="stirring motor start" />
+            </node>
+            <node concept="38cVw3" id="2PM1koKM1Hr" role="38cVwR">
+              <property role="38cVwP" value="On " />
+              <property role="TrG5h" value="valve 0 open" />
+            </node>
+            <node concept="38cVw3" id="2PM1koKM1Hs" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 1 open" />
+            </node>
+            <node concept="38cVw3" id="2PM1koKM1Ht" role="38cVwR">
+              <property role="38cVwP" value="Off" />
+              <property role="TrG5h" value="valve 2 open" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gp" role="2RkARI">
+      <property role="TrG5h" value="emergency button is pressed" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0gq" role="2u20uQ" />
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gn" role="2RkARI">
+      <property role="TrG5h" value="liquid level of first load cycle equals level l1" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0go" role="2u20uQ" />
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gl" role="2RkARI">
+      <property role="TrG5h" value="liquid level of second load cycle equals level l2" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0gm" role="2u20uQ" />
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gr" role="2RkARI">
+      <property role="TrG5h" value="one minute timer expired" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0gs" role="2u20uQ" />
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gv" role="2RkARI">
+      <property role="TrG5h" value="start button is pressed" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0gw" role="2u20uQ" />
+    </node>
+    <node concept="38cVw2" id="2PM1koKM0gt" role="2RkARI">
+      <property role="TrG5h" value="two minute timer expired" />
+      <property role="38cVwL" value="0" />
+      <node concept="2Qmrlo" id="2PM1koKM0gu" role="2u20uQ" />
     </node>
   </node>
 </model>

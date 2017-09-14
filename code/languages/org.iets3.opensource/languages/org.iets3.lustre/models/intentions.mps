@@ -16,7 +16,8 @@
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1444,7 +1445,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xqWi" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                   </node>
@@ -1554,7 +1555,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xt9n" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
@@ -1587,7 +1588,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xst0" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1618,7 +1619,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xtQJ" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1647,7 +1648,7 @@
                 <node concept="liA8E" id="3q$2SldUepE" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
                   <node concept="Xl_RD" id="3q$2SldUepF" role="37wK5m">
-                    <property role="Xl_RC" value="  new_system(sys) \n open_system(sys)\n" />
+                    <property role="Xl_RC" value="  new_system(sys); \n" />
                   </node>
                 </node>
               </node>
@@ -4345,15 +4346,19 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="5T0u6EwPo$p" role="3cqZAp">
-              <node concept="2OqwBi" id="5T0u6EwPo$q" role="3clFbG">
-                <node concept="37vLTw" id="5T0u6EwPo$r" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
-                </node>
-                <node concept="liA8E" id="5T0u6EwPo$s" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
-                  <node concept="Xl_RD" id="5T0u6EwPo$t" role="37wK5m">
-                    <property role="Xl_RC" value="close_system(sys)\n" />
+            <node concept="1X3_iC" id="2PM1koKKPQq" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="5T0u6EwPo$p" role="8Wnug">
+                <node concept="2OqwBi" id="5T0u6EwPo$q" role="3clFbG">
+                  <node concept="37vLTw" id="5T0u6EwPo$r" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3q$2SldU406" resolve="bufferedWriter" />
+                  </node>
+                  <node concept="liA8E" id="5T0u6EwPo$s" role="2OqNvi">
+                    <ref role="37wK5l" to="guwi:~Writer.write(java.lang.String):void" resolve="write" />
+                    <node concept="Xl_RD" id="5T0u6EwPo$t" role="37wK5m">
+                      <property role="Xl_RC" value="close_system(sys)\n" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4406,6 +4411,79 @@
             <node concept="3SKdUt" id="1yEH9AqMO8T" role="3cqZAp">
               <node concept="3SKdUq" id="1yEH9AqMO8V" role="3SKWNk">
                 <property role="3SKdUp" value="running MATLAB by command" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="2PM1koKHSDl" role="3cqZAp" />
+            <node concept="3SKdUt" id="2PM1koKIvco" role="3cqZAp">
+              <node concept="3SKdUq" id="2PM1koKIvcq" role="3SKWNk">
+                <property role="3SKdUp" value="start by deleting the previous simulink model" />
+              </node>
+            </node>
+            <node concept="SfApY" id="77jgNrRONni" role="3cqZAp">
+              <node concept="3clFbS" id="77jgNrRONnk" role="SfCbr">
+                <node concept="3cpWs8" id="77jgNrROx6q" role="3cqZAp">
+                  <node concept="3cpWsn" id="77jgNrROx6r" role="3cpWs9">
+                    <property role="TrG5h" value="file" />
+                    <node concept="3uibUv" id="77jgNrROx6s" role="1tU5fm">
+                      <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                    </node>
+                    <node concept="2ShNRf" id="77jgNrROx6t" role="33vP2m">
+                      <node concept="1pGfFk" id="77jgNrROx6u" role="2ShVmc">
+                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                        <node concept="3cpWs3" id="2PM1koKI3nQ" role="37wK5m">
+                          <node concept="Xl_RD" id="2PM1koKI3nR" role="3uHU7w">
+                            <property role="Xl_RC" value="/simulinkModel.slx" />
+                          </node>
+                          <node concept="2OqwBi" id="2PM1koKI3nS" role="3uHU7B">
+                            <node concept="2OqwBi" id="2PM1koKI3nT" role="2Oq$k0">
+                              <node concept="2Sf5sV" id="2PM1koKI3nU" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="2PM1koKI3nV" role="2OqNvi">
+                                <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                              </node>
+                            </node>
+                            <node concept="2qgKlT" id="2PM1koKI3nW" role="2OqNvi">
+                              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="77jgNrROx6y" role="3cqZAp">
+                  <node concept="2YIFZM" id="77jgNrROx6z" role="3clFbG">
+                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                    <ref role="37wK5l" to="eoo2:~Files.deleteIfExists(java.nio.file.Path):boolean" resolve="deleteIfExists" />
+                    <node concept="2OqwBi" id="77jgNrROx6$" role="37wK5m">
+                      <node concept="37vLTw" id="77jgNrROx6_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="77jgNrROx6r" resolve="file" />
+                      </node>
+                      <node concept="liA8E" id="77jgNrROx6A" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.toPath():java.nio.file.Path" resolve="toPath" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="77jgNrRONnl" role="TEbGg">
+                <node concept="3cpWsn" id="77jgNrRONnn" role="TDEfY">
+                  <property role="TrG5h" value="ex" />
+                  <node concept="3uibUv" id="77jgNrROTPq" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="77jgNrRONnr" role="TDEfX">
+                  <node concept="3clFbF" id="77jgNrROZEm" role="3cqZAp">
+                    <node concept="2OqwBi" id="77jgNrRP1jY" role="3clFbG">
+                      <node concept="37vLTw" id="77jgNrROZEl" role="2Oq$k0">
+                        <ref role="3cqZAo" node="77jgNrRONnn" resolve="ex" />
+                      </node>
+                      <node concept="liA8E" id="77jgNrRP5ct" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3clFbH" id="3q$2Sle8HQu" role="3cqZAp" />
@@ -4514,7 +4592,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="6aXPsWutady" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -4659,7 +4737,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="2puXhQwM9y9" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
             <node concept="2OqwBi" id="2aNf2oqVPfI" role="37vLTJ">
