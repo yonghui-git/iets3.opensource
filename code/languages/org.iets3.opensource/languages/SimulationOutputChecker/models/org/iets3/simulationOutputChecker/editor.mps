@@ -233,6 +233,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -1506,51 +1507,41 @@
                                     </node>
                                     <node concept="3clFbJ" id="2fpjQnRffi6" role="3cqZAp">
                                       <node concept="3clFbS" id="2fpjQnRffi7" role="3clFbx">
-                                        <node concept="3clFbF" id="2fpjQnRffi8" role="3cqZAp">
-                                          <node concept="2YIFZM" id="2fpjQnRffi9" role="3clFbG">
-                                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
-                                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                            <node concept="10Nm6u" id="2fpjQnRffia" role="37wK5m" />
-                                            <node concept="Xl_RD" id="2fpjQnRffib" role="37wK5m">
-                                              <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
+                                        <node concept="3clFbF" id="ZmuSUyY4dz" role="3cqZAp">
+                                          <node concept="2OqwBi" id="ZmuSUyY4d$" role="3clFbG">
+                                            <node concept="37vLTw" id="ZmuSUyY4d_" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="ZmuSUyY4du" resolve="matlabEngine" />
+                                            </node>
+                                            <node concept="liA8E" id="ZmuSUyY4dA" role="2OqNvi">
+                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                              <node concept="Xl_RD" id="ZmuSUyY4dB" role="37wK5m">
+                                                <property role="Xl_RC" value="clear trub_block_gxw" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbF" id="ZmuSUyY4dC" role="3cqZAp">
+                                          <node concept="2OqwBi" id="ZmuSUyY4dD" role="3clFbG">
+                                            <node concept="37vLTw" id="ZmuSUyY4dE" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="ZmuSUyY4du" resolve="matlabEngine" />
+                                            </node>
+                                            <node concept="liA8E" id="ZmuSUyY4dF" role="2OqNvi">
+                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                              <node concept="Xl_RD" id="ZmuSUyY4dG" role="37wK5m">
+                                                <property role="Xl_RC" value="clear generic_event_block_gxw" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbC" id="2fpjQnRffic" role="3clFbw">
-                                        <node concept="10Nm6u" id="2fpjQnRffid" role="3uHU7w" />
+                                      <node concept="3y3z36" id="6aXPsWusy9C" role="3clFbw">
                                         <node concept="37vLTw" id="2fpjQnRffie" role="3uHU7B">
                                           <ref role="3cqZAo" node="ZmuSUyY4du" resolve="matlabEngine" />
                                         </node>
+                                        <node concept="10Nm6u" id="2fpjQnRffid" role="3uHU7w" />
                                       </node>
                                     </node>
                                     <node concept="3clFbH" id="2fpjQnReTOK" role="3cqZAp" />
-                                    <node concept="3clFbF" id="ZmuSUyY4dz" role="3cqZAp">
-                                      <node concept="2OqwBi" id="ZmuSUyY4d$" role="3clFbG">
-                                        <node concept="37vLTw" id="ZmuSUyY4d_" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="ZmuSUyY4du" resolve="matlabEngine" />
-                                        </node>
-                                        <node concept="liA8E" id="ZmuSUyY4dA" role="2OqNvi">
-                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                          <node concept="Xl_RD" id="ZmuSUyY4dB" role="37wK5m">
-                                            <property role="Xl_RC" value="clear trub_block_gxw" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3clFbF" id="ZmuSUyY4dC" role="3cqZAp">
-                                      <node concept="2OqwBi" id="ZmuSUyY4dD" role="3clFbG">
-                                        <node concept="37vLTw" id="ZmuSUyY4dE" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="ZmuSUyY4du" resolve="matlabEngine" />
-                                        </node>
-                                        <node concept="liA8E" id="ZmuSUyY4dF" role="2OqNvi">
-                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                          <node concept="Xl_RD" id="ZmuSUyY4dG" role="37wK5m">
-                                            <property role="Xl_RC" value="clear generic_event_block_gxw" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
                                     <node concept="3clFbH" id="2fpjQnReR63" role="3cqZAp" />
                                   </node>
                                   <node concept="2OqwBi" id="2aNf2oqWt0s" role="3clFbw">
@@ -1620,52 +1611,40 @@
                                     </node>
                                     <node concept="3clFbJ" id="2fpjQnReSxP" role="3cqZAp">
                                       <node concept="3clFbS" id="2fpjQnReSxQ" role="3clFbx">
-                                        <node concept="3clFbF" id="2fpjQnReSxR" role="3cqZAp">
-                                          <node concept="2YIFZM" id="2fpjQnReSxS" role="3clFbG">
-                                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
-                                            <node concept="10Nm6u" id="2fpjQnReSxT" role="37wK5m" />
-                                            <node concept="Xl_RD" id="6v7th1lSf$z" role="37wK5m">
-                                              <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
+                                        <node concept="3clFbF" id="2fpjQnReRRx" role="3cqZAp">
+                                          <node concept="2OqwBi" id="2fpjQnReRRy" role="3clFbG">
+                                            <node concept="37vLTw" id="2fpjQnReRRz" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="2fpjQnReRRs" resolve="matlabEngine" />
+                                            </node>
+                                            <node concept="liA8E" id="2fpjQnReRR$" role="2OqNvi">
+                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                              <node concept="Xl_RD" id="2fpjQnReRR_" role="37wK5m">
+                                                <property role="Xl_RC" value="clear trub_block_gxw" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbF" id="2fpjQnReRRA" role="3cqZAp">
+                                          <node concept="2OqwBi" id="2fpjQnReRRB" role="3clFbG">
+                                            <node concept="37vLTw" id="2fpjQnReRRC" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="2fpjQnReRRs" resolve="matlabEngine" />
+                                            </node>
+                                            <node concept="liA8E" id="2fpjQnReRRD" role="2OqNvi">
+                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                              <node concept="Xl_RD" id="2fpjQnReRRE" role="37wK5m">
+                                                <property role="Xl_RC" value="clear generic_event_block_gxw" />
+                                              </node>
                                             </node>
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbC" id="2fpjQnReSxV" role="3clFbw">
-                                        <node concept="10Nm6u" id="2fpjQnReSxW" role="3uHU7w" />
+                                      <node concept="3y3z36" id="6aXPsWusAU$" role="3clFbw">
                                         <node concept="37vLTw" id="2fpjQnReSxX" role="3uHU7B">
                                           <ref role="3cqZAo" node="2fpjQnReRRs" resolve="matlabEngine" />
                                         </node>
+                                        <node concept="10Nm6u" id="2fpjQnReSxW" role="3uHU7w" />
                                       </node>
                                     </node>
-                                    <node concept="3clFbH" id="2fpjQnReSh5" role="3cqZAp" />
-                                    <node concept="3clFbF" id="2fpjQnReRRx" role="3cqZAp">
-                                      <node concept="2OqwBi" id="2fpjQnReRRy" role="3clFbG">
-                                        <node concept="37vLTw" id="2fpjQnReRRz" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2fpjQnReRRs" resolve="matlabEngine" />
-                                        </node>
-                                        <node concept="liA8E" id="2fpjQnReRR$" role="2OqNvi">
-                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                          <node concept="Xl_RD" id="2fpjQnReRR_" role="37wK5m">
-                                            <property role="Xl_RC" value="clear trub_block_gxw" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3clFbF" id="2fpjQnReRRA" role="3cqZAp">
-                                      <node concept="2OqwBi" id="2fpjQnReRRB" role="3clFbG">
-                                        <node concept="37vLTw" id="2fpjQnReRRC" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="2fpjQnReRRs" resolve="matlabEngine" />
-                                        </node>
-                                        <node concept="liA8E" id="2fpjQnReRRD" role="2OqNvi">
-                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                          <node concept="Xl_RD" id="2fpjQnReRRE" role="37wK5m">
-                                            <property role="Xl_RC" value="clear generic_event_block_gxw" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                    <node concept="3clFbH" id="2fpjQnReRFV" role="3cqZAp" />
                                   </node>
                                   <node concept="2OqwBi" id="2aNf2oqWy0k" role="3clFbw">
                                     <node concept="37vLTw" id="2aNf2oqWxfA" role="2Oq$k0">
@@ -3564,53 +3543,40 @@
                                                     </node>
                                                     <node concept="3clFbJ" id="4jkBousR4y9" role="3cqZAp">
                                                       <node concept="3clFbS" id="4jkBousR4ya" role="3clFbx">
-                                                        <node concept="3clFbF" id="4jkBousR4yb" role="3cqZAp">
-                                                          <node concept="2YIFZM" id="4jkBousR4yc" role="3clFbG">
-                                                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
-                                                            <node concept="10Nm6u" id="4jkBousR4yd" role="37wK5m" />
-                                                            <node concept="Xl_RD" id="4jkBousR4ye" role="37wK5m">
-                                                              <property role="Xl_RC" value="Please generate Output Checker instance again" />
+                                                        <node concept="3clFbF" id="62U8g3rePVy" role="3cqZAp">
+                                                          <node concept="2OqwBi" id="62U8g3reQar" role="3clFbG">
+                                                            <node concept="37vLTw" id="77AdqIQdpVk" role="2Oq$k0">
+                                                              <ref role="3cqZAo" node="77AdqIQdocs" resolve="matlabEngine" />
+                                                            </node>
+                                                            <node concept="liA8E" id="62U8g3reQq1" role="2OqNvi">
+                                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                                              <node concept="Xl_RD" id="62U8g3reQyc" role="37wK5m">
+                                                                <property role="Xl_RC" value="clear trub_block_gxw" />
+                                                              </node>
+                                                            </node>
+                                                          </node>
+                                                        </node>
+                                                        <node concept="3clFbF" id="ZmuSUyY2XD" role="3cqZAp">
+                                                          <node concept="2OqwBi" id="ZmuSUyY2XE" role="3clFbG">
+                                                            <node concept="37vLTw" id="ZmuSUyY2XF" role="2Oq$k0">
+                                                              <ref role="3cqZAo" node="77AdqIQdocs" resolve="matlabEngine" />
+                                                            </node>
+                                                            <node concept="liA8E" id="ZmuSUyY2XG" role="2OqNvi">
+                                                              <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
+                                                              <node concept="Xl_RD" id="ZmuSUyY2XH" role="37wK5m">
+                                                                <property role="Xl_RC" value="clear generic_event_block_gxw" />
+                                                              </node>
                                                             </node>
                                                           </node>
                                                         </node>
                                                       </node>
-                                                      <node concept="3clFbC" id="4jkBousR4yf" role="3clFbw">
-                                                        <node concept="10Nm6u" id="4jkBousR4yg" role="3uHU7w" />
+                                                      <node concept="3y3z36" id="$4h79IVHOq" role="3clFbw">
                                                         <node concept="37vLTw" id="4jkBousR4yh" role="3uHU7B">
                                                           <ref role="3cqZAo" node="77AdqIQdocs" resolve="matlabEngine" />
                                                         </node>
+                                                        <node concept="10Nm6u" id="4jkBousR4yg" role="3uHU7w" />
                                                       </node>
                                                     </node>
-                                                    <node concept="3clFbH" id="4jkBousR4fN" role="3cqZAp" />
-                                                    <node concept="3clFbF" id="62U8g3rePVy" role="3cqZAp">
-                                                      <node concept="2OqwBi" id="62U8g3reQar" role="3clFbG">
-                                                        <node concept="37vLTw" id="77AdqIQdpVk" role="2Oq$k0">
-                                                          <ref role="3cqZAo" node="77AdqIQdocs" resolve="matlabEngine" />
-                                                        </node>
-                                                        <node concept="liA8E" id="62U8g3reQq1" role="2OqNvi">
-                                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                                          <node concept="Xl_RD" id="62U8g3reQyc" role="37wK5m">
-                                                            <property role="Xl_RC" value="clear trub_block_gxw" />
-                                                          </node>
-                                                        </node>
-                                                      </node>
-                                                    </node>
-                                                    <node concept="3clFbF" id="ZmuSUyY2XD" role="3cqZAp">
-                                                      <node concept="2OqwBi" id="ZmuSUyY2XE" role="3clFbG">
-                                                        <node concept="37vLTw" id="ZmuSUyY2XF" role="2Oq$k0">
-                                                          <ref role="3cqZAo" node="77AdqIQdocs" resolve="matlabEngine" />
-                                                        </node>
-                                                        <node concept="liA8E" id="ZmuSUyY2XG" role="2OqNvi">
-                                                          <ref role="37wK5l" to="972b:~MatlabEngine.evalAsync(java.lang.String):java.util.concurrent.Future" resolve="evalAsync" />
-                                                          <node concept="Xl_RD" id="ZmuSUyY2XH" role="37wK5m">
-                                                            <property role="Xl_RC" value="clear generic_event_block_gxw" />
-                                                          </node>
-                                                        </node>
-                                                      </node>
-                                                    </node>
-                                                    <node concept="3clFbH" id="4jkBousR5_J" role="3cqZAp" />
-                                                    <node concept="3clFbH" id="4jkBousR6mf" role="3cqZAp" />
                                                     <node concept="1X3_iC" id="77AdqIQd77V" role="lGtFl">
                                                       <property role="3V$3am" value="statement" />
                                                       <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />

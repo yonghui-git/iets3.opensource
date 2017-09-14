@@ -16,7 +16,7 @@
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -31,6 +31,9 @@
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
+        <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -69,10 +72,12 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -1439,7 +1444,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xqWi" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                   </node>
@@ -1549,7 +1554,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xt9n" role="2OqNvi">
-                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
@@ -1582,7 +1587,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xst0" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1613,7 +1618,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xtQJ" role="2OqNvi">
-                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -4486,6 +4491,89 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="6aXPsWut3ST" role="3cqZAp" />
+            <node concept="3cpWs8" id="1tgl$O1hg_m" role="3cqZAp">
+              <node concept="3cpWsn" id="1tgl$O1hg_l" role="3cpWs9">
+                <property role="3TUv4t" value="false" />
+                <property role="TrG5h" value="f" />
+                <node concept="3uibUv" id="1tgl$O1hg_n" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="1tgl$O1hg_z" role="33vP2m">
+                  <node concept="1pGfFk" id="1tgl$O1hgAd" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                    <node concept="3cpWs3" id="6aXPsWutb3i" role="37wK5m">
+                      <node concept="Xl_RD" id="6aXPsWutb3o" role="3uHU7w">
+                        <property role="Xl_RC" value="/simulinkModel.slx" />
+                      </node>
+                      <node concept="2OqwBi" id="6aXPsWut9n$" role="3uHU7B">
+                        <node concept="2OqwBi" id="6aXPsWut7S9" role="2Oq$k0">
+                          <node concept="2Sf5sV" id="6aXPsWut7id" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="6aXPsWut8tx" role="2OqNvi">
+                            <ref role="3Tt5mk" to="lqc6:3HrZonixGzD" resolve="tmpFilePath" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="6aXPsWutady" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="1tgl$O1hCK$" role="3cqZAp">
+              <node concept="3cpWsn" id="1tgl$O1hCKB" role="3cpWs9">
+                <property role="TrG5h" value="computationFinished" />
+                <node concept="10P_77" id="1tgl$O1hCKy" role="1tU5fm" />
+                <node concept="3clFbT" id="1tgl$O1hEAc" role="33vP2m">
+                  <property role="3clFbU" value="false" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6XEZarpcu7p" role="3cqZAp" />
+            <node concept="2$JKZl" id="6XEZarpcu7q" role="3cqZAp">
+              <node concept="3clFbS" id="6XEZarpcu7r" role="2LFqv$">
+                <node concept="3clFbJ" id="6XEZarpcu7s" role="3cqZAp">
+                  <node concept="2OqwBi" id="6XEZarpcu7t" role="3clFbw">
+                    <node concept="37vLTw" id="6XEZarpcu7u" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1tgl$O1hg_l" resolve="f" />
+                    </node>
+                    <node concept="liA8E" id="6XEZarpcu7v" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="6XEZarpcu7w" role="3clFbx">
+                    <node concept="3clFbF" id="6XEZarpcu7x" role="3cqZAp">
+                      <node concept="37vLTI" id="6XEZarpcu7y" role="3clFbG">
+                        <node concept="3clFbT" id="6XEZarpcu7z" role="37vLTx">
+                          <property role="3clFbU" value="true" />
+                        </node>
+                        <node concept="37vLTw" id="6XEZarpcu7$" role="37vLTJ">
+                          <ref role="3cqZAo" node="1tgl$O1hCKB" resolve="computationFinished" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4MKUcPmju7t" role="3cqZAp">
+                      <node concept="2YIFZM" id="4MKUcPmju7u" role="3clFbG">
+                        <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                        <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
+                        <node concept="10Nm6u" id="4MKUcPmju7v" role="37wK5m" />
+                        <node concept="Xl_RD" id="4MKUcPmju7$" role="37wK5m">
+                          <property role="Xl_RC" value="The model generation is complete!" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6XEZarpcu7L" role="2$JKZa">
+                <node concept="37vLTw" id="6XEZarpcu7M" role="3fr31v">
+                  <ref role="3cqZAo" node="1tgl$O1hCKB" resolve="computationFinished" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6aXPsWusYb7" role="3cqZAp" />
             <node concept="3clFbF" id="HwFWd0bzsc" role="3cqZAp">
               <node concept="2OqwBi" id="HwFWd0bAeV" role="3clFbG">
                 <node concept="37vLTw" id="7PV9vzKfMyN" role="2Oq$k0">
@@ -4493,16 +4581,6 @@
                 </node>
                 <node concept="liA8E" id="51Y4ts8goid" role="2OqNvi">
                   <ref role="37wK5l" to="972b:~MatlabEngine.disconnect():void" resolve="disconnect" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="4MKUcPmju7t" role="3cqZAp">
-              <node concept="2YIFZM" id="4MKUcPmju7u" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <node concept="10Nm6u" id="4MKUcPmju7v" role="37wK5m" />
-                <node concept="Xl_RD" id="4MKUcPmju7$" role="37wK5m">
-                  <property role="Xl_RC" value="The model generation is complete!" />
                 </node>
               </node>
             </node>
@@ -4581,7 +4659,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="2puXhQwM9y9" role="2OqNvi">
-                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
             <node concept="2OqwBi" id="2aNf2oqVPfI" role="37vLTJ">
