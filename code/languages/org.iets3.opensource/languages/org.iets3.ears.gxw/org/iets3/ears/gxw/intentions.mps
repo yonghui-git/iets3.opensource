@@ -240,7 +240,7 @@
       <node concept="3clFbS" id="5NauajGHc1x" role="2VODD2">
         <node concept="3clFbF" id="5NauajGHc2W" role="3cqZAp">
           <node concept="Xl_RD" id="5NauajGHc2V" role="3clFbG">
-            <property role="Xl_RC" value="Transform" />
+            <property role="Xl_RC" value="Generate Synchronous Dataflow Diagram" />
           </node>
         </node>
       </node>
