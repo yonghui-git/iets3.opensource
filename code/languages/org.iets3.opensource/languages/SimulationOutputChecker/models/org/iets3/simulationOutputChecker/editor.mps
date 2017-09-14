@@ -471,7 +471,7 @@
                 <property role="3TUv4t" value="true" />
                 <node concept="17QB3L" id="obzvELprxB" role="1tU5fm" />
                 <node concept="Xl_RD" id="obzvELpw_j" role="33vP2m">
-                  <property role="Xl_RC" value="testCaseView" />
+                  <property role="Xl_RC" value="Test Generation View" />
                 </node>
               </node>
             </node>
@@ -481,7 +481,7 @@
                 <property role="3TUv4t" value="true" />
                 <node concept="17QB3L" id="obzvELpxla" role="1tU5fm" />
                 <node concept="Xl_RD" id="obzvELpxlb" role="33vP2m">
-                  <property role="Xl_RC" value="stepView" />
+                  <property role="Xl_RC" value="Simulation View" />
                 </node>
               </node>
             </node>
@@ -831,7 +831,7 @@
                   <node concept="1pGfFk" id="obzvELsQIm" role="2ShVmc">
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                     <node concept="Xl_RD" id="obzvELsRlf" role="37wK5m">
-                      <property role="Xl_RC" value="Depth" />
+                      <property role="Xl_RC" value="Depth:" />
                     </node>
                   </node>
                 </node>
@@ -900,12 +900,17 @@
                   <ref role="3cqZAo" node="obzvELp3tv" resolve="depth" />
                 </node>
                 <node concept="liA8E" id="obzvELtyrN" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Component.setSize(int,int):void" resolve="setSize" />
-                  <node concept="3cmrfG" id="obzvELtCK5" role="37wK5m">
-                    <property role="3cmrfH" value="200" />
-                  </node>
-                  <node concept="3cmrfG" id="obzvELtE4_" role="37wK5m">
-                    <property role="3cmrfH" value="50" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+                  <node concept="2ShNRf" id="3iqnFbMRXOa" role="37wK5m">
+                    <node concept="1pGfFk" id="3iqnFbMS6U0" role="2ShVmc">
+                      <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                      <node concept="3cmrfG" id="2su1YOjhw_q" role="37wK5m">
+                        <property role="3cmrfH" value="30" />
+                      </node>
+                      <node concept="3cmrfG" id="2su1YOjimJ8" role="37wK5m">
+                        <property role="3cmrfH" value="23" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -940,7 +945,7 @@
                   <node concept="1pGfFk" id="obzvELt7II" role="2ShVmc">
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                     <node concept="Xl_RD" id="obzvELt7IJ" role="37wK5m">
-                      <property role="Xl_RC" value="allowSameInput" />
+                      <property role="Xl_RC" value=" Allow Repeated Input in Test Case:" />
                     </node>
                   </node>
                 </node>
@@ -1015,7 +1020,7 @@
                   <node concept="1pGfFk" id="obzvELthKQ" role="2ShVmc">
                     <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                     <node concept="Xl_RD" id="obzvELthKR" role="37wK5m">
-                      <property role="Xl_RC" value="allowSameOutput" />
+                      <property role="Xl_RC" value=" Allow Simultaneous Inputs:" />
                     </node>
                   </node>
                 </node>
@@ -1507,7 +1512,7 @@
                                             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                             <node concept="10Nm6u" id="2fpjQnRffia" role="37wK5m" />
                                             <node concept="Xl_RD" id="2fpjQnRffib" role="37wK5m">
-                                              <property role="Xl_RC" value="Please generate Output Checker instance again" />
+                                              <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
                                             </node>
                                           </node>
                                         </node>
@@ -1620,8 +1625,8 @@
                                             <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                             <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
                                             <node concept="10Nm6u" id="2fpjQnReSxT" role="37wK5m" />
-                                            <node concept="Xl_RD" id="2fpjQnReSxU" role="37wK5m">
-                                              <property role="Xl_RC" value="Please generate Output Checker instance again" />
+                                            <node concept="Xl_RD" id="6v7th1lSf$z" role="37wK5m">
+                                              <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
                                             </node>
                                           </node>
                                         </node>
@@ -2111,8 +2116,8 @@
                                                                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                                                 <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
                                                                 <node concept="10Nm6u" id="Fj106O7ABp" role="37wK5m" />
-                                                                <node concept="Xl_RD" id="Fj106O7ABq" role="37wK5m">
-                                                                  <property role="Xl_RC" value="Please generate the Simulink model again" />
+                                                                <node concept="Xl_RD" id="$OQL4HIbUU" role="37wK5m">
+                                                                  <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
                                                                 </node>
                                                               </node>
                                                             </node>
@@ -2211,8 +2216,8 @@
                                                 <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
                                                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                                 <node concept="10Nm6u" id="4MKUcPmju7v" role="37wK5m" />
-                                                <node concept="Xl_RD" id="4MKUcPmju7$" role="37wK5m">
-                                                  <property role="Xl_RC" value="Please generate Output Checker instance again" />
+                                                <node concept="Xl_RD" id="$OQL4HIohw" role="37wK5m">
+                                                  <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
                                                 </node>
                                               </node>
                                             </node>
@@ -2700,7 +2705,7 @@
                                                                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                                                 <node concept="10Nm6u" id="ZmuSUyYUPn" role="37wK5m" />
                                                                 <node concept="Xl_RD" id="ZmuSUyYUPo" role="37wK5m">
-                                                                  <property role="Xl_RC" value="Please generate the Simulink model again" />
+                                                                  <property role="Xl_RC" value="Please re-generate the Simulink model." />
                                                                 </node>
                                                               </node>
                                                             </node>
@@ -2786,8 +2791,8 @@
                                                 <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object):void" resolve="showMessageDialog" />
                                                 <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                                                 <node concept="10Nm6u" id="7UTFLkaqG6i" role="37wK5m" />
-                                                <node concept="Xl_RD" id="7UTFLkaqG6j" role="37wK5m">
-                                                  <property role="Xl_RC" value="Please generate Output Checker instance again" />
+                                                <node concept="Xl_RD" id="$OQL4HIq12" role="37wK5m">
+                                                  <property role="Xl_RC" value="Please re-generate the simulation / test case generation panel." />
                                                 </node>
                                               </node>
                                             </node>

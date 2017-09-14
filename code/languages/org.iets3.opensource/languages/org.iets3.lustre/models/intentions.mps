@@ -16,7 +16,7 @@
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" />
     <import index="972b" ref="0b6b7b3c-cdda-4a45-903d-ee5f7706c340/java:com.mathworks.engine(MatlabEngine.lib/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
-    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1285,7 +1285,7 @@
       <node concept="3clFbS" id="3q$2SlebIvg" role="2VODD2">
         <node concept="3clFbF" id="3q$2SlebJmN" role="3cqZAp">
           <node concept="Xl_RD" id="3q$2SlebJmM" role="3clFbG">
-            <property role="Xl_RC" value="GenerateSimulinkModel" />
+            <property role="Xl_RC" value="Generate Simulink Model" />
           </node>
         </node>
       </node>
@@ -1439,7 +1439,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xqWi" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                   </node>
@@ -1549,7 +1549,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3inSYB5xt9n" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                        <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                       </node>
                     </node>
                     <node concept="Xl_RD" id="1yEH9AqPoSr" role="3uHU7B">
@@ -1582,7 +1582,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xst0" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -1613,7 +1613,7 @@
                           </node>
                         </node>
                         <node concept="2qgKlT" id="3inSYB5xtQJ" role="2OqNvi">
-                          <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                          <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                         </node>
                       </node>
                     </node>
@@ -4549,7 +4549,7 @@
       <node concept="3clFbS" id="7C$xkK6TOdP" role="2VODD2">
         <node concept="3clFbF" id="7C$xkK6TSOJ" role="3cqZAp">
           <node concept="Xl_RD" id="7C$xkK6TSOI" role="3clFbG">
-            <property role="Xl_RC" value="AddOutputChecker" />
+            <property role="Xl_RC" value="Add Simulation / Test Case Generation Panel" />
           </node>
         </node>
       </node>
@@ -4581,7 +4581,7 @@
                 </node>
               </node>
               <node concept="2qgKlT" id="2puXhQwM9y9" role="2OqNvi">
-                <ref role="37wK5l" to="hwgx:5lKnBeAuKov" resolve="getCanonicalPath" />
+                <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
             <node concept="2OqwBi" id="2aNf2oqVPfI" role="37vLTJ">
