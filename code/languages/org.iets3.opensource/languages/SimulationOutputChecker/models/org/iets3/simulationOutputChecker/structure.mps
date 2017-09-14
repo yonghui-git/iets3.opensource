@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qd5k" ref="r:8a818e8f-03d4-44be-b838-eff0c518f4d9(org.iets3.simulink.resultmodel.structure)" implicit="true" />
+    <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -16,9 +17,13 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <property id="241647608299431129" name="propertyId" index="IQ2nx" />
@@ -57,6 +62,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" to="qd5k:5uxx$av$zT0" resolve="InputCell" />
     </node>
+    <node concept="1TJgyj" id="6XEZarpcUTJ" role="1TKVEi">
+      <property role="IQ2ns" value="8028507079280143983" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tracablityList" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6XEZarpcOBY" resolve="TraceablityList" />
+    </node>
     <node concept="1TJgyi" id="2aNf2oqVf7h" role="1TKVEl">
       <property role="IQ2nx" value="2500408352478917073" />
       <property role="TrG5h" value="filePath" />
@@ -66,6 +78,33 @@
       <property role="IQ2nx" value="384140770239581517" />
       <property role="TrG5h" value="currentView" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6XEZarpcOBY">
+    <property role="EcuMT" value="8028507079280118270" />
+    <property role="TrG5h" value="TraceablityList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6XEZarpcOBZ" role="1TKVEi">
+      <property role="IQ2ns" value="8028507079280118271" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listOfTraces" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6XEZarpcOC3" resolve="TraceRef" />
+    </node>
+    <node concept="PrWs8" id="2PjhdmNngSh" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6XEZarpcOC3">
+    <property role="EcuMT" value="8028507079280118275" />
+    <property role="TrG5h" value="TraceRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6XEZarpcUTH" role="1TKVEi">
+      <property role="IQ2ns" value="8028507079280143981" />
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="referenceToRequirement" />
+      <ref role="20lvS9" to="q3w4:6_TIzovfnvj" resolve="RequirementTemplate" />
     </node>
   </node>
 </model>

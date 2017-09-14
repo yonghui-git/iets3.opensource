@@ -3,10 +3,12 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
     <import index="q3w4" ref="r:9fc7e752-54e5-497f-97da-8e179a90760e(org.iets3.ears.gxw.structure)" />
+    <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -118,6 +120,13 @@
     </node>
     <node concept="PrWs8" id="5uxx$av$BuW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2PjhdmNmOdz" role="1TKVEi">
+      <property role="IQ2ns" value="3266029839401567075" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listOfRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="sgle:6XEZarpcOBY" resolve="TraceablityList" />
     </node>
   </node>
   <node concept="1TIwiD" id="5uxx$av$zT1">
