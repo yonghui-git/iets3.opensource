@@ -133,6 +133,13 @@
     <property role="EcuMT" value="6314475773253271105" />
     <property role="TrG5h" value="OutputCell" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3gfMyTVj4Mu" role="1TKVEi">
+      <property role="IQ2ns" value="3751439315608816798" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="listOfRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="sgle:6XEZarpcOBY" resolve="TraceablityList" />
+    </node>
     <node concept="1TJgyi" id="5uxx$av$zTR" role="1TKVEl">
       <property role="IQ2nx" value="6314475773253271159" />
       <property role="TrG5h" value="outputValue" />

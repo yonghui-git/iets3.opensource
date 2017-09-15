@@ -65,7 +65,14 @@
     <node concept="1TJgyj" id="6XEZarpcUTJ" role="1TKVEi">
       <property role="IQ2ns" value="8028507079280143983" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="tracablityList" />
+      <property role="20kJfa" value="tracablityListInput" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6XEZarpcOBY" resolve="TraceablityList" />
+    </node>
+    <node concept="1TJgyj" id="3gfMyTVoBX_" role="1TKVEi">
+      <property role="IQ2ns" value="3751439315610271589" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tracablityListOutput" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6XEZarpcOBY" resolve="TraceablityList" />
     </node>

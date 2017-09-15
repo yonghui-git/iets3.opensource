@@ -51,7 +51,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="/Users/levilucio/git/iets3.opensource/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
+    <stubModelEntry path="${iets3.github.opensource.home}/code/languages/org.iets3.opensource/solutions/MatlabEngine.lib/engine.jar" />
   </stubModelEntries>
   <sourcePath />
   <usedDevKits>

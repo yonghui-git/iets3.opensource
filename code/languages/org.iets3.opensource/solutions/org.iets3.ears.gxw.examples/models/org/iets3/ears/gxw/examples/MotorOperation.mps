@@ -5,6 +5,7 @@
     <use id="7731a166-da1f-472e-a40a-2283f5e47dc5" name="org.iets3.ears.gxw" version="-1" />
     <use id="33eb1b5b-ad96-4262-9112-684c487e01e0" name="org.iets3.graphicalLustre" version="-1" />
     <use id="4796fa81-3510-44f2-9810-887e950aacc3" name="org.iets3.simulationOutputChecker" version="-1" />
+    <use id="be728f68-d295-4af5-a9af-f280cb60ec85" name="org.iets3.simulink.resultmodel" version="0" />
   </languages>
   <imports>
     <import index="sgle" ref="r:e9507403-d0c6-4ae9-8f38-d17a1f3a0c92(org.iets3.simulationOutputChecker.structure)" />
@@ -225,9 +226,9 @@
       <node concept="35YNXi" id="2Bva3qemdAZ" role="35gu1z">
         <property role="TrG5h" value="stop oil motor" />
       </node>
-      <node concept="OJJ_J" id="2Bva3qemdB9" role="35YNX4">
-        <node concept="OJJ_U" id="2Bva3qemdBe" role="9Cqx7">
-          <ref role="OJJ_O" node="5ByxUIFAEiW" />
+      <node concept="OJJ_J" id="3gfMyTVoQVj" role="35YNX4">
+        <node concept="OJJ_U" id="3gfMyTVoQVo" role="9Cqx7">
+          <ref role="OJJ_O" node="5ByxUIFAEiO" />
         </node>
       </node>
     </node>
@@ -235,10 +236,8 @@
       <node concept="35YNXi" id="2Bva3qemdBt" role="35gu1z">
         <property role="TrG5h" value="stop auxiliary motor" />
       </node>
-      <node concept="OJJ_J" id="2Bva3qemdBF" role="35YNX4">
-        <node concept="OJJ_U" id="2Bva3qemdBK" role="9Cqx7">
-          <ref role="OJJ_O" node="5ByxUIFAEiW" />
-        </node>
+      <node concept="OJJ_U" id="3gfMyTVoQVt" role="35YNX4">
+        <ref role="OJJ_O" node="5ByxUIFAEjz" />
       </node>
     </node>
   </node>
