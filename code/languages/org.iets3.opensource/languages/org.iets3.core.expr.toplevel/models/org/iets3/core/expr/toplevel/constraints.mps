@@ -136,6 +136,7 @@
       <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
+      <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
@@ -146,6 +147,7 @@
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
         <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
         <child id="3906442776579556548" name="presentation" index="Bn3R6" />
+        <child id="1163203787401" name="referentSetHandler" index="3kmjI7" />
         <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
@@ -268,6 +270,26 @@
                     <ref role="cht4Q" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="17RY8bQOkhH" role="3kmjI7">
+        <node concept="3clFbS" id="17RY8bQOkhI" role="2VODD2">
+          <node concept="3clFbF" id="17RY8bQOkiC" role="3cqZAp">
+            <node concept="2OqwBi" id="17RY8bQOkzj" role="3clFbG">
+              <node concept="3kakTB" id="17RY8bQOkiA" role="2Oq$k0" />
+              <node concept="2qgKlT" id="17RY8bQOkQD" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:17RY8bQObwK" resolve="updateType" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="17RY8bQUDl$" role="3cqZAp">
+            <node concept="2OqwBi" id="17RY8bQUDE1" role="3clFbG">
+              <node concept="3kakTB" id="17RY8bQUDly" role="2Oq$k0" />
+              <node concept="2qgKlT" id="17RY8bQUEmI" role="2OqNvi">
+                <ref role="37wK5l" to="nu60:17RY8bQUyLU" resolve="updateName" />
               </node>
             </node>
           </node>

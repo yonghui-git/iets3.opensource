@@ -466,6 +466,9 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1224414427926" name="jetbrains.mps.baseLanguage.collections.structure.SequenceCreator" flags="nn" index="kMnCb">
+        <child id="1224414456414" name="elementType" index="kMuH3" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -19709,6 +19712,236 @@
     <node concept="3Tm1VV" id="4Pi6J8Cccrr" role="1B3o_S" />
     <node concept="3uibUv" id="4Pi6J8Ccde5" role="1zkMxy">
       <ref role="3uigEE" node="7lHetQyBI3r" resolve="ValueAndTrace" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7nkcv_Bo$bj">
+    <property role="3GE5qa" value="contract" />
+    <ref role="13h7C2" to="hm2y:7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+    <node concept="13i0hz" id="7nkcv__K7Lt" role="13h7CS">
+      <property role="TrG5h" value="createCarriedISSVariableForCarrier" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="37vLTG" id="7nkcv__K86R" role="3clF46">
+        <property role="TrG5h" value="carrier" />
+        <node concept="3Tqbb2" id="7nkcv__K877" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7nkcv_BoBYO" role="3clF46">
+        <property role="TrG5h" value="varNamePrefix" />
+        <node concept="17QB3L" id="7nkcv_BoBZc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="45Lu9X0qQzv" role="3clF46">
+        <property role="TrG5h" value="type" />
+        <node concept="3Tqbb2" id="45Lu9X0qYaG" role="1tU5fm">
+          <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7nkcv__K7Lu" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7nkcv__Kad4" role="3clF45">
+        <ref role="ehGHo" to="hm2y:7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+      </node>
+      <node concept="3clFbS" id="7nkcv__K7Lw" role="3clF47">
+        <node concept="3cpWs8" id="7nkcv_Bo_Cd" role="3cqZAp">
+          <node concept="3cpWsn" id="7nkcv_Bo_Ce" role="3cpWs9">
+            <property role="TrG5h" value="node" />
+            <node concept="3Tqbb2" id="7nkcv_Bo_Cf" role="1tU5fm">
+              <ref role="ehGHo" to="hm2y:7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+            </node>
+            <node concept="2ShNRf" id="7nkcv_Bo_Cg" role="33vP2m">
+              <node concept="3zrR0B" id="7nkcv_Bo_Ch" role="2ShVmc">
+                <node concept="3Tqbb2" id="7nkcv_Bo_Ci" role="3zrR0E">
+                  <ref role="ehGHo" to="hm2y:7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nkcv_Bo_Cj" role="3cqZAp">
+          <node concept="37vLTI" id="7nkcv_Bo_Ck" role="3clFbG">
+            <node concept="37vLTw" id="7nkcv_Bo_Cl" role="37vLTx">
+              <ref role="3cqZAo" node="7nkcv__K86R" resolve="carrier" />
+            </node>
+            <node concept="2OqwBi" id="7nkcv_Bo_Cm" role="37vLTJ">
+              <node concept="37vLTw" id="7nkcv_Bo_Cn" role="2Oq$k0">
+                <ref role="3cqZAo" node="7nkcv_Bo_Ce" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="7nkcv_BoB3l" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:7nkcv_Bo$bu" resolve="carrier" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nkcv_BoCnP" role="3cqZAp">
+          <node concept="37vLTI" id="7nkcv_BoDok" role="3clFbG">
+            <node concept="37vLTw" id="7nkcv_BoDv0" role="37vLTx">
+              <ref role="3cqZAo" node="7nkcv_BoBYO" resolve="varNamePrefix" />
+            </node>
+            <node concept="2OqwBi" id="7nkcv_BoCw4" role="37vLTJ">
+              <node concept="37vLTw" id="7nkcv_BoCnN" role="2Oq$k0">
+                <ref role="3cqZAo" node="7nkcv_Bo_Ce" resolve="node" />
+              </node>
+              <node concept="3TrcHB" id="7nkcv_BoCIX" role="2OqNvi">
+                <ref role="3TsBF5" to="hm2y:7nkcv_BoC1G" resolve="varNamePrefix" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5M9d$Pt8ZUU" role="3cqZAp">
+          <node concept="3clFbS" id="5M9d$Pt8ZUW" role="3clFbx">
+            <node concept="SfApY" id="5M9d$Pt9nFI" role="3cqZAp">
+              <node concept="3clFbS" id="5M9d$Pt9nFK" role="SfCbr">
+                <node concept="YS8fn" id="5M9d$Pt90kE" role="3cqZAp">
+                  <node concept="2ShNRf" id="5M9d$Pt90l4" role="YScLw">
+                    <node concept="1pGfFk" id="5M9d$Pt9nhu" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="5M9d$Pt9oAo" role="37wK5m">
+                        <property role="Xl_RC" value="created a CarriedISSVariable with type=null." />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="TDmWw" id="5M9d$Pt9nFL" role="TEbGg">
+                <node concept="3cpWsn" id="5M9d$Pt9nFN" role="TDEfY">
+                  <property role="TrG5h" value="rte" />
+                  <node concept="3uibUv" id="5M9d$Pt9nGx" role="1tU5fm">
+                    <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="5M9d$Pt9nFR" role="TDEfX">
+                  <node concept="3clFbF" id="5M9d$Pt9nWq" role="3cqZAp">
+                    <node concept="2OqwBi" id="5M9d$Pt9obb" role="3clFbG">
+                      <node concept="37vLTw" id="5M9d$Pt9nWp" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5M9d$Pt9nFN" resolve="rte" />
+                      </node>
+                      <node concept="liA8E" id="5M9d$Pt9o_w" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="5M9d$Pt90g2" role="3clFbw">
+            <node concept="10Nm6u" id="5M9d$Pt90kf" role="3uHU7w" />
+            <node concept="37vLTw" id="5M9d$Pt8ZWb" role="3uHU7B">
+              <ref role="3cqZAo" node="45Lu9X0qQzv" resolve="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="45Lu9X0qYtR" role="3cqZAp">
+          <node concept="37vLTI" id="45Lu9X0qZdH" role="3clFbG">
+            <node concept="37vLTw" id="45Lu9X0qZin" role="37vLTx">
+              <ref role="3cqZAo" node="45Lu9X0qQzv" resolve="type" />
+            </node>
+            <node concept="2OqwBi" id="45Lu9X0qYAC" role="37vLTJ">
+              <node concept="37vLTw" id="45Lu9X0qYtP" role="2Oq$k0">
+                <ref role="3cqZAo" node="7nkcv_Bo_Ce" resolve="node" />
+              </node>
+              <node concept="3TrEf2" id="45Lu9X0qYPC" role="2OqNvi">
+                <ref role="3Tt5mk" to="hm2y:45Lu9X0qYfr" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nkcv_Bo_Cp" role="3cqZAp">
+          <node concept="37vLTw" id="7nkcv_Bo_Cq" role="3clFbG">
+            <ref role="3cqZAo" node="7nkcv_Bo_Ce" resolve="node" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="7nkcv__JtBa" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableName" />
+      <ref role="13i0hy" node="7BxfuU7QrrQ" resolve="getVariableName" />
+      <node concept="3Tm1VV" id="7nkcv__JtBb" role="1B3o_S" />
+      <node concept="3clFbS" id="7nkcv__JtBe" role="3clF47">
+        <node concept="3clFbF" id="7nkcv__JtOy" role="3cqZAp">
+          <node concept="3cpWs3" id="7nkcv_BoFb8" role="3clFbG">
+            <node concept="2OqwBi" id="7nkcv_BoE50" role="3uHU7B">
+              <node concept="13iPFW" id="7nkcv_BoDKg" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7nkcv_BoEwk" role="2OqNvi">
+                <ref role="3TsBF5" to="hm2y:7nkcv_BoC1G" resolve="varNamePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7nkcv_BoFsd" role="3uHU7w">
+              <node concept="2JrnkZ" id="7nkcv_BoFse" role="2Oq$k0">
+                <node concept="2OqwBi" id="7nkcv_BoFsf" role="2JrQYb">
+                  <node concept="13iPFW" id="7nkcv_BoFsg" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="7nkcv_BoFsh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="hm2y:7nkcv_Bo$bu" resolve="carrier" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="7nkcv_BoFsi" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7nkcv__JtBf" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7nkcv__JtBg" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getVariableType" />
+      <ref role="13i0hy" node="7BxfuU7QrsR" resolve="getVariableType" />
+      <node concept="3Tm1VV" id="7nkcv__JtBh" role="1B3o_S" />
+      <node concept="3clFbS" id="7nkcv__JtBk" role="3clF47">
+        <node concept="3clFbF" id="7nkcv_Bsl_U" role="3cqZAp">
+          <node concept="2OqwBi" id="45Lu9X0qZH9" role="3clFbG">
+            <node concept="13iPFW" id="45Lu9X0qZx0" role="2Oq$k0" />
+            <node concept="3TrEf2" id="45Lu9X0qZW8" role="2OqNvi">
+              <ref role="3Tt5mk" to="hm2y:45Lu9X0qYfr" resolve="type" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7nkcv__JtBl" role="3clF45">
+        <ref role="ehGHo" to="hm2y:6sdnDbSlaok" resolve="Type" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="7nkcv__JtBm" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getVariableConstraints" />
+      <ref role="13i0hy" node="7BxfuU7Qruw" resolve="getVariableConstraints" />
+      <node concept="3Tm1VV" id="7nkcv__JtBp" role="1B3o_S" />
+      <node concept="3clFbS" id="7nkcv__JtBr" role="3clF47">
+        <node concept="3SKdUt" id="7nkcv__JC93" role="3cqZAp">
+          <node concept="3SKdUq" id="7nkcv__JC94" role="3SKWNk">
+            <property role="3SKdUp" value="pre- and postconditions are not yet leveraged" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7nkcv__JC95" role="3cqZAp">
+          <node concept="2ShNRf" id="7nkcv__JC96" role="3clFbG">
+            <node concept="kMnCb" id="7nkcv__JC97" role="2ShVmc">
+              <node concept="3Tqbb2" id="7nkcv__JC98" role="kMuH3">
+                <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="A3Dl8" id="7nkcv__JtBs" role="3clF45">
+        <node concept="3Tqbb2" id="7nkcv__JtBt" role="A3Ik2">
+          <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="7nkcv_Bo$bk" role="13h7CW">
+      <node concept="3clFbS" id="7nkcv_Bo$bl" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7nkcv_CgRFc">
+    <property role="3GE5qa" value="contract" />
+    <ref role="13h7C2" to="hm2y:7nkcv_Bo$aB" resolve="ICarryMyOwnISSVariable" />
+    <node concept="13hLZK" id="7nkcv_CgRFd" role="13h7CW">
+      <node concept="3clFbS" id="7nkcv_CgRFe" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -1580,5 +1580,52 @@
     <property role="34LRSv" value="§disable-caching-globally" />
     <ref role="1TJDcQ" node="4Pi6J8BU$OM" resolve="PragmaExpression" />
   </node>
+  <node concept="PlHQZ" id="7nkcv_Bo$aB">
+    <property role="EcuMT" value="8490466144751338151" />
+    <property role="TrG5h" value="ICarryMyOwnISSVariable" />
+    <property role="3GE5qa" value="contract" />
+    <node concept="1TJgyj" id="7nkcv_B0O5y" role="1TKVEi">
+      <property role="IQ2ns" value="8490466144745111906" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="ownVar" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+    </node>
+    <node concept="1TJgyj" id="7nkcv_B0MOM" role="1TKVEi">
+      <property role="IQ2ns" value="8490466144745106738" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="var" />
+      <ref role="20lvS9" node="7nkcv_Bo$bf" resolve="CarriedISSVariable" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7nkcv_Bo$bf">
+    <property role="EcuMT" value="8490466144751338191" />
+    <property role="3GE5qa" value="contract" />
+    <property role="TrG5h" value="CarriedISSVariable" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7nkcv_BoC1G" role="1TKVEl">
+      <property role="IQ2nx" value="8490466144751353964" />
+      <property role="TrG5h" value="varNamePrefix" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7nkcv_Bo$bu" role="1TKVEi">
+      <property role="IQ2ns" value="8490466144751338206" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="carrier" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="45Lu9X0qYfr" role="1TKVEi">
+      <property role="IQ2ns" value="4715682910209565659" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" node="6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="PrWs8" id="7nkcv_Bo$bg" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+  </node>
 </model>
 
