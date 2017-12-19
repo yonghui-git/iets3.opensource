@@ -50,7 +50,7 @@ if (!project.hasProperty("mbeddrVersion")) {
     }
     else {
         //default version
-        ext.mbeddrVersion = '1.0.19698.00e7dad'
+        ext.mbeddrVersion = '1.0.19754.2e0c298'
     }
 }
 
