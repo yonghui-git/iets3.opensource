@@ -13649,5 +13649,9 @@
       </node>
     </node>
   </node>
+  <node concept="3p36aQ" id="4yRe11GUWgn">
+    <property role="3GE5qa" value="components.substructure" />
+    <ref role="aqKnT" to="w9y2:siw10FjaPn" resolve="EmptySubstructureContent" />
+  </node>
 </model>
 
