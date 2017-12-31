@@ -975,5 +975,58 @@
       <ref role="PrY4T" to="hm2y:ORfz$DS6_k" resolve="IMayAllowEffect" />
     </node>
   </node>
+  <node concept="1TIwiD" id="cU4eM9UV1K">
+    <property role="EcuMT" value="232516938875252848" />
+    <property role="TrG5h" value="Variant" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="vd" />
+    <property role="34LRSv" value="variant" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="cU4eM9UV1L" role="PzmwI">
+      <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyj" id="cU4eM9UXg0" role="1TKVEi">
+      <property role="IQ2ns" value="232516938875261952" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="matcher" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="cU4eM9UXfZ" resolve="VariantClause" />
+    </node>
+    <node concept="1TJgyj" id="cU4eMa0s0Q" role="1TKVEi">
+      <property role="IQ2ns" value="232516938876698678" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="1TJgyj" id="cU4eM9UXhK" role="1TKVEi">
+      <property role="IQ2ns" value="232516938875262064" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="base" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cU4eM9UXfZ">
+    <property role="EcuMT" value="232516938875261951" />
+    <property role="3GE5qa" value="vd" />
+    <property role="TrG5h" value="VariantClause" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="cU4eM9UXgL">
+    <property role="EcuMT" value="232516938875262001" />
+    <property role="3GE5qa" value="vd" />
+    <property role="TrG5h" value="ValidFromClause" />
+    <property role="34LRSv" value="valid from" />
+    <ref role="1TJDcQ" node="cU4eM9UXfZ" resolve="VariantClause" />
+    <node concept="1TJgyi" id="cU4eM9UXgM" role="1TKVEl">
+      <property role="IQ2nx" value="232516938875262002" />
+      <property role="TrG5h" value="time" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 
