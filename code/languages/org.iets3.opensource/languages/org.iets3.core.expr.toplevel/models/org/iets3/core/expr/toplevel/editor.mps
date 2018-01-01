@@ -10,6 +10,7 @@
     <use id="3bdedd09-792a-4e15-a4db-83970df3ee86" name="de.itemis.mps.editor.collapsible" version="-1" />
     <use id="21063c66-85ba-4e98-839b-036445b17ae2" name="de.itemis.mps.editor.layout" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -412,6 +413,12 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1176544042499" name="jetbrains.mps.lang.typesystem.structure.Node_TypeOperation" flags="nn" index="3JvlWi" />
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
+        <property id="7122083600696909496" name="falseText" index="2aYyvO" />
+        <property id="7122083600696906118" name="trueText" index="2aYyza" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
@@ -3283,6 +3290,24 @@
           <property role="3F0ifm" value="variant" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
+        <node concept="3F0ifn" id="cU4eMajKjC" role="3EZMnx">
+          <property role="3F0ifm" value="/" />
+          <node concept="11L4FC" id="cU4eMajKjO" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="cU4eMajKjT" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2aMyGU" id="cU4eMahrjd" role="3EZMnx">
+          <property role="2aYyza" value="runtime" />
+          <property role="2aYyvO" value="static" />
+          <ref role="1NtTu8" to="yv47:cU4eMahrix" resolve="runtime" />
+          <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
+          <node concept="Vb9p2" id="cU4eMahrjF" role="3F10Kt">
+            <property role="Vbekb" value="BOLD" />
+          </node>
+        </node>
         <node concept="3F0ifn" id="cU4eM9UXhE" role="3EZMnx">
           <property role="3F0ifm" value="of" />
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
@@ -3301,7 +3326,7 @@
           <ref role="1k5W1q" to="itrz:4rZeNQ6MfR7" resolve="iets3Keyword" />
         </node>
         <node concept="3F1sOY" id="cU4eM9UXhw" role="3EZMnx">
-          <ref role="1NtTu8" to="yv47:cU4eM9UXg0" resolve="matcher" />
+          <ref role="1NtTu8" to="yv47:cU4eM9UXg0" resolve="clause" />
         </node>
       </node>
       <node concept="3EZMnI" id="cU4eMa0s1L" role="3EZMnx">

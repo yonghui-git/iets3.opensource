@@ -86,6 +86,9 @@
         <property role="YLQ7P" value="The property was moved to concept &quot;org.iets3.core.expr.lambda.structure.IFunctionLike&quot;" />
       </node>
     </node>
+    <node concept="PrWs8" id="cU4eMacM2w" role="PzmwI">
+      <ref role="PrY4T" node="cU4eMacfi1" resolve="ICanHaveVariants" />
+    </node>
     <node concept="PrWs8" id="49WTic8f4nK" role="PzmwI">
       <ref role="PrY4T" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
     </node>
@@ -281,6 +284,9 @@
     </node>
     <node concept="PrWs8" id="xu7xcKiodX" role="PzmwI">
       <ref role="PrY4T" node="xu7xcKinTJ" resolve="IRecordDeclaration" />
+    </node>
+    <node concept="PrWs8" id="cU4eMah0YM" role="PzmwI">
+      <ref role="PrY4T" node="cU4eMacfi1" resolve="ICanHaveVariants" />
     </node>
     <node concept="1TJgyj" id="7D7uZV2dYzK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -983,13 +989,21 @@
     <property role="3GE5qa" value="vd" />
     <property role="34LRSv" value="variant" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="cU4eMahrix" role="1TKVEl">
+      <property role="IQ2nx" value="232516938881152161" />
+      <property role="TrG5h" value="runtime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="PrWs8" id="cU4eM9UV1L" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
+    </node>
+    <node concept="PrWs8" id="cU4eMalmL8" role="PzmwI">
+      <ref role="PrY4T" node="cU4eMalmJr" resolve="IVariantClauseContext" />
     </node>
     <node concept="1TJgyj" id="cU4eM9UXg0" role="1TKVEi">
       <property role="IQ2ns" value="232516938875261952" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="matcher" />
+      <property role="20kJfa" value="clause" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="cU4eM9UXfZ" resolve="VariantClause" />
     </node>
@@ -1027,6 +1041,16 @@
       <property role="TrG5h" value="time" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="cU4eMacfi1">
+    <property role="EcuMT" value="232516938879792257" />
+    <property role="3GE5qa" value="vd" />
+    <property role="TrG5h" value="ICanHaveVariants" />
+  </node>
+  <node concept="PlHQZ" id="cU4eMalmJr">
+    <property role="EcuMT" value="232516938882182107" />
+    <property role="3GE5qa" value="vd" />
+    <property role="TrG5h" value="IVariantClauseContext" />
   </node>
 </model>
 

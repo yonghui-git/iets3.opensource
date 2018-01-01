@@ -23,6 +23,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
         <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
@@ -56,6 +57,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -134,6 +138,22 @@
       <node concept="BaHAS" id="uGVYUiiVGY" role="cpn$n">
         <property role="BaHAW" value="org.iets3.core.expr.tests.structure" />
         <property role="BaGAP" value="" />
+      </node>
+    </node>
+    <node concept="qq9P1" id="cU4eMarpPk" role="qq9xR">
+      <property role="2TnfIJ" value="true" />
+      <ref role="qq9wM" to="av4b:cU4eMaqAaz" resolve="RenderExpr" />
+      <node concept="3vetai" id="cU4eMarpYO" role="3vQZUl">
+        <node concept="2OqwBi" id="cU4eMarqav" role="3vdyny">
+          <node concept="1eOMI4" id="cU4eMarq7p" role="2Oq$k0">
+            <node concept="rqRoa" id="cU4eMarpZ2" role="1eOMHV">
+              <ref role="rqRob" to="av4b:cU4eMaqAaT" resolve="expr" />
+            </node>
+          </node>
+          <node concept="liA8E" id="cU4eMarqgo" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="qq9P1" id="5kGo$yLJ9Yd" role="qq9xR">
