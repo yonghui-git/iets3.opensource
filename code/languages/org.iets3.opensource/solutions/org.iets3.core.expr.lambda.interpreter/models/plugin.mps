@@ -340,7 +340,7 @@
                     <ref role="cht4Q" to="yv47:49WTic8f4iz" resolve="Function" />
                   </node>
                   <node concept="2YIFZM" id="cU4eMaaaeh" role="1m5AlR">
-                    <ref role="37wK5l" to="rxyl:cU4eMa4IJy" resolve="resolveVariant" />
+                    <ref role="37wK5l" to="rxyl:cU4eMa4IJy" resolve="resolveRuntimeVariant" />
                     <ref role="1Pybhc" to="rxyl:cU4eMa4IeK" resolve="VariantResolveHelper" />
                     <node concept="1PxgMI" id="cU4eMaaaei" role="37wK5m">
                       <node concept="chp4Y" id="cU4eMaaaej" role="3oSUPX">
@@ -750,6 +750,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="cU4eMb3kZZ" role="3cqZAp" />
                 <node concept="3cpWs6" id="6iqfHNC0IZ9" role="3cqZAp">
                   <node concept="37vLTw" id="5s2rYclkIJk" role="3cqZAk">
                     <ref role="3cqZAo" node="5s2rYclkIfq" resolve="res" />
