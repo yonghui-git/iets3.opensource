@@ -1,5 +1,8 @@
 import de.itemis.mps.gradle.GenerateLibrariesXml;
 
+
+
+
 //will pull the groovy classes/types from nexus to the classpath
 buildscript {
     repositories {
@@ -27,7 +30,7 @@ def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
-ext.mpsVersion = '2017.3'
+ext.mpsVersion = '2017.3.2'
 
 
 // Project version
@@ -143,7 +146,7 @@ task packageTests(type: Zip, dependsOn: 'ant-clean-and-build') {
 }
 
 assemble.dependsOn packageAllScripts, packageOpenSource, packageTests
- 
+
 publishing {
     repositories {
         maven {
