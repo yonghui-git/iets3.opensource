@@ -1813,5 +1813,40 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3Qosey6Znb1">
+    <property role="3GE5qa" value="vd.datev" />
+    <ref role="1M2myG" to="yv47:3Qosey6WpWf" resolve="Berechnungsregel" />
+    <node concept="EnEH3" id="3Qosey6Znb2" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="3Qosey6Znb4" role="EtsB7">
+        <node concept="3clFbS" id="3Qosey6Znb5" role="2VODD2">
+          <node concept="3clFbF" id="3Qosey6Znjm" role="3cqZAp">
+            <node concept="3cpWs3" id="3Qosey6ZqmR" role="3clFbG">
+              <node concept="2OqwBi" id="3Qosey6ZqFB" role="3uHU7w">
+                <node concept="EsrRn" id="3Qosey6Zqne" role="2Oq$k0" />
+                <node concept="2bSWHS" id="3Qosey6ZrcZ" role="2OqNvi" />
+              </node>
+              <node concept="3cpWs3" id="3Qosey6Zpxq" role="3uHU7B">
+                <node concept="2OqwBi" id="3Qosey6Zov0" role="3uHU7B">
+                  <node concept="2OqwBi" id="3Qosey6Zn_K" role="2Oq$k0">
+                    <node concept="EsrRn" id="3Qosey6Znjl" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="3Qosey6ZnXv" role="2OqNvi">
+                      <ref role="3Tt5mk" to="yv47:3Qosey6WpWi" resolve="data" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="3Qosey6ZoVk" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3Qosey6Zpxw" role="3uHU7w">
+                  <property role="Xl_RC" value="_" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

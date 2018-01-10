@@ -3453,5 +3453,59 @@
       <property role="2BUmq6" value="Concise" />
     </node>
   </node>
+  <node concept="24kQdi" id="3Qosey6Vd0y">
+    <property role="3GE5qa" value="vd.datev" />
+    <ref role="1XX52x" to="yv47:3Qosey6Vd06" resolve="DataItem" />
+    <node concept="3EZMnI" id="3Qosey6Vd0B" role="2wV5jI">
+      <node concept="2iRfu4" id="3Qosey6Vd0C" role="2iSdaV" />
+      <node concept="3F0ifn" id="3Qosey6Vd0$" role="3EZMnx">
+        <property role="3F0ifm" value="data" />
+      </node>
+      <node concept="3F0A7n" id="3Qosey6Vd0K" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Qosey6WpWH">
+    <property role="3GE5qa" value="vd.datev" />
+    <ref role="1XX52x" to="yv47:3Qosey6WpWf" resolve="Berechnungsregel" />
+    <node concept="3EZMnI" id="3Qosey6WpWM" role="2wV5jI">
+      <node concept="2iRfu4" id="3Qosey6WpWN" role="2iSdaV" />
+      <node concept="3F0ifn" id="3Qosey6WpWJ" role="3EZMnx">
+        <property role="3F0ifm" value="calc" />
+      </node>
+      <node concept="3F0ifn" id="3Qosey6YbwO" role="3EZMnx">
+        <property role="3F0ifm" value="for" />
+      </node>
+      <node concept="1iCGBv" id="3Qosey6WpWV" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:3Qosey6WpWi" resolve="data" />
+        <node concept="1sVBvm" id="3Qosey6WpWX" role="1sWHZn">
+          <node concept="3F0A7n" id="3Qosey6WpX5" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="3Qosey7g0aJ" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:cU4eM9UXg0" resolve="clause" />
+      </node>
+      <node concept="3F1sOY" id="3Qosey7j4jT" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:3Qosey7iHBD" resolve="body" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Qosey7khnt">
+    <property role="3GE5qa" value="vd.datev" />
+    <ref role="1XX52x" to="yv47:3Qosey7kh6S" resolve="DataRef" />
+    <node concept="1iCGBv" id="3Qosey7khnv" role="2wV5jI">
+      <ref role="1NtTu8" to="yv47:3Qosey7kh6T" resolve="data" />
+      <node concept="1sVBvm" id="3Qosey7khnx" role="1sWHZn">
+        <node concept="3F0A7n" id="3Qosey7khnF" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
