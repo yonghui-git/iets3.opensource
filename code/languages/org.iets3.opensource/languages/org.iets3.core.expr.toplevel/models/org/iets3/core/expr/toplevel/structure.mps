@@ -989,11 +989,6 @@
     <property role="3GE5qa" value="vd" />
     <property role="34LRSv" value="variant" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="cU4eMahrix" role="1TKVEl">
-      <property role="IQ2nx" value="232516938881152161" />
-      <property role="TrG5h" value="runtime" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="cU4eM9UV1L" role="PzmwI">
       <ref role="PrY4T" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
@@ -1013,7 +1008,7 @@
     <node concept="1TJgyj" id="cU4eM9UXhK" role="1TKVEi">
       <property role="IQ2ns" value="232516938875262064" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="base" />
+      <property role="20kJfa" value="original" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2uR5X5ayM7T" resolve="IToplevelExprContent" />
     </node>
@@ -1042,6 +1037,12 @@
     <property role="EcuMT" value="232516938879792257" />
     <property role="3GE5qa" value="vd" />
     <property role="TrG5h" value="ICanHaveVariants" />
+    <node concept="1TJgyj" id="6_Le4YrQsZS" role="1TKVEi">
+      <property role="IQ2ns" value="7597915960919052280" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="original" />
+      <ref role="20lvS9" node="6_Le4YrQsZO" resolve="ActAsOriginal" />
+    </node>
   </node>
   <node concept="PlHQZ" id="cU4eMalmJr">
     <property role="EcuMT" value="232516938882182107" />
@@ -1108,6 +1109,20 @@
       <property role="20kJfa" value="data" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3Qosey6Vd06" resolve="DataItem" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6_Le4YrQsZO">
+    <property role="EcuMT" value="7597915960919052276" />
+    <property role="3GE5qa" value="vd.datev" />
+    <property role="TrG5h" value="ActAsOriginal" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6_Le4YrQsZU" role="1TKVEl">
+      <property role="IQ2nx" value="7597915960919052282" />
+      <property role="TrG5h" value="static" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="6_Le4YrWBIh" role="PzmwI">
+      <ref role="PrY4T" node="3Qosey6Zx4l" resolve="IHasVariantClause" />
     </node>
   </node>
 </model>
