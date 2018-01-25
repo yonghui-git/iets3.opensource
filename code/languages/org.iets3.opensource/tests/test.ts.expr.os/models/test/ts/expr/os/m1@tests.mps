@@ -54,13 +54,6 @@
         <child id="1229187707859" name="result" index="LiZbd" />
         <child id="1229187755283" name="code" index="LjaKd" />
       </concept>
-      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
-        <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
-        <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
-        <property id="1229194968596" name="caretPosition" index="LIFWa" />
-        <property id="1229194968595" name="cellId" index="LIFWd" />
-        <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
-      </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -162,16 +155,6 @@
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="3829047245309363370" name="org.iets3.core.expr.base.structure.OptionOrExpression" flags="ng" index="21Ysq4" />
-      <concept id="8092372783983481648" name="org.iets3.core.expr.base.structure.LetExpression_old" flags="ng" index="2b4z4r">
-        <child id="8092372783983481748" name="main" index="2b4z6Z" />
-        <child id="8092372783983481807" name="subs" index="2b4z7$" />
-      </concept>
-      <concept id="8092372783983481750" name="org.iets3.core.expr.base.structure.LetSubVariable_old" flags="ng" index="2b4z6X">
-        <child id="8092372783983481753" name="expr" index="2b4z6M" />
-      </concept>
-      <concept id="8092372783983482221" name="org.iets3.core.expr.base.structure.LetSubVarRef_old" flags="ng" index="2b4zt6">
-        <reference id="8092372783983482222" name="var" index="2b4zt5" />
-      </concept>
       <concept id="7971844778466793051" name="org.iets3.core.expr.base.structure.AltOption" flags="ng" index="2fGnzd">
         <child id="7971844778466793072" name="then" index="2fGnzA" />
         <child id="7971844778466793070" name="when" index="2fGnzS" />
@@ -12350,32 +12333,25 @@
       </node>
       <node concept="2zPypq" id="4qowQiBs6wj" role="_iOnC">
         <property role="TrG5h" value="z" />
-        <node concept="2b4z4r" id="4qowQiBs6wG" role="2zPyp_">
-          <node concept="2b4z6X" id="4qowQiBs6wU" role="2b4z7$">
+        <node concept="1aduha" id="5Bg8FfPBnPF" role="2zPyp_">
+          <node concept="1adJid" id="5Bg8FfPBnPE" role="1aduh9">
             <property role="TrG5h" value="y" />
-            <node concept="30dDZf" id="4qowQiBs6xB" role="2b4z6M">
-              <node concept="30bXRB" id="4qowQiBs6xR" role="30dEs_">
+            <node concept="30dDZf" id="5Bg8FfPBnPB" role="1adJii">
+              <node concept="30bXRB" id="5Bg8FfPBnPC" role="30dEs_">
                 <property role="30bXRw" value="1" />
               </node>
-              <node concept="_emDc" id="4qowQiBs6xf" role="30dEsF">
+              <node concept="_emDc" id="5Bg8FfPBnPD" role="30dEsF">
                 <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
               </node>
             </node>
           </node>
-          <node concept="30dDTi" id="4qowQiBs6Cv" role="2b4z6Z">
-            <node concept="2b4zt6" id="4qowQiBs6E_" role="30dEs_">
-              <ref role="2b4zt5" node="4qowQiBs6wU" resolve="y" />
+          <node concept="30dDTi" id="5Bg8FfPBnPG" role="1aduh9">
+            <node concept="1adzI2" id="5Bg8FfPBnPJ" role="30dEs_">
+              <ref role="1adwt6" node="5Bg8FfPBnPE" resolve="y" />
             </node>
-            <node concept="_emDc" id="4qowQiBs6zB" role="30dEsF">
+            <node concept="_emDc" id="5Bg8FfPBnPI" role="30dEsF">
               <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
             </node>
-          </node>
-          <node concept="LIFWc" id="4qowQiBs7Ae" role="lGtFl">
-            <property role="LIFWa" value="1" />
-            <property role="OXtK3" value="true" />
-            <property role="p6zMq" value="1" />
-            <property role="p6zMs" value="1" />
-            <property role="LIFWd" value="Constant_te4b7c_a0" />
           </node>
         </node>
       </node>
