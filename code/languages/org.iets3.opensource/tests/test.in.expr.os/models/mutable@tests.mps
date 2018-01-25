@@ -233,9 +233,7 @@
       <concept id="7782108600708168956" name="org.iets3.core.expr.base.structure.ReferenceType" flags="ng" index="nhQpQ">
         <child id="7782108600708168957" name="baseType" index="nhQpR" />
       </concept>
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
-        <child id="606861080870797310" name="expr" index="pf3We" />
-      </concept>
+      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
       <concept id="7089558164909884363" name="org.iets3.core.expr.base.structure.TryErrorClause" flags="ng" index="2zzUxt">
         <child id="7089558164909884398" name="expr" index="2zzUxS" />
         <child id="7089558164910923907" name="errorLiteral" index="2zBOGl" />
@@ -4693,9 +4691,7 @@
             </node>
           </node>
         </node>
-        <node concept="pf3Wd" id="xG0f0hnQJo" role="pf3W8">
-          <node concept="UmHTt" id="4pyjK6aYXh0" role="pf3We" />
-        </node>
+        <node concept="pf3Wd" id="5Bg8FfP_ddW" role="pf3W8" />
       </node>
     </node>
     <node concept="1aga60" id="4pyjK6aZ2Fb" role="_iOnB">
@@ -5187,9 +5183,7 @@
                     <ref role="2YqRDN" node="mQGcCvOcqu" resolve="who" />
                   </node>
                 </node>
-                <node concept="pf3Wd" id="xG0f0hnQJp" role="pf3W8">
-                  <node concept="UmHTt" id="mQGcCvAozr" role="pf3We" />
-                </node>
+                <node concept="pf3Wd" id="5Bg8FfP_ddX" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -9551,9 +9545,7 @@
                           <ref role="2YgRg3" node="71HHyJ2r5Xl" resolve="players" />
                         </node>
                       </node>
-                      <node concept="pf3Wd" id="xG0f0hnQJr" role="pf3W8">
-                        <node concept="UmHTt" id="71HHyJ2s77Y" role="pf3We" />
-                      </node>
+                      <node concept="pf3Wd" id="5Bg8FfP_ddZ" role="pf3W8" />
                     </node>
                     <node concept="2YjPKq" id="3N4k0eSIuwB" role="1aduh9">
                       <node concept="1QScDb" id="3N4k0eSIuYf" role="30dEs_">
@@ -9571,6 +9563,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="pf3Wd" id="5Bg8FfP_ddY" role="pf3W8" />
                 </node>
               </node>
             </node>
@@ -13130,6 +13123,7 @@
                     </node>
                   </node>
                 </node>
+                <node concept="pf3Wd" id="5Bg8FfP_de0" role="pf3W8" />
               </node>
             </node>
           </node>
@@ -14574,9 +14568,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="pf3Wd" id="xG0f0hnQJt" role="pf3W8">
-                  <node concept="UmHTt" id="4IV0h47E8Lm" role="pf3We" />
-                </node>
+                <node concept="pf3Wd" id="5Bg8FfP_de1" role="pf3W8" />
               </node>
             </node>
           </node>
