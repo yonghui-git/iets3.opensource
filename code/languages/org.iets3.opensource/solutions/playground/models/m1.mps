@@ -35,9 +35,6 @@
       <concept id="7971844778466793028" name="org.iets3.core.expr.base.structure.AlternativesExpression" flags="ng" index="2fGnzi">
         <child id="7971844778466793162" name="alternatives" index="2fGnxs" />
       </concept>
-      <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd">
-        <child id="606861080870797310" name="expr" index="pf3We" />
-      </concept>
       <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
@@ -62,9 +59,9 @@
         <child id="4934857995792118062" name="condition" index="34kP8t" />
       </concept>
       <concept id="7849560302565679722" name="org.iets3.core.expr.base.structure.IfExpression" flags="ng" index="39w5ZF">
-        <child id="606861080870797304" name="elseSection" index="pf3W8" />
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
+        <child id="7849560302565679728" name="elsePart" index="39w5ZL" />
       </concept>
       <concept id="4790956042240983401" name="org.iets3.core.expr.base.structure.BlockExpression" flags="ng" index="1aduha">
         <child id="4790956042240983402" name="expressions" index="1aduh9" />
@@ -268,14 +265,12 @@
         <node concept="1afdae" id="3yVmeSjL7oX" role="39w5ZG">
           <ref role="1afue_" node="3yVmeSjL7oS" resolve="a" />
         </node>
-        <node concept="pf3Wd" id="5Bg8FfP_d9D" role="pf3W8">
-          <node concept="30dDTi" id="3yVmeSjL7oY" role="pf3We">
-            <node concept="30bXRB" id="3yVmeSjL7oZ" role="30dEs_">
-              <property role="30bXRw" value="1" />
-            </node>
-            <node concept="1afdae" id="3yVmeSjL7p0" role="30dEsF">
-              <ref role="1afue_" node="3yVmeSjL7oS" resolve="a" />
-            </node>
+        <node concept="30dDTi" id="3yVmeSjL7oY" role="39w5ZL">
+          <node concept="30bXRB" id="3yVmeSjL7oZ" role="30dEs_">
+            <property role="30bXRw" value="1" />
+          </node>
+          <node concept="1afdae" id="3yVmeSjL7p0" role="30dEsF">
+            <ref role="1afue_" node="3yVmeSjL7oS" resolve="a" />
           </node>
         </node>
       </node>
