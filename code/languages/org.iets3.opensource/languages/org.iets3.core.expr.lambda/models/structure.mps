@@ -2,7 +2,6 @@
 <model ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -14,6 +13,9 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -48,6 +50,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -353,7 +356,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8ig5D">
-    <property role="TrG5h" value="BlockExpression" />
+    <property role="TrG5h" value="BlockExpression_old" />
     <property role="34LRSv" value="{" />
     <property role="3GE5qa" value="block" />
     <property role="EcuMT" value="4790956042240983401" />
@@ -381,24 +384,33 @@
     </node>
     <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expressions" />
+      <property role="20kJfa" value="expressions_old" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="4790956042240983402" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="4oXXM3088yx" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.BlockExpression&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="4oXXM3088xJ" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="49WTic8ix6I">
     <property role="3GE5qa" value="block" />
-    <property role="TrG5h" value="ValExpression" />
+    <property role="TrG5h" value="ValExpression_old" />
     <property role="34LRSv" value="val" />
     <property role="EcuMT" value="4790956042241053102" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="49WTic8ix6L" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expr" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="expr_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4790956042241053105" />
       <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+      <node concept="asaX9" id="4oXXM3088yG" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ValExpression&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="49WTic8ix6J" role="PzmwI">
       <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
@@ -421,24 +433,33 @@
     <node concept="PrWs8" id="6o_i6Gww56Z" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEV" resolve="ISSConstrainedValue" />
     </node>
+    <node concept="asaX9" id="4oXXM3088y3" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="49WTic8iHUx">
     <property role="3GE5qa" value="block" />
-    <property role="TrG5h" value="ValRef" />
+    <property role="TrG5h" value="ValRef_old" />
     <property role="EcuMT" value="4790956042241105569" />
     <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
     <node concept="1TJgyj" id="49WTic8iI9_" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="val" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="val_old" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4790956042241106533" />
-      <ref role="20lvS9" node="49WTic8ix6I" resolve="ValExpression" />
+      <ref role="20lvS9" node="49WTic8ix6I" resolve="ValExpression_old" />
+      <node concept="asaX9" id="4oXXM3088yR" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.base.structure.ValRef&quot;" />
+      </node>
     </node>
     <node concept="PrWs8" id="3kzwyUOJ2IH" role="PzmwI">
       <ref role="PrY4T" to="hm2y:3kzwyUOs05a" resolve="ISingleSymbolRef" />
     </node>
     <node concept="PrWs8" id="6o_i6Gxd_tj" role="PzmwI">
       <ref role="PrY4T" to="hm2y:5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+    <node concept="asaX9" id="4oXXM3088yd" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="2rOWEwsAzV1">
@@ -475,12 +496,15 @@
   </node>
   <node concept="1TIwiD" id="KaZMgy7sW6">
     <property role="3GE5qa" value="block" />
-    <property role="TrG5h" value="ValValueInContractExpr" />
+    <property role="TrG5h" value="ValValueInContractExpr_old" />
     <property role="34LRSv" value="it" />
     <property role="EcuMT" value="867786408878526214" />
     <ref role="1TJDcQ" to="hm2y:KaZMgy51iZ" resolve="ExprInContract" />
     <node concept="PrWs8" id="69JueU2AvYo" role="PzmwI">
       <ref role="PrY4T" to="hm2y:69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
+    <node concept="asaX9" id="4oXXM3088yn" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="KaZMgyeHyQ">
@@ -512,7 +536,10 @@
   <node concept="PlHQZ" id="5ipapt3mzbM">
     <property role="EcuMT" value="6095949300269462258" />
     <property role="3GE5qa" value="block" />
-    <property role="TrG5h" value="IJoinedBlockContext" />
+    <property role="TrG5h" value="IJoinedBlockContext_old" />
+    <node concept="asaX9" id="4oXXM3088xT" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;org.iets3.core.expr.base&quot;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5Win3SA8mVE">
     <property role="EcuMT" value="6850639405181398762" />

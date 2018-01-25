@@ -7,8 +7,7 @@
   </languages>
   <imports>
     <import index="5s8v" ref="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,7 +101,7 @@
                 <node concept="3SM$VE" id="sflsE7nesa" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="sflsE7nesb" role="2OqNvi">
                   <node concept="chp4Y" id="sflsE7nezv" role="cj9EA">
-                    <ref role="cht4Q" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
+                    <ref role="cht4Q" to="hm2y:49WTic8ix6I" resolve="ValExpression" />
                   </node>
                 </node>
               </node>

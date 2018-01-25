@@ -2,9 +2,9 @@
 <model ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="6" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -1672,6 +1672,110 @@
     <property role="34LRSv" value="void" />
     <property role="3GE5qa" value="void" />
     <ref role="1TJDcQ" node="6sdnDbSlaok" resolve="Type" />
+  </node>
+  <node concept="1TIwiD" id="49WTic8ig5D">
+    <property role="TrG5h" value="BlockExpression" />
+    <property role="34LRSv" value="{" />
+    <property role="3GE5qa" value="block" />
+    <property role="EcuMT" value="4790956042240983401" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="6KxoTHgLvIg" role="PzmwI">
+      <ref role="PrY4T" node="6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="PrWs8" id="sflsE7bZ15" role="PzmwI">
+      <ref role="PrY4T" node="sflsE7bZ0S" resolve="IBlockLike" />
+    </node>
+    <node concept="PrWs8" id="18$bUx5ao3e" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:4qSf1u1TQeO" resolve="IContainerOfUniqueNames" />
+    </node>
+    <node concept="PrWs8" id="5IR_boI6ZWs" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="3ni3WidwZ72" role="PzmwI">
+      <ref role="PrY4T" node="3ni3WidwYNF" resolve="IAllowsDocInChildExpressions" />
+    </node>
+    <node concept="PrWs8" id="6o_i6Gx8amf" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+    <node concept="PrWs8" id="6o_i6Gx8amG" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+    <node concept="1TJgyj" id="49WTic8ig5E" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expressions" />
+      <property role="20lbJX" value="0..n" />
+      <property role="IQ2ns" value="4790956042240983402" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5ipapt3mzbM">
+    <property role="EcuMT" value="6095949300269462258" />
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="IJoinedBlockContext" />
+  </node>
+  <node concept="1TIwiD" id="49WTic8ix6I">
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="ValExpression" />
+    <property role="34LRSv" value="val" />
+    <property role="EcuMT" value="4790956042241053102" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="49WTic8ix6L" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expr" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4790956042241053105" />
+      <ref role="20lvS9" node="6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="PrWs8" id="49WTic8ix6J" role="PzmwI">
+      <ref role="PrY4T" to="4kwy:cJpacq5T0O" resolve="IValidNamedConcept" />
+    </node>
+    <node concept="PrWs8" id="69zaTr1ELbM" role="PzmwI">
+      <ref role="PrY4T" node="69zaTr1EKHW" resolve="IOptionallyTyped" />
+    </node>
+    <node concept="PrWs8" id="KaZMgy4KPG" role="PzmwI">
+      <ref role="PrY4T" node="KaZMgy4Iiz" resolve="IContracted" />
+    </node>
+    <node concept="PrWs8" id="5ElkanPXwPd" role="PzmwI">
+      <ref role="PrY4T" node="5ElkanPUl6g" resolve="IDocumentableWordProvider" />
+    </node>
+    <node concept="PrWs8" id="KaZMgykRO0" role="PzmwI">
+      <ref role="PrY4T" node="6iqfHNBPkjp" resolve="IContainmentStackMember" />
+    </node>
+    <node concept="PrWs8" id="7lHetQxDjWA" role="PzmwI">
+      <ref role="PrY4T" to="3673:7obiejCehKv" resolve="ITracerFrame" />
+    </node>
+    <node concept="PrWs8" id="6o_i6Gww56Z" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEV" resolve="ISSConstrainedValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="49WTic8iHUx">
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="ValRef" />
+    <property role="EcuMT" value="4790956042241105569" />
+    <ref role="1TJDcQ" node="6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="49WTic8iI9_" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="val" />
+      <property role="20lbJX" value="1" />
+      <property role="IQ2ns" value="4790956042241106533" />
+      <ref role="20lvS9" node="49WTic8ix6I" resolve="ValExpression" />
+    </node>
+    <node concept="PrWs8" id="3kzwyUOJ2IH" role="PzmwI">
+      <ref role="PrY4T" node="3kzwyUOs05a" resolve="ISingleSymbolRef" />
+    </node>
+    <node concept="PrWs8" id="6o_i6Gxd_tj" role="PzmwI">
+      <ref role="PrY4T" node="5GL30CqMVEW" resolve="ISSConstrainedValueRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="KaZMgy7sW6">
+    <property role="3GE5qa" value="block" />
+    <property role="TrG5h" value="ValValueInContractExpr" />
+    <property role="34LRSv" value="it" />
+    <property role="EcuMT" value="867786408878526214" />
+    <ref role="1TJDcQ" node="KaZMgy51iZ" resolve="ExprInContract" />
+    <node concept="PrWs8" id="69JueU2AvYo" role="PzmwI">
+      <ref role="PrY4T" node="69JueU2zshL" resolve="ISSItValueRef" />
+    </node>
   </node>
 </model>
 

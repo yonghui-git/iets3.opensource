@@ -8,7 +8,7 @@
     <use id="fbba5118-5fc6-49ff-9c3b-0b4469830440" name="org.iets3.core.expr.mutable" version="-1" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="-1" />
-    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="-1" />
+    <use id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda" version="2" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="-1" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="-1" />
     <use id="cd87ddab-6434-448e-a011-1e1c898de18e" name="org.iets3.core.expr.statemachines" version="-1" />
@@ -17,17 +17,9 @@
     <use id="d441fba0-f46b-43cd-b723-dad7b65da615" name="org.iets3.core.expr.tests" version="-1" />
     <use id="50b470e7-14ad-46c3-b540-4586f56d2e9c" name="org.iets3.core.expr.process" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
-    <use id="18001c94-33a7-4f68-a7c1-ffddc4b39be1" name="org.iets3.core.expr.repl" version="-1" />
     <use id="711a16d7-99e8-4e1d-b20c-99c0b7309cd8" name="org.iets3.core.expr.metafunction" version="-1" />
   </languages>
   <imports>
-    <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" />
-    <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
-    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
-    <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="8lgj" ref="r:69a1255c-62e5-4b5d-ae54-d3a534a3ad07(org.iets3.core.expr.mutable.structure)" />
     <import index="19m5" ref="r:854255a4-0f76-4555-8c94-d91e2ad4eb02(org.iets3.core.expr.statemachines.structure)" />
   </imports>
@@ -316,6 +308,15 @@
         <child id="7849560302565679723" name="condition" index="39w5ZE" />
         <child id="7849560302565679725" name="thenPart" index="39w5ZG" />
       </concept>
+      <concept id="4790956042240983401" name="org.iets3.core.expr.base.structure.BlockExpression" flags="ng" index="1aduha">
+        <child id="4790956042240983402" name="expressions" index="1aduh9" />
+      </concept>
+      <concept id="4790956042241105569" name="org.iets3.core.expr.base.structure.ValRef" flags="ng" index="1adzI2">
+        <reference id="4790956042241106533" name="val" index="1adwt6" />
+      </concept>
+      <concept id="4790956042241053102" name="org.iets3.core.expr.base.structure.ValExpression" flags="ng" index="1adJid">
+        <child id="4790956042241053105" name="expr" index="1adJii" />
+      </concept>
       <concept id="1919538606559981270" name="org.iets3.core.expr.base.structure.ErrorLiteral" flags="ng" index="1i17NB" />
       <concept id="5571545316364799282" name="org.iets3.core.expr.base.structure.PragmaExpression" flags="ng" index="1EI5v0">
         <child id="5571545316365029300" name="expr" index="1EJXl6" />
@@ -600,15 +601,6 @@
       <concept id="5096753237482793708" name="org.iets3.core.expr.lambda.structure.ReadEffectTag" flags="ng" index="2lgajW" />
       <concept id="5096753237482793709" name="org.iets3.core.expr.lambda.structure.ModifyEffectTag" flags="ng" index="2lgajX" />
       <concept id="5096753237482793710" name="org.iets3.core.expr.lambda.structure.ReadModifyEffectTag" flags="ng" index="2lgajY" />
-      <concept id="4790956042240983401" name="org.iets3.core.expr.lambda.structure.BlockExpression" flags="ng" index="1aduha">
-        <child id="4790956042240983402" name="expressions" index="1aduh9" />
-      </concept>
-      <concept id="4790956042241105569" name="org.iets3.core.expr.lambda.structure.ValRef" flags="ng" index="1adzI2">
-        <reference id="4790956042241106533" name="val" index="1adwt6" />
-      </concept>
-      <concept id="4790956042241053102" name="org.iets3.core.expr.lambda.structure.ValExpression" flags="ng" index="1adJid">
-        <child id="4790956042241053105" name="expr" index="1adJii" />
-      </concept>
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
@@ -2502,13 +2494,13 @@
         <node concept="1aduha" id="35BERW$7kVi" role="_fkuY">
           <node concept="1adJid" id="35BERW$7kWJ" role="1aduh9">
             <property role="TrG5h" value="b" />
+            <node concept="3sNe5_" id="35BERW$7mXc" role="2zM23F">
+              <node concept="30bXR$" id="35BERW$7n48" role="3sNe5$" />
+            </node>
             <node concept="3sRH3H" id="35BERW$7l4E" role="1adJii">
               <node concept="30bXRB" id="35BERW$7l8H" role="3sRH3h">
                 <property role="30bXRw" value="1" />
               </node>
-            </node>
-            <node concept="3sNe5_" id="35BERW$7mXc" role="2zM23F">
-              <node concept="30bXR$" id="35BERW$7n48" role="3sNe5$" />
             </node>
           </node>
           <node concept="1QScDb" id="35BERW$7ll$" role="1aduh9">
@@ -2595,12 +2587,6 @@
         <node concept="2zH6wq" id="79jc6YzMKsJ" role="1aduh9" />
         <node concept="1adJid" id="79jc6YzMggW" role="1aduh9">
           <property role="TrG5h" value="i" />
-          <node concept="1QScDb" id="79jc6YzMpR_" role="1adJii">
-            <node concept="3sQ2Ir" id="79jc6YzMt6h" role="1QScD9" />
-            <node concept="_emDc" id="79jc6YzMmDd" role="30czhm">
-              <ref role="_emDf" node="79jc6YzLq4D" resolve="intBox1" />
-            </node>
-          </node>
           <node concept="1z9TsT" id="79jc6YzMQRs" role="lGtFl">
             <node concept="OjmMv" id="79jc6YzMQRt" role="1w35rA">
               <node concept="19SGf9" id="79jc6YzMQRu" role="OjmMu">
@@ -2608,6 +2594,12 @@
                   <property role="19SUeA" value="Extracting the value from the box" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="1QScDb" id="79jc6YzMpR_" role="1adJii">
+            <node concept="3sQ2Ir" id="79jc6YzMt6h" role="1QScD9" />
+            <node concept="_emDc" id="79jc6YzMmDd" role="30czhm">
+              <ref role="_emDf" node="79jc6YzLq4D" resolve="intBox1" />
             </node>
           </node>
         </node>

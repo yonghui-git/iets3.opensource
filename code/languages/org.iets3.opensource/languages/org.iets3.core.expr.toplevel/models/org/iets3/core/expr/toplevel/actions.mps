@@ -6,9 +6,8 @@
   </languages>
   <imports>
     <import index="yv47" ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
-    <import index="zzzn" ref="r:af0af2e7-f7e1-4536-83b5-6bf010d4afd2(org.iets3.core.expr.lambda.structure)" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -83,8 +82,8 @@
   <node concept="1hljLi" id="TuTPrvGL$7">
     <property role="TrG5h" value="pasteLocalAsGlobalVal" />
     <node concept="1hlzdc" id="TuTPrvGL$8" role="1hl$rw">
-      <ref role="1hmvP4" to="zzzn:49WTic8ix6I" resolve="ValExpression" />
       <ref role="1hszAz" to="yv47:2uR5X5ayM7T" resolve="IToplevelExprContent" />
+      <ref role="1hmvP4" to="hm2y:49WTic8ix6I" resolve="ValExpression" />
       <node concept="1ht64k" id="TuTPrvGL$9" role="1hsNre">
         <node concept="3clFbS" id="TuTPrvGL$a" role="2VODD2">
           <node concept="3cpWs8" id="TuTPrvGN60" role="3cqZAp">
@@ -126,7 +125,7 @@
                 <node concept="2OqwBi" id="TuTPrvGRol" role="2Oq$k0">
                   <node concept="1ht04C" id="TuTPrvGR47" role="2Oq$k0" />
                   <node concept="3TrEf2" id="TuTPrvGRQG" role="2OqNvi">
-                    <ref role="3Tt5mk" to="zzzn:49WTic8ix6L" resolve="expr" />
+                    <ref role="3Tt5mk" to="hm2y:49WTic8ix6L" resolve="expr" />
                   </node>
                 </node>
                 <node concept="1$rogu" id="TuTPrvGWvN" role="2OqNvi" />
