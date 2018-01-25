@@ -48,12 +48,6 @@
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
-      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
-        <property id="1883175908513350760" name="description" index="3YCmrE" />
-        <child id="1229187676388" name="nodeToEdit" index="LiRBU" />
-        <child id="1229187707859" name="result" index="LiZbd" />
-        <child id="1229187755283" name="code" index="LjaKd" />
-      </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
@@ -73,9 +67,6 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
-      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
-        <reference id="1225989811227" name="intention" index="1MFYO6" />
-      </concept>
     </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="1330041117646892901" name="org.iets3.core.expr.collections.structure.CollectionSizeSpec" flags="ng" index="2gteSW">
@@ -394,7 +385,6 @@
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
-        <child id="6839478809833656927" name="imports" index="3i6evy" />
       </concept>
       <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
         <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
@@ -443,9 +433,6 @@
         <property id="5046167311257675124" name="onlyInteresing" index="1mH3cr" />
       </concept>
       <concept id="543046448977223537" name="org.iets3.core.expr.simpleTypes.tests.structure.EqClassProducer" flags="ng" index="Sm_qJ" />
-    </language>
-    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
-      <concept id="747084250476811597" name="com.mbeddr.core.base.structure.DefaultGenericChunkDependency" flags="ng" index="3GEVxB" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -12317,85 +12304,6 @@
             <property role="30bXRw" value="1" />
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="LiM7Y" id="4qowQiBs6sq">
-    <property role="TrG5h" value="ReplaceLetWithBlockIntention" />
-    <property role="3YCmrE" value="Tests the ReplaceLetWithBlock Intention" />
-    <node concept="_iOnV" id="4qowQiBs6uY" role="LiRBU">
-      <property role="TrG5h" value="LetUseCase" />
-      <node concept="2zPypq" id="4qowQiBs6vo" role="_iOnC">
-        <property role="TrG5h" value="x" />
-        <node concept="30bXRB" id="4qowQiBs6vF" role="2zPyp_">
-          <property role="30bXRw" value="5" />
-        </node>
-      </node>
-      <node concept="2zPypq" id="4qowQiBs6wj" role="_iOnC">
-        <property role="TrG5h" value="z" />
-        <node concept="1aduha" id="5Bg8FfPBnPF" role="2zPyp_">
-          <node concept="1adJid" id="5Bg8FfPBnPE" role="1aduh9">
-            <property role="TrG5h" value="y" />
-            <node concept="30dDZf" id="5Bg8FfPBnPB" role="1adJii">
-              <node concept="30bXRB" id="5Bg8FfPBnPC" role="30dEs_">
-                <property role="30bXRw" value="1" />
-              </node>
-              <node concept="_emDc" id="5Bg8FfPBnPD" role="30dEsF">
-                <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
-              </node>
-            </node>
-          </node>
-          <node concept="30dDTi" id="5Bg8FfPBnPG" role="1aduh9">
-            <node concept="1adzI2" id="5Bg8FfPBnPJ" role="30dEs_">
-              <ref role="1adwt6" node="5Bg8FfPBnPE" resolve="y" />
-            </node>
-            <node concept="_emDc" id="5Bg8FfPBnPI" role="30dEsF">
-              <ref role="_emDf" node="4qowQiBs6vo" resolve="x" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="_ixoA" id="4qowQiBs6vi" role="_iOnC" />
-      <node concept="3GEVxB" id="4qowQiBs6va" role="3i6evy" />
-    </node>
-    <node concept="_iOnV" id="4qowQiBs6HL" role="LiZbd">
-      <property role="TrG5h" value="LetUseCase" />
-      <node concept="2zPypq" id="4qowQiBs6HM" role="_iOnC">
-        <property role="TrG5h" value="x" />
-        <node concept="30bXRB" id="4qowQiBs6HN" role="2zPyp_">
-          <property role="30bXRw" value="5" />
-        </node>
-      </node>
-      <node concept="2zPypq" id="4qowQiBs6HO" role="_iOnC">
-        <property role="TrG5h" value="z" />
-        <node concept="1aduha" id="4qowQiBs6Ma" role="2zPyp_">
-          <node concept="1adJid" id="4qowQiBs6MU" role="1aduh9">
-            <property role="TrG5h" value="y" />
-            <node concept="30dDZf" id="4qowQiBs6Od" role="1adJii">
-              <node concept="30bXRB" id="4qowQiBs6Ot" role="30dEs_">
-                <property role="30bXRw" value="1" />
-              </node>
-              <node concept="_emDc" id="4qowQiBs6Nf" role="30dEsF">
-                <ref role="_emDf" node="4qowQiBs6HM" resolve="x" />
-              </node>
-            </node>
-          </node>
-          <node concept="30dDTi" id="4qowQiBs70b" role="1aduh9">
-            <node concept="1adzI2" id="4qowQiBs70x" role="30dEs_">
-              <ref role="1adwt6" node="4qowQiBs6MU" resolve="y" />
-            </node>
-            <node concept="_emDc" id="4qowQiBs6Ti" role="30dEsF">
-              <ref role="_emDf" node="4qowQiBs6HM" resolve="x" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="_ixoA" id="4qowQiBs6HX" role="_iOnC" />
-      <node concept="3GEVxB" id="4qowQiBs6HY" role="3i6evy" />
-    </node>
-    <node concept="3clFbS" id="4qowQiBs73K" role="LjaKd">
-      <node concept="1MFPAf" id="4qowQiBs74j" role="3cqZAp">
-        <ref role="1MFYO6" to="tzmp:4qowQiBqJ1R" resolve="ReplaceLetExprWithBlock" />
       </node>
     </node>
   </node>
