@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="0" />
-    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="6" />
+    <use id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core" version="7" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
     <use id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="1" />
@@ -173,7 +173,7 @@
     </language>
     <language id="3c910f62-7ca9-45f3-a98a-c6239acaa8f1" name="test.iest3.component.attribute">
       <concept id="4448734902941668085" name="test.iest3.component.attribute.structure.TestPortCategoryOffers" flags="ng" index="3o1koB" />
-      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKindA" flags="ng" index="3o2yKq" />
+      <concept id="4448734902941595848" name="test.iest3.component.attribute.structure.TestKind" flags="ng" index="3o2yKq" />
       <concept id="4448734902940615074" name="test.iest3.component.attribute.structure.TestPortCategoryAccepts" flags="ng" index="3o5llK" />
       <concept id="4448734902940638651" name="test.iest3.component.attribute.structure.TestPortType" flags="ng" index="3o5o_D" />
       <concept id="4448734902938442738" name="test.iest3.component.attribute.structure.TestAttribute" flags="ng" index="3oewWw" />
