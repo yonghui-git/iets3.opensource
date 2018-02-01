@@ -12501,19 +12501,31 @@
       </node>
       <node concept="_fkuZ" id="6HHp2WmWcGg" role="_fkp5">
         <node concept="_fku$" id="6HHp2WmWcGh" role="_fkur" />
-        <node concept="1af_rf" id="6HHp2WmWcGi" role="_fkuY">
-          <ref role="1afhQb" node="6HHp2WmWcj_" resolve="add" />
-          <node concept="30bXRB" id="6HHp2WmWcGj" role="1afhQ5">
-            <property role="30bXRw" value="3" />
-          </node>
-          <node concept="30bXRB" id="6HHp2WmWcGk" role="1afhQ5">
-            <property role="30bXRw" value="4" />
-          </node>
-        </node>
         <node concept="30bXRB" id="6HHp2WmWcGl" role="_fkuS">
           <property role="30bXRw" value="7" />
         </node>
         <node concept="pfQqD" id="6HHp2WmWcGm" role="pfQ1b">
+          <property role="pfQqC" value="sum" />
+        </node>
+        <node concept="1af_rf" id="6L2$eP$s8im" role="_fkuY">
+          <ref role="1afhQb" node="6HHp2WmWcj_" resolve="add" />
+        </node>
+      </node>
+      <node concept="_fkuZ" id="6L2$eP$pivc" role="_fkp5">
+        <node concept="_fku$" id="6L2$eP$pivd" role="_fkur" />
+        <node concept="1af_rf" id="6L2$eP$pive" role="_fkuY">
+          <ref role="1afhQb" node="6HHp2WmWcj_" resolve="add" />
+          <node concept="30bXRB" id="6L2$eP$pivf" role="1afhQ5">
+            <property role="30bXRw" value="3" />
+          </node>
+          <node concept="30bXRB" id="6L2$eP$pivg" role="1afhQ5">
+            <property role="30bXRw" value="4" />
+          </node>
+        </node>
+        <node concept="30bXRB" id="6L2$eP$pivh" role="_fkuS">
+          <property role="30bXRw" value="7" />
+        </node>
+        <node concept="pfQqD" id="6L2$eP$pivi" role="pfQ1b">
           <property role="pfQqC" value="sum" />
         </node>
       </node>
