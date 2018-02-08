@@ -1237,6 +1237,21 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="5fy$GmWg8Pl" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="canOpenProblemsView" />
+      <ref role="13i0hy" to="gdgh:5fy$GmWg6sx" resolve="canOpenProblemsView" />
+      <node concept="3Tm1VV" id="5fy$GmWg8Pm" role="1B3o_S" />
+      <node concept="3clFbS" id="5fy$GmWg8Po" role="3clF47">
+        <node concept="3clFbF" id="5fy$GmWgapP" role="3cqZAp">
+          <node concept="3clFbT" id="5fy$GmWgapO" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="5fy$GmWg9IP" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="7rOSrvnGeUF">
     <property role="3GE5qa" value="adapter" />
