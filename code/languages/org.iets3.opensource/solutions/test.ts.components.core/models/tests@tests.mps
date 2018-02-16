@@ -59,6 +59,7 @@
         <child id="5115872837156802411" name="expr" index="30czhm" />
       </concept>
       <concept id="5115872837156578671" name="org.iets3.core.expr.base.structure.MulExpression" flags="ng" index="30dDTi" />
+      <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
@@ -176,9 +177,6 @@
       <concept id="7804632404593841020" name="org.iets3.components.core.structure.Port" flags="ng" index="1i7wMI">
         <child id="409503520730247653" name="category" index="1aMMyH" />
         <child id="7804632404594156402" name="type" index="1i6vMw" />
-      </concept>
-      <concept id="6062699114203041744" name="org.iets3.components.core.structure.OuterParamRef" flags="ng" index="1u1GtD">
-        <reference id="687461109518235361" name="param" index="2kcaNt" />
       </concept>
       <concept id="227686178023855820" name="org.iets3.components.core.structure.AbstractConnectorRefTarget" flags="ng" index="1yi36j">
         <reference id="227686178023855923" name="connector" index="1yi31G" />
@@ -558,12 +556,45 @@
                 <property role="TrG5h" value="inlineOff" />
                 <node concept="3o2yKq" id="3PhTX5cY6Db" role="1i0K$_" />
                 <node concept="H_j2F" id="3PhTX5cY6Ds" role="1i1XAe">
-                  <node concept="H_vQO" id="3PhTX5cY6Dt" role="H_jLS" />
+                  <node concept="pdmcS" id="4VHfdEqdRsI" role="H_jLS">
+                    <property role="TrG5h" value="siblingParam" />
+                    <node concept="mLuIC" id="4VHfdEqdRsV" role="pdmcX" />
+                    <node concept="30dDZf" id="4VHfdEqevEi" role="pdmc3">
+                      <node concept="30bXRB" id="4VHfdEqevGQ" role="30dEs_">
+                        <property role="30bXRw" value="1" />
+                      </node>
+                      <node concept="18Ww8V" id="4VHfdEqevBV" role="30dEsF">
+                        <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="1i7wMI" id="3PhTX5cY6DE" role="IJpy$">
                     <node concept="3o1koB" id="3PhTX5cY6DD" role="1aMMyH" />
                     <node concept="3o5o_D" id="3PhTX5cY6DL" role="1i6vMw" />
                     <node concept="pfQqD" id="3PhTX5cYixP" role="pfQ1b">
                       <property role="pfQqC" value="offers" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="GnABt" id="4VHfdEqevKq" role="1i1XAe">
+                  <node concept="2sGezh" id="4VHfdEqevKT" role="GnABu">
+                    <node concept="1i1XBj" id="4VHfdEqevKU" role="2sGezg">
+                      <property role="TrG5h" value="nestedInline" />
+                      <node concept="1EZ9Mj" id="4VHfdEqevL9" role="1i0K$_" />
+                      <node concept="H_j2F" id="4VHfdEqevLY" role="1i1XAe">
+                        <node concept="pdmcS" id="4VHfdEqevMb" role="H_jLS">
+                          <property role="TrG5h" value="nestedInlineParam" />
+                          <node concept="mLuIC" id="4VHfdEqevMo" role="pdmcX" />
+                          <node concept="30dDZf" id="4VHfdEqevNk" role="pdmc3">
+                            <node concept="18Ww8V" id="4VHfdEqevQM" role="30dEs_">
+                              <ref role="18Ww8U" node="4VHfdEqdRsI" resolve="siblingParam" />
+                            </node>
+                            <node concept="18Ww8V" id="4VHfdEqevN4" role="30dEsF">
+                              <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -577,12 +608,17 @@
                   <node concept="pdmcS" id="77HYM7HCYNt" role="H_jLS">
                     <property role="TrG5h" value="testParam" />
                     <node concept="mLuIC" id="77HYM7HShMo" role="pdmcX" />
-                    <node concept="30dDTi" id="AamzMtZ_9j" role="pdmc3">
-                      <node concept="30bXRB" id="AamzMtZ_9v" role="30dEs_">
-                        <property role="30bXRw" value="2" />
+                    <node concept="30dDZf" id="4VHfdEqdQMD" role="pdmc3">
+                      <node concept="30dDTi" id="4VHfdEqdQME" role="30dEsF">
+                        <node concept="18Ww8V" id="4VHfdEqe$FO" role="30dEsF">
+                          <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
+                        </node>
+                        <node concept="30bXRB" id="4VHfdEqdQMF" role="30dEs_">
+                          <property role="30bXRw" value="2" />
+                        </node>
                       </node>
-                      <node concept="1u1GtD" id="AamzMtZ_8N" role="30dEsF">
-                        <ref role="2kcaNt" node="5gz2b$a9sG6" resolve="parentParam" />
+                      <node concept="18Ww8V" id="4VHfdEqdRnM" role="30dEs_">
+                        <ref role="18Ww8U" node="5gz2b$a9sG6" resolve="parentParam" />
                       </node>
                     </node>
                   </node>
