@@ -24,24 +24,39 @@ if (project.hasProperty("forceCI")) {
     }
 }
 
-
+def release = project.hasProperty("release")
 def forceLocal = project.hasProperty("forceLocalDependencies")
 
 
 // Dependency versions
 ext.mpsVersion = '2017.3.5'
 
+def major = "0"
+def minor = "1"
 
 // Project version
 if (project.hasProperty('iets3OpenSourceVersion')) {
     version = project.iets3OpenSourceVersion
 } else {
-    if (ciBuild) {
-        version = GitBasedVersioning.getVersionWithCount("0", "1", System.env.BUILD_NUMBER.toInteger())
-        println "##teamcity[buildNumber '${version}']"
+    if (release) {
+        String buildnumber = System.env.BUILD_NUMBER
+
+        if (buildnumber == null) {
+            buildnumber = project.findProperty("buildnumber")
+            if (buildnumber == null) {
+                logger.log(LogLevel.ERROR, "can not get buildnumner please supply a build number with -Pbuildnumber=<number>")
+            }
+        }
+
+        version = GitBasedVersioning.getVersionWithCount(major, minor, buildnumber.toInteger())
+        println "Release build"
     } else {
-        println "Local build detected, version will be SNAPSHOT"
-        version = "1.0-SNAPSHOT"
+        println "SNAPSHOT build"
+        version = "$major.$minor-SNAPSHOT"
+    }
+
+    if (ciBuild) {
+        println "##teamcity[buildNumber '${version}']"
     }
 }
 
