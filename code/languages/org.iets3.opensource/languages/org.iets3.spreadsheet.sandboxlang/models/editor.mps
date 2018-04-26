@@ -25,6 +25,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -39,6 +40,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -64,6 +66,18 @@
         <ref role="PMmxG" to="vn7l:RO0pLGjloP" resolve="spreadsheet" />
       </node>
       <node concept="2iRkQZ" id="RO0pLGxQmx" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4uAxemOUVpb">
+    <ref role="1XX52x" to="vbj:4uAxemOUTN$" resolve="ExpressionCell" />
+    <node concept="3EZMnI" id="4uAxemOUVpi" role="2wV5jI">
+      <node concept="3F1sOY" id="4uAxemOUVp_" role="3EZMnx">
+        <ref role="1NtTu8" to="vbj:4uAxemOUTNK" resolve="expr" />
+      </node>
+      <node concept="2iRfu4" id="4uAxemOUVpl" role="2iSdaV" />
+      <node concept="VPXOz" id="4uAxemOUVpG" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
 </model>

@@ -19,6 +19,7 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="11" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
+    <language slang="l:fac12970-9bcf-4933-a923-62ffb785daad:org.iets3.spreadsheet" version="0" />
     <language slang="l:592da81a-5f71-4c2c-b006-020f59146506:org.iets3.spreadsheet.sandboxlang" version="0" />
   </languageVersions>
   <dependencyVersions>
