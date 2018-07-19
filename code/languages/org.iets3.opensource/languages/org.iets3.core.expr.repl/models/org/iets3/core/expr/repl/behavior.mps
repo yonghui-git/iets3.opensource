@@ -26,6 +26,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xk6s" ref="r:7961970e-5737-42e2-b144-9bef3ad8d077(org.iets3.core.expr.tests.behavior)" />
+    <import index="4kwy" ref="r:657c9fde-2f36-4e61-ae17-20f02b8630ad(org.iets3.core.base.structure)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -643,20 +644,20 @@
       </node>
       <node concept="10P_77" id="14RJwd1gH0Y" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="4b4fYXfoebd" role="13h7CS">
+    <node concept="13i0hz" id="4_rb_9qMbUu" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="highlightError" />
-      <ref role="13i0hy" to="gdgh:4b4fYXfo1HZ" resolve="highlightError" />
-      <node concept="3Tm1VV" id="4b4fYXfoebe" role="1B3o_S" />
-      <node concept="3clFbS" id="4b4fYXfoebj" role="3clF47">
-        <node concept="3clFbF" id="4b4fYXfof3c" role="3cqZAp">
-          <node concept="3clFbT" id="4b4fYXfof3b" role="3clFbG">
+      <ref role="13i0hy" to="gdgh:4_rb_9qLHXB" resolve="highlightError" />
+      <node concept="3Tm1VV" id="4_rb_9qMbUv" role="1B3o_S" />
+      <node concept="3clFbS" id="4_rb_9qMbU$" role="3clF47">
+        <node concept="3clFbF" id="4_rb_9qMcYi" role="3cqZAp">
+          <node concept="3clFbT" id="4_rb_9qMcYh" role="3clFbG">
             <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
-      <node concept="10P_77" id="4b4fYXfoebk" role="3clF45" />
+      <node concept="10P_77" id="4_rb_9qMbU_" role="3clF45" />
     </node>
     <node concept="13i0hz" id="7bd8pklaJxI" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -1148,21 +1149,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="13i0hz" id="2jITtfD$6IJ" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="doNotShowManualInfoMessage" />
-      <ref role="13i0hy" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
-      <node concept="3Tm1VV" id="2jITtfD$6IK" role="1B3o_S" />
-      <node concept="3clFbS" id="2jITtfD$6IP" role="3clF47">
-        <node concept="3clFbF" id="2jITtfD$8fo" role="3cqZAp">
-          <node concept="3clFbT" id="2jITtfD$8fn" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="2jITtfD$6IQ" role="3clF45" />
     </node>
     <node concept="13i0hz" id="2UfkHNj5e$2" role="13h7CS">
       <property role="2Ki8OM" value="false" />
@@ -2988,21 +2974,6 @@
         </node>
       </node>
       <node concept="10P_77" id="5xEoEMrw1aC" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="5xEoEMrH8Ch" role="13h7CS">
-      <property role="13i0iv" value="false" />
-      <property role="13i0it" value="false" />
-      <property role="TrG5h" value="doNotShowManualInfoMessage" />
-      <ref role="13i0hy" to="gdgh:2jITtfD$0No" resolve="doNotShowManualInfoMessage" />
-      <node concept="3Tm1VV" id="5xEoEMrH8Ci" role="1B3o_S" />
-      <node concept="3clFbS" id="5xEoEMrH8Cn" role="3clF47">
-        <node concept="3clFbF" id="5xEoEMrH9eE" role="3cqZAp">
-          <node concept="3clFbT" id="5xEoEMrH9eD" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="10P_77" id="5xEoEMrH8Co" role="3clF45" />
     </node>
     <node concept="13i0hz" id="5avmkTFbHb3" role="13h7CS">
       <property role="TrG5h" value="getCell" />
