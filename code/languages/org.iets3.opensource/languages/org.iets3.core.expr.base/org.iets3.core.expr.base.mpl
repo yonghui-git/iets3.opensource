@@ -61,6 +61,7 @@
   </generators>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/pcollections/pcollections-28apr2016.jar" />
+    <stubModelEntry path="${module}/lib/vavr/vavr-0.9.2.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
