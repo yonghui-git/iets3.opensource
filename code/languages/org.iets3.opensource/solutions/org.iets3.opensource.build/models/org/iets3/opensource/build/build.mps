@@ -4894,6 +4894,28 @@
             <ref role="1Busuk" node="49WTic8jAaa" resolve="org.iets3.analysis.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="Mb7jBAs2w" role="3bR37C">
+          <node concept="1BurEX" id="Mb7jBAs2x" role="1SiIV1">
+            <node concept="398BVA" id="Mb7jBAs2h" role="1BurEY">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="Mb7jBAs2i" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="Mb7jBAs2j" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.core.expr.base" />
+                  <node concept="2Ry0Ak" id="Mb7jBAs2k" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="Mb7jBAs2l" role="2Ry0An">
+                      <property role="2Ry0Am" value="vavr" />
+                      <node concept="2Ry0Ak" id="Mb7jBAs2m" role="2Ry0An">
+                        <property role="2Ry0Am" value="vavr-0.9.2.jar" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396gt" role="2G$12L">
         <property role="BnDLt" value="true" />
