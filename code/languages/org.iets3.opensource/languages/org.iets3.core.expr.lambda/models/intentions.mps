@@ -864,5 +864,40 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2AWSbzJh0JO">
+    <property role="TrG5h" value="linearize" />
+    <ref role="2ZfgGC" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="2S6ZIM" id="2AWSbzJh0JP" role="2ZfVej">
+      <node concept="3clFbS" id="2AWSbzJh0JQ" role="2VODD2">
+        <node concept="3clFbF" id="2AWSbzJh1WL" role="3cqZAp">
+          <node concept="Xl_RD" id="2AWSbzJh1WK" role="3clFbG">
+            <property role="Xl_RC" value="Linearize" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2AWSbzJh0JR" role="2ZfgGD">
+      <node concept="3clFbS" id="2AWSbzJh0JS" role="2VODD2">
+        <node concept="3clFbF" id="2AWSbzJh2EU" role="3cqZAp">
+          <node concept="2YIFZM" id="2AWSbzJh2Gl" role="3clFbG">
+            <ref role="37wK5l" to="5s8v:2AWSbzJfKdE" resolve="linearize" />
+            <ref role="1Pybhc" to="5s8v:2AWSbzJfKaz" resolve="Linearizer" />
+            <node concept="2Sf5sV" id="2AWSbzJh2Gm" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2AWSbzJh2iH" role="2ZfVeh">
+      <node concept="3clFbS" id="2AWSbzJh2iI" role="2VODD2">
+        <node concept="3clFbF" id="2AWSbzJh1aL" role="3cqZAp">
+          <node concept="2YIFZM" id="2AWSbzJh1jO" role="3clFbG">
+            <ref role="1Pybhc" to="5s8v:2AWSbzJfKaz" resolve="Linearizer" />
+            <ref role="37wK5l" to="5s8v:2AWSbzJfKbs" resolve="canBeLinearized" />
+            <node concept="2Sf5sV" id="2AWSbzJh1wf" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
