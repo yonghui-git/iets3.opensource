@@ -3,11 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
-    <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" implicit="true" />
+    <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -370,6 +368,13 @@
     <property role="34LRSv" value="toString" />
     <property role="R4oN_" value="a string representation of a date" />
     <ref role="1TJDcQ" node="7aRvJQEfB5t" resolve="DateOp" />
+  </node>
+  <node concept="1TIwiD" id="7k75uGPx4R1">
+    <property role="EcuMT" value="8432732927233904065" />
+    <property role="3GE5qa" value="delta.periods" />
+    <property role="TrG5h" value="PeriodType" />
+    <property role="34LRSv" value="period" />
+    <ref role="1TJDcQ" node="7aRvJQE305f" resolve="DateDeltaType" />
   </node>
 </model>
 

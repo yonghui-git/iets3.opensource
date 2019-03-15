@@ -1792,6 +1792,30 @@
         </node>
       </node>
     </node>
+    <node concept="_ixoA" id="7k75uGPvX8F" role="_iOnB" />
+    <node concept="_fkuM" id="7k75uGPvY0i" role="_iOnB">
+      <property role="TrG5h" value="periods" />
+      <node concept="_fkuZ" id="7k75uGPvY$I" role="_fkp5">
+        <node concept="_fku$" id="7k75uGPvY$J" role="_fkur" />
+        <node concept="3oJwfo" id="7k75uGPvYSr" role="_fkuS">
+          <node concept="30bXRB" id="7k75uGPvYNx" role="3oJwfr">
+            <property role="30bXRw" value="8" />
+          </node>
+        </node>
+        <node concept="30dDZf" id="7k75uGPvYFg" role="_fkuY">
+          <node concept="3oJwfo" id="7k75uGPvYM6" role="30dEs_">
+            <node concept="30bXRB" id="7k75uGPvYFZ" role="3oJwfr">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+          <node concept="3ow14F" id="7k75uGPvYDY" role="30dEsF">
+            <node concept="30bXRB" id="7k75uGPvYEG" role="3oJwfr">
+              <property role="30bXRw" value="1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="_ixoA" id="5wmCCs0hWfE" role="_iOnB" />
   </node>
   <node concept="2XOHcx" id="4rZeNQ6M9GV">
