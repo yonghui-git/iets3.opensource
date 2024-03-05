@@ -107,7 +107,9 @@ if (!project.hasProperty("mbeddrVersion")) {
 
 ext.releaseRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-releases/'
 ext.snapshotRepository = 'https://artifacts.itemis.cloud/repository/maven-mps-snapshots'
-ext.publishingRepository = version.toString().endsWith("-SNAPSHOT") ? snapshotRepository : releaseRepository
+
+def isForReleaseRepository = (currentBranch == "master" || currentBranch.startsWith("maintenance") || currentBranch.contains("datev")) && !version.toString().endsWith("-SNAPSHOT")
+ext.publishingRepository = isForReleaseRepository ? releaseRepository : snapshotRepository
 
 
 // 'artifacts' is used in the generated ant scripts as build output directory
